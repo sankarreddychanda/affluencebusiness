@@ -21,7 +21,15 @@ from django.conf.urls.static import static
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path("b2b-email-list/", b2b_email_list)
+    path("", home),
+    path("b2b-email-list/", b2b_email_list),
+    path("data-verification/", data_verification),
+    path("email-appending/", email_appending),
+    path("data-appending/", data_appending),
+    path("data-profiling/", data_profiling),
+    path("data-intelligence/", data_intelligence),
+    path("data-cleansing/", data_cleansing),
+    path("contact-us/", contact),
 
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
