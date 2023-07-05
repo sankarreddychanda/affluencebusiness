@@ -31,6 +31,9 @@ urlpatterns = [
     path("data-cleansing/", data_cleansing),
     path("contact-us/", contact),
     path("phone-appending/", phone_appending),
+    path("about-us/", about),
+    path("total-addressable-market/", total_addressable_market),
+    path("investors-email-list/", investors_email_list),
 
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

@@ -31,3 +31,9 @@ def contact(request):
     return render(request,'contact.html')
 def phone_appending(request):
     return render(request,'phone-appending.html')
+def about(request):
+    return render(request,'about.html')
+def total_addressable_market(request):
+    return render(request,'total-addressable-market.html')
+def investors_email_list(request):
+    return render(request,'investors-email-list.html')
