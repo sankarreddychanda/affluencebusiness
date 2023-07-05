@@ -1,0 +1,1108 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<main id="main">
+    <style>
+        @media screen and (max-width:768px) {
+            .respo-mb-table {
+                height: 500px;
+                overflow-y: scroll;
+            }
+
+            .mb-sec {
+                margin-top: -20px;
+            }
+        }
+
+        @media screen and (max-width:768px) {
+            .respo-mb-table-uk {
+                height: 450px;
+                overflow-y: scroll;
+                margin-top: -35px;
+            }
+
+            .respo-mb-table-uk::-webkit-scrollbar {
+                width: 5px;
+            }
+
+            .respo-mb-table-uk::-webkit-scrollbar-track {
+                background: gray;
+            }
+
+            .respo-mb-table-uk::-webkit-scrollbar-thumb {
+                background: green;
+            }
+        }
+
+        @media screen and (max-width:1600px) {
+            .mobile-tableview .tab-scroll {
+                display: none !important;
+            }
+        }
+
+        @media screen and (max-width:768px) {
+            .respo-green-box .col-lg-4 {
+                display: none;
+            }
+
+            .green-right-list {
+                display: none;
+            }
+
+            .mobile-tableview .tab-scroll {
+                display: block !important;
+            }
+
+            .mobile-tableview {
+                margin-top: -10px;
+            }
+
+            .mobile-tableview ::-webkit-scrollbar {
+                width: 5px;
+            }
+
+            .mobile-tableview ::-webkit-scrollbar-track {
+                box-shadow: inset 0 0 5px grey;
+                border-radius: 5px;
+            }
+
+            .mobile-tableview ::-webkit-scrollbar-thumb {
+                background: green;
+                border-radius: 5px;
+            }
+        }
+    </style>
+    <section class="section-sec">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7 respo-mb-table-uk section-fpad wow fadeInLeft">
+                    <div class="tab-scroll">
+                        <h2 class="subhead-small-blk">Get Cracking with the Most Comprehensive Geo-Targeted Contacts
+                            Data for the USA</h2>
+                        <table class="border-tab-new01"
+                            style="width: 100%; border-collapse: collapse; border-spacing: 0px;">
+                            <tbody>
+                                <tr>
+                                    <td style="text-align:center;">USA C-Level Executives List</td>
+                                    <td style="text-align:center;">CEOs, CFOs, CMOs, CIOs, CTOs, COOs, CAOs, CSOs, CMDs
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align:center;">USA CVDs and Decision Makers</td>
+                                    <td style="text-align:center;">President, VPs, Directors, Managing Directors, AVPs
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align:center;">USA Professionals List</td>
+                                    <td style="text-align:center;">Doctors, Lawyers, Accountants, Academicians,
+                                        Librarians, HR Managers, Event Organizers and more</td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align:center;">USA Industries Executives List</td>
+                                    <td style="text-align:center;">Information Technology, BFSI, Healthcare, Legal, Real
+                                        Estate, Construction, Oil and Gas, Travel and Tourism, Education, Hospitality,
+                                        Retail, Manufacturing, Automotive, Transportation, Mining, Telecommunication,
+                                        Business Services, Media & Entertainment, Life Sciences, Consulting,
+                                        Pharmaceuticals, Semiconductor, Agriculture and more</td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align:center;">USA Technology Users List</td>
+                                    <td style="text-align:center;">ERP, CRM, SCM, SAP, Oracle, Salesforce, Microsoft,
+                                        Adobe, JD Edwards, People Soft SugarCRM, Lawson, 3COM, AS400, Siebel CRM,
+                                        QuickBooks, Linux, .NET, and more</td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align:center;">USA Healthcare Professionals List</td>
+                                    <td style="text-align:center;">Physicians, Surgeons, Doctors, Nurses, Pathologists,
+                                        Pharmacist, Gynecologists, Neurologists, Dentists, Orthopedists, Psychiatrists
+                                        and more</td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align:center;">USA Industry List</td>
+                                    <td style="text-align:center;">Large Shipping, Real-estate, Banking & Finance,
+                                        Manufacturers, Chemical, Cement, Supply Chain, Agriculture, Insurance and more
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="col-lg-5 mb-4 wow fadeInRight">
+                    <div class="mx-800 floating-div">
+                        <div class="contact-side">
+                            <h4>GET A FREE QUOTE</h4>
+                            <p>We have got you covered on all your email and direct marketing needs</p>
+                            <div class="form">
+                                <form name="f12" id="contact-form"
+                                    action="https://www.spanglobalservices.com/scripts/formmail" method="post"
+                                    onSubmit="return validationcon()"> <input type="hidden" name="returnURL"
+                                        value="https://www.spanglobalservices.com/thanks"><input name="title"
+                                        type="hidden" value="Contact Request from Span Global Services">
+                                    <div class=" form-row">
+                                        <div class="col-lg-6 form-group">
+                                            <div class="input-container"> <input type="text" name="fname"
+                                                    class="form-control" id="fname" placeholder="First Name*"> <i
+                                                    class="fa fa-user icon"></i> </div>
+                                        </div>
+                                        <div class="col-lg-6 form-group">
+                                            <div class="input-container"> <input type="text" name="lname"
+                                                    class="form-control" id="lname" placeholder="Last Name"> <i
+                                                    class="fa fa-user icon"></i> </div>
+                                        </div>
+                                    </div>
+                                    <div class=" form-row">
+                                        <div class="col-lg-6 form-group">
+                                            <div class="input-container"> <input type="email" class="form-control"
+                                                    name="email" id="email" placeholder="Business Email*"> <i
+                                                    class="fa fa-envelope icon"></i> </div>
+                                        </div>
+                                        <div class="col-lg-6 form-group">
+                                            <div class="input-container"> <input type="text" class="form-control"
+                                                    name="phone" id="phone" placeholder="Business Phone*"> <i
+                                                    class="fa fa-phone icon"></i> </div>
+                                        </div>
+                                    </div>
+                                    <div class=" form-row">
+                                        <div class="col-lg-12 form-group">
+                                            <div class="input-container"> <input type="text" name="company"
+                                                    class="form-control" id="company" placeholder="Company Name*"> <i
+                                                    class="fa fa-briefcase icon"></i> </div>
+                                        </div>
+                                    </div>
+                                    <div class=" form-row">
+                                        <div class="col-lg-12 form-group">
+                                            <div class="input-container"> <select name="contact" class="form-control">
+                                                    <option value="">No. of contacts</option>
+                                                    <option value="Less than 10k">Less than 10k</option>
+                                                    <option value="10k-50k">10k-50k</option>
+                                                    <option value="50k-100k">50k-100k</option>
+                                                    <option value="100k+">100k+</option>
+                                                </select> </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group"> <textarea class="form-control " name="comments" rows="1"
+                                            placeholder="Message*"></textarea> </div>
+                                    <div class="form-group"> <label><input name="newslettersubscribe"
+                                                value="newslettersubscribe" checked="" type="checkbox"> I would like to
+                                            subscribe to your Newsletter.</label> </div>
+                                    <div class="form-group mt-4"><button type="submit" class="circle-fa">Submit Data
+                                            Counts and Quote Request &nbsp; <i
+                                                class="fa icon ion-android-arrow-forward"></i></button></div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </section>
+    <section class="section-sec-0-0 mb-sec">
+        <div class="container">
+            <div class="row ">
+                <div class="col-lg-6 wow fadeInLeft">
+                    <div class="mb-3">
+                        <h2 class="small-tab-head mb-2"><b>Segmentation of United States (USA) Contacts by Industry</b>
+                        </h2>
+                    </div>
+                    <div class="respo-tab scroll-vertical-tab">
+                        <table class="border-tab-new01" cellpadding="0" cellspacing="0">
+                            <tbody>
+                                <tr>
+                                    <th>Industry</th>
+                                    <th>Email</th>
+                                    <th>Phone &amp; Direct Mail</th>
+                                </tr>
+                                <tr>
+                                    <td>Business Services</td>
+                                    <td>124,226</td>
+                                    <td>905,392</td>
+                                </tr>
+                                <tr>
+                                    <td>Automotive</td>
+                                    <td>50,124</td>
+                                    <td>368,096</td>
+                                </tr>
+                                <tr>
+                                    <td>Banking &amp; Financial Services</td>
+                                    <td>128,922</td>
+                                    <td>939,677</td>
+                                </tr>
+                                <tr>
+                                    <td>Media &amp; Publishing</td>
+                                    <td>41,912</td>
+                                    <td>303,040</td>
+                                </tr>
+                                <tr>
+                                    <td>Information Technology</td>
+                                    <td>245,648</td>
+                                    <td>1,794,697</td>
+                                </tr>
+                                <tr>
+                                    <td>Construction</td>
+                                    <td>142,593</td>
+                                    <td>1,038,743</td>
+                                </tr>
+                                <tr>
+                                    <td>Consumer Goods &amp; Services</td>
+                                    <td>110,509</td>
+                                    <td>805,258</td>
+                                </tr>
+                                <tr>
+                                    <td>Manufacturing</td>
+                                    <td>148,133</td>
+                                    <td>1,080,645</td>
+                                </tr>
+                                <tr>
+                                    <td>Government</td>
+                                    <td>97,894</td>
+                                    <td>715,359</td>
+                                </tr>
+                                <tr>
+                                    <td>Education</td>
+                                    <td>97,604</td>
+                                    <td>711,054</td>
+                                </tr>
+                                <tr>
+                                    <td>Healthcare</td>
+                                    <td>252,931</td>
+                                    <td>1,845,673</td>
+                                </tr>
+                                <tr>
+                                    <td>Hospitality &amp; Travel</td>
+                                    <td>48,176</td>
+                                    <td>350,955</td>
+                                </tr>
+                                <tr>
+                                    <td>Human Resources</td>
+                                    <td>28,468</td>
+                                    <td>209,280</td>
+                                </tr>
+                                <tr>
+                                    <td>Industrial Automation</td>
+                                    <td>6,979</td>
+                                    <td>48,761</td>
+                                </tr>
+                                <tr>
+                                    <td>Insurance</td>
+                                    <td>55,452</td>
+                                    <td>402,617</td>
+                                </tr>
+                                <tr>
+                                    <td>Investment Banking &amp; Venture Capital</td>
+                                    <td>19,013</td>
+                                    <td>140,9853</td>
+                                </tr>
+                                <tr>
+                                    <td>Law Practice &amp; Legal Services</td>
+                                    <td>64,199</td>
+                                    <td>470,849</td>
+                                </tr>
+                                <tr>
+                                    <td>Supply Chain &amp; Logistics</td>
+                                    <td>61,248</td>
+                                    <td>444,924</td>
+                                </tr>
+                                <tr>
+                                    <td>Marketing &amp; Advertising</td>
+                                    <td>40,300</td>
+                                    <td>292,735</td>
+                                </tr>
+                                <tr>
+                                    <td>Mining &amp; Metals</td>
+                                    <td>8,205</td>
+                                    <td>58,437</td>
+                                </tr>
+                                <tr>
+                                    <td>Nonprofit Organization Management</td>
+                                    <td>40,060</td>
+                                    <td>293,903</td>
+                                </tr>
+                                <tr>
+                                    <td>Oil,Energy,Renewables,Environment &amp; Utilities</td>
+                                    <td>62,489</td>
+                                    <td>458,366</td>
+                                </tr>
+                                <tr>
+                                    <td>Pharmaceuticals</td>
+                                    <td>27,904</td>
+                                    <td>201,510</td>
+                                </tr>
+                                <tr>
+                                    <td>Public Relations &amp; Communications</td>
+                                    <td>16,111</td>
+                                    <td>116,8873</td>
+                                </tr>
+                                <tr>
+                                    <td>Real Estate</td>
+                                    <td>86,098</td>
+                                    <td>629,250</td>
+                                </tr>
+                                <tr>
+                                    <td>Research</td>
+                                    <td>26,236</td>
+                                    <td>192,990</td>
+                                </tr>
+                                <tr>
+                                    <td>Retail</td>
+                                    <td>150,650</td>
+                                    <td>1,101,936</td>
+                                </tr>
+                                <tr>
+                                    <td>Telecommunications &amp; Wireless</td>
+                                    <td>44,941</td>
+                                    <td>327,341</td>
+                                </tr>
+                                <tr>
+                                    <td>Warehousing</td>
+                                    <td>9,905</td>
+                                    <td>71,578</td>
+                                </tr>
+                                <tr>
+                                    <td>Wholesale</td>
+                                    <td>15,885</td>
+                                    <td>115,234</td>
+                                </tr>
+                                <tr class="total-count">
+                                    <td><b>Total</b></td>
+                                    <td><b>2,252,815</b></td>
+                                    <td><b>16,436,172</b></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeInRight">
+                    <div class="mb-3">
+                        <h2 class="small-tab-head mb-2"><b>Segmentation of United States (USA) Contacts by Job Roles</b>
+                        </h2>
+                    </div>
+                    <div class="respo-tab scroll-vertical-tab">
+                        <table class="border-tab-new01" cellpadding="0" cellspacing="0">
+                            <tbody>
+                                <tr>
+                                    <th>Job Roles</th>
+                                    <th>Email</th>
+                                    <th>Phone &amp; Direct Mail</th>
+                                </tr>
+                                <tr>
+                                    <td>Engineering</td>
+                                    <td>327,909</td>
+                                    <td>2,392,276</td>
+                                </tr>
+                                <tr>
+                                    <td>Finance</td>
+                                    <td>307,433</td>
+                                    <td>2,242,073</td>
+                                </tr>
+                                <tr>
+                                    <td>HR</td>
+                                    <td>189,543</td>
+                                    <td>1,380,746</td>
+                                </tr>
+                                <tr>
+                                    <td>IT</td>
+                                    <td>329,676</td>
+                                    <td>2,403,715</td>
+                                </tr>
+                                <tr>
+                                    <td>Legal</td>
+                                    <td>152,309</td>
+                                    <td>1,114,777</td>
+                                </tr>
+                                <tr>
+                                    <td>Marketing</td>
+                                    <td>198,783</td>
+                                    <td>1,450,387</td>
+                                </tr>
+                                <tr>
+                                    <td>Media &amp; Communication</td>
+                                    <td>237,705</td>
+                                    <td>1,733,791</td>
+                                </tr>
+                                <tr>
+                                    <td>Operations</td>
+                                    <td>937,142</td>
+                                    <td>6,843,327</td>
+                                </tr>
+                                <tr>
+                                    <td>Product Management</td>
+                                    <td>35,582</td>
+                                    <td>262,671</td>
+                                </tr>
+                                <tr>
+                                    <td>Program &amp; Project Management</td>
+                                    <td>195,159</td>
+                                    <td>1,426,123</td>
+                                </tr>
+                                <tr>
+                                    <td>Purchasing</td>
+                                    <td>41,824</td>
+                                    <td>304,591</td>
+                                </tr>
+                                <tr>
+                                    <td>Quality Assurance</td>
+                                    <td>71,451</td>
+                                    <td>520,139</td>
+                                </tr>
+                                <tr>
+                                    <td>Real Estate</td>
+                                    <td>142,048</td>
+                                    <td>1,039,147</td>
+                                </tr>
+                                <tr>
+                                    <td>Research</td>
+                                    <td>198,174</td>
+                                    <td>1,448,136</td>
+                                </tr>
+                                <tr>
+                                    <td>Sales / Business Development</td>
+                                    <td>782,909</td>
+                                    <td>5,714,508</td>
+                                </tr>
+                                <tr>
+                                    <td>Senior Management</td>
+                                    <td>1,334,767</td>
+                                    <td>9,742,340</td>
+                                </tr>
+                                <tr class="total-count">
+                                    <td><b>Total</b></td>
+                                    <td><b>5,482,414</b></td>
+                                    <td><b>40,018,747</b></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="col-lg-12 wow fadeInLeft">
+                    <div class="mb-4 mt-4 text-center"> <a href="#" data-toggle="modal" data-target="#send-message"
+                            class="green-btn circle-fa">Request a Quote! &nbsp; <i
+                                class="fa icon ion-android-arrow-forward"></i></a> </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-sec-50-40">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 wow fadeInLeft">
+                    <h2 class="subhead-small-blk mb-2">USA Business Email Lists – Aligned Towards Achieving Your
+                        Targeted Business Goals</h2>
+                    <p style="text-align:Justify;">As a marketer if you want to engage in effective business
+                        communication with business heads and top executives in USA, then Span Global Services'
+                        <strong>USA Business Email List</strong> is the best tool for you. You can directly have
+                        business communication with your targeted audience and keep them engaged. We have developed an
+                        extensive database with contact details of over 30 million business executives in USA. Marketers
+                        and vendors can now reap better business returns through increased <a
+                            href="https://www.spanglobalservices.com/email-lists" title="B2B Sales Leads"><strong>B2B
+                                Sales Leads</strong></a>.</p>
+                    <p style="text-align:Justify;">We value our clients and ensure the <strong>List of
+                            Businesses</strong> in USA exceeds your expectations. The data includes complete contact
+                        information of businesses, thereby helping you connect with the right audience and take your
+                        business to new heights.</p>
+                    <p style="text-align:Justify;">The <strong>USA Business Mailing List</strong> is built to facilitate
+                        B2B marketing, therefore marketers can leverage from a single investment with repeated returns.
+                    </p>
+                    <p style="text-align:Justify;">Having access to Span Global Services meticulously created data will
+                        make sure marketers will make the right business decisions and be influential in taking their
+                        brand to global success. Furthermore, it gives you the opportunity to promote your products and
+                        services in the international markets and achieve your targeted business goals. You can connect
+                        with us for a free consultation to have a better understanding of our services.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="grey-sec-light-01">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 wow fadeInRight"><img
+                        src="https://www.spanglobalservices.com/assets/img/quality-leads-usa.jpg" class="respo-img"
+                        alt="USA Business Email List" /></div>
+                <div class="col-lg-6 pt-5 pb-5 mt-3 wow fadeInLeft">
+                    <h2 class="subhead-small-blk">Benefits of Procuring Span Global Services’ USA Email Leads</h2>
+                    <p><img src="https://www.spanglobalservices.com/assets/img/green-right.png" alt="Benefits" title=""
+                            class="repo-img" style="width:30px;height:30px;">&nbsp;<strong>200+ unique data
+                            attributes</strong> </p>
+                    <p><img src="https://www.spanglobalservices.com/assets/img/green-right.png" alt="Benefits" title=""
+                            class="repo-img" style="width:30px;height:30px;">&nbsp;<strong>100% Data Refresh Every
+                            Quarter</strong></p>
+                    <p><img src="https://www.spanglobalservices.com/assets/img/green-right.png" alt="Benefits" title=""
+                            class="repo-img" style="width:30px;height:30px;">&nbsp;<strong>Customized lists based on
+                            user’s need</strong> </p>
+                    <p><img src="https://www.spanglobalservices.com/assets/img/green-right.png" alt="Benefits" title=""
+                            class="repo-img" style="width:30px;height:30px;">&nbsp;<strong>Worldwide outreach with data
+                            from US, Canada, UK, Europe, Australia, and other countries </strong></p>
+                    <p><img src="https://www.spanglobalservices.com/assets/img/green-right.png" alt="Benefits" title=""
+                            class="repo-img" style="width:30px;height:30px;">&nbsp;<strong>Fresh and active data
+                            verified quarterly with SMTP & NCOA protocols</strong></p>
+                    <p><img src="https://www.spanglobalservices.com/assets/img/green-right.png" alt="Benefits" title=""
+                            class="repo-img" style="width:30px;height:30px;">&nbsp;<strong>All-inclusive data to
+                            facilitate multi-channel & cross-channel marketing.</strong></p>
+                    <div class="mb-4 mt-4"> <a href="#" data-toggle="modal" data-target="#send-message"
+                            class="green-btn circle-fa">Get Data Sample and Counts Now! &nbsp; <i
+                                class="fa icon ion-android-arrow-forward"></i></a> </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-sec-50-40 mb-4 mt-4" style="padding: 10px 0 0px 0;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 mb-4 wow fadeInLeft" style="padding: 10px 0 0px 0;">
+                    <h2 class="subhead-small-blk mb-4">Get Access to the Most Reliable USA Business Contacts List for
+                        Quality Leads</h2>
+                    <p style="text-align:Justify;">Span Global Service is the trusted provider of high quality business
+                        leads in the international market. It is known for the authenticity and accuracy of the data we
+                        provide. USA Business Mailing Lists are regularly updated to give you current and reliable
+                        contact details of businesses in USA. Most companies are relying on our <a
+                            href="https://www.spanglobalservices.com/email-lists" title="Email Lists"><strong>email
+                                lists</strong></a> as it assures high returns on investments. Our business lists
+                        facilitates easy communication through multi-channel campaigning for marketers and customers
+                        spread across geographies. USA is home to multiple industries and organizations, and with our
+                        systematically segmented <strong>USA Business Email Lists</strong> you can plan your marketing
+                        strategies to take your business to the next level.</p>
+                </div>
+                <div class="col-lg-6 mb-4 wow fadeInRight">
+                    <h2 class="subhead-small-blk text-center">Data Fields We Provide Includes</h2>
+                    <div class="dp-green-box">
+                        <div class="row respo-green-box">
+                            <div class="col-lg-4 wow fadeInLeft"
+                                style="visibility: visible; animation-name: fadeInLeft;padding-right: 0px;padding-left: 0px;">
+                                <a href="#requestquote">
+                                    <p><img src="https://www.spanglobalservices.com/assets/img/first-name.png"
+                                            alt="first-name" title="first-name" class="respo-img">&nbsp;First Name</p>
+                                    <p><img src="https://www.spanglobalservices.com/assets/img/last-name.png"
+                                            alt="last-name" title="last-name" class="respo-img">&nbsp;Last Name</p>
+                                    <p><img src="https://www.spanglobalservices.com/assets/img/comapny-name.png"
+                                            alt="comapny-name" title="comapny-name" class="respo-img">&nbsp;Company Name
+                                    </p>
+                                    <p><img src="https://www.spanglobalservices.com/assets/img/job-title2.png"
+                                            alt="job-title" title="job-title" class="respo-img">&nbsp;Job Title</p>
+                                </a> </div>
+                            <div class="col-lg-4 wow fadeInLeft"
+                                style="visibility: visible; animation-name: fadeInLeft;padding-right: 0px;padding-left: 0px;">
+                                <a href="#requestquote">
+                                    <p><img src="https://www.spanglobalservices.com/assets/img/email.png" alt="email"
+                                            title="email" class="respo-img">&nbsp;Email</p>
+                                    <p><img src="https://www.spanglobalservices.com/assets/img/phone-number.png"
+                                            alt="phone-number" title="phone-number" class="respo-img">&nbsp;Phone Number
+                                    </p>
+                                    <p><img src="https://www.spanglobalservices.com/assets/img/fax-number.png"
+                                            alt="fax-number" title="fax-number" class="respo-img">&nbsp;Fax Number</p>
+                                    <p><img src="https://www.spanglobalservices.com/assets/img/company-mailng.png"
+                                            alt="company-mailng" title="company-mailng" class="respo-img">&nbsp;Mailng
+                                        Address</p>
+                                </a> </div>
+                            <div class="col-lg-4 wow fadeInLeft"
+                                style="visibility: visible; animation-name: fadeInLeft;padding-right: 0px;padding-left: 0px;">
+                                <a href="#requestquote">
+                                    <p><img src="https://www.spanglobalservices.com/assets/img/website.png"
+                                            alt="website" title="website" class="respo-img">&nbsp;Company Website</p>
+                                    <p><img src="https://www.spanglobalservices.com/assets/img/industry.png"
+                                            alt="industry" title="industry" class="respo-img">&nbsp;Industry</p>
+                                    <p><img src="https://www.spanglobalservices.com/assets/img/NACIS-and-SIC.png"
+                                            alt="NACIS-and-SIC" title="NACIS-and-SIC" class="respo-img">&nbsp;NACIS &
+                                        SIC Code</p>
+                                    <p><img src="https://www.spanglobalservices.com/assets/img/Socialmedia-handling.png"
+                                            alt="Socialmedia-handling" title="Socialmedia-handling"
+                                            class="respo-img">&nbsp;Social Media Handles</p>
+                                </a> </div>
+                        </div>
+                        <div class="row mobile-tableview">
+                            <div class="col-lg-12 wow fadeInLeft">
+                                <div class="tab-scroll">
+                                    <ul class="green-star-list " style="height:130px;overflow-y:scroll;"> <a
+                                            href="#requestquote">
+                                            <p><img src="https://www.spanglobalservices.com/assets/img/first-name.png"
+                                                    alt="first-name" title="first-name" class="respo-img">&nbsp;First
+                                                Name</p>
+                                        </a> <a href="#requestquote">
+                                            <p><img src="https://www.spanglobalservices.com/assets/img/last-name.png"
+                                                    alt="last-name" title="last-name" class="respo-img">&nbsp;Last Name
+                                            </p>
+                                        </a> <a href="#requestquote">
+                                            <p><img src="https://www.spanglobalservices.com/assets/img/comapny-name.png"
+                                                    alt="comapny-name" title="comapny-name"
+                                                    class="respo-img">&nbsp;Company Name</p>
+                                        </a> <a href="#requestquote">
+                                            <p><img src="https://www.spanglobalservices.com/assets/img/job-title2.png"
+                                                    alt="job-title" title="job-title" class="respo-img">&nbsp;Job Title
+                                            </p>
+                                        </a> <a href="#requestquote">
+                                            <p><img src="https://www.spanglobalservices.com/assets/img/email.png"
+                                                    alt="email" title="email" class="respo-img">&nbsp;Email</p>
+                                        </a><a href="#requestquote">
+                                            <p><img src="https://www.spanglobalservices.com/assets/img/phone-number.png"
+                                                    alt="phone-number" title="phone-number"
+                                                    class="respo-img">&nbsp;Phone Number</p>
+                                        </a> <a href="#requestquote">
+                                            <p><img src="https://www.spanglobalservices.com/assets/img/fax-number.png"
+                                                    alt="fax-number" title="fax-number" class="respo-img">&nbsp;Fax
+                                                Number</p>
+                                        </a> <a href="#requestquote">
+                                            <p><img src="https://www.spanglobalservices.com/assets/img/company-mailng.png"
+                                                    alt="company-mailng" title="company-mailng"
+                                                    class="respo-img">&nbsp;Mailng Address</p>
+                                        </a> <a href="#requestquote">
+                                            <p><img src="https://www.spanglobalservices.com/assets/img/website.png"
+                                                    alt="website" title="website" class="respo-img">&nbsp;Company
+                                                Website</p>
+                                        </a> <a href="#requestquote">
+                                            <p><img src="https://www.spanglobalservices.com/assets/img/industry.png"
+                                                    alt="industry" title="industry" class="respo-img">&nbsp;Industry</p>
+                                        </a> <a href="#requestquote">
+                                            <p><img src="https://www.spanglobalservices.com/assets/img/NACIS-and-SIC.png"
+                                                    alt="NACIS-and-SIC" title="NACIS-and-SIC"
+                                                    class="respo-img">&nbsp;NACIS & SIC Code</p>
+                                        </a><a href="#requestquote">
+                                            <p><img src="https://www.spanglobalservices.com/assets/img/Socialmedia-handling.png"
+                                                    alt="Socialmedia-handling" title="Socialmedia-handling"
+                                                    class="respo-img">&nbsp;Social Media Handles</p>
+                                        </a> </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <p style="text-align:Justify;"><strong>List of Businesses in USA</strong> will give you the right
+                    business leads, so that you can have immediate communication with prospective clients in USA. The
+                    database when used for your marketing initiatives is sure to bring good response. You can reach out
+                    to your potential clients and expand your customer network. With updated data by your side you can
+                    retain contact with old and existing clients. You will be able to lead your company to the next
+                    phase of success.</p>
+            </div>
+        </div>
+    </section>
+    <section class="section-sec-0-60 usa-business-list-sec">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 mb-1 wow fadeInLeft">
+                    <div class="dark-green ">
+                        <h2>Customize Your USA Business Lists Based On Your Requirement</h2>
+                    </div>
+                </div>
+                <div class="col-lg-7 section-fpad wow fadeInLeft">
+                    <p class="font-14">The <strong>USA Business Lists</strong> can be custom built based on your
+                        business needs. We are in touch with reliable sources across countries that can provide relevant
+                        contact data of your targeted audience. Therefore it is now convenient to get accurate and
+                        verified data at affordable rates. We at <a
+                            href="https://www.spanglobalservices.com/email-lists"
+                            title="Span Global Services"><strong>Span Global Services</strong></a> understand how
+                        important business contact lists are to companies. Therefore to make things easier, we have
+                        built a unique platform to launch campaigns, create market presence, and to get qualified sales
+                        leads from all across the United States.</p>
+                    <p class="font-14">We provide quality marketing lists at affordable price so that you can use the
+                        data effectively to enhance your business and decrease your marketing cost. Our USA Business
+                        Email List and contacts datasets are currently being used by multinationals as well as startups.
+                        You can grow your customer list and also make contact with businesses from specific countries.
+                        You can now connect with them without any hassles. In addition we have developed the <strong>USA
+                            Email Lists</strong> to serve customers and to ensure that their campaigns are able to reap
+                        desired benefits. So, use our data to give your campaigns the required boost.</p>
+                    <div class="mb-5 mt-4"> <a href="https://www.spanglobalservices.com/request-sample-list"
+                            class="green-btn circle-fa">Get Your FREE Sample Today!&nbsp; <i
+                                class="fa icon ion-android-arrow-forward"></i></a> </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-sec-50-40">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 mb-4 wow fadeInLeft">
+                    <h2 class="subhead-list mb-2">Some of Our Top Selling C-Level Executives List, Industry Wise<br />
+                        Executives Email List and Healthcare Mailing Addresses for the USA Include:</h2>
+                </div>
+                <div class="col-lg-6 wow fadeInLeft">
+                    <div class="row">
+                        <div class="col-lg-7 wow fadeInLeft">
+                            <table class="list-head-tab" border="0" cellpadding="0" cellspacing="0">
+                                <tr>
+                                    <td bgcolor="#066933"> <img
+                                            src="https://www.spanglobalservices.com/assets/img/c-level-list-icon.png"
+                                            class="respo-img" alt="C Level Email List" title="C Level Email List" />
+                                    </td>
+                                    <td class="list-head-outer">
+                                        <h2 class="list-head"><a
+                                                href="https://www.spanglobalservices.com/professional-lists/">C-Level
+                                                Executives List</a></h2>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="dgreen-bg-list-outer">
+                        <table class="grey-bg-list">
+                            <tr>
+                                <td height="20"></td>
+                                <td height="20"></td>
+                            </tr>
+                            <tr>
+                                <td valign="top"><a
+                                        href="https://www.spanglobalservices.com/professional-lists/ceo-email-list">United
+                                        States of America Companies CEOs Email List</a></td>
+                                <td valign="top"><a
+                                        href="https://www.spanglobalservices.com/professional-lists/cio-email-list">USA
+                                        CIOs Email List</a></td>
+                            </tr>
+                            <tr>
+                                <td valign="top"><a
+                                        href="https://www.spanglobalservices.com/professional-lists/cto-email-list">USA
+                                        CTOs Email List</a></td>
+                                <td valign="top"><a
+                                        href="https://www.spanglobalservices.com/professional-lists/cmo-email-list">USA
+                                        CMOs Email List</a></td>
+                            </tr>
+                            <tr>
+                                <td valign="top"><a
+                                        href="https://www.spanglobalservices.com/professional-lists/cfo-email-list">USA
+                                        CFOs Email List</a></td>
+                                <td valign="top">&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td valign="top"><a
+                                        href="https://www.spanglobalservices.com/industry-wise-lists/">Industry Wise USA
+                                        Email List</a></td>
+                                <td valign="top"><a
+                                        href="https://www.spanglobalservices.com/industry-wise-lists/oil-and-gas-industry-email-list">Oil
+                                        &amp; Gas Industry USA Email List</a></td>
+                            </tr>
+                            <tr>
+                                <td valign="top"><a
+                                        href="https://www.spanglobalservices.com/industry-wise-lists/pharmaceutical-industry-email-list">USA
+                                        Pharmaceutical Manufacturing Email List</a></td>
+                                <td valign="top"><a
+                                        href="https://www.spanglobalservices.com/industry-wise-lists/real-estate-industry-email-list">Real
+                                        Estate Agents &amp; Mortgage Brokers List</a></td>
+                            </tr>
+                            <tr>
+                                <td valign="top"><a
+                                        href="https://www.spanglobalservices.com/industry-wise-lists/insurance-service-industry-email-list">Insurance
+                                        Service Industry USA Email List</a></td>
+                                <td valign="top"><a
+                                        href="https://www.spanglobalservices.com/industry-wise-lists/advertising-industry-email-list">Advertising
+                                        &amp; Marketing Industry Email List</a></td>
+                            </tr>
+                            <tr>
+                                <td valign="top"><a
+                                        href="https://www.spanglobalservices.com/industry-wise-lists/automotive-industry-email-list">Automotive
+                                        Industry US Email List</a></td>
+                                <td valign="top">&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td height="20"></td>
+                                <td height="20"></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeInLeft">
+                    <div class="row">
+                        <div class="col-lg-7 wow fadeInLeft">
+                            <table class="list-head-tab" border="0" cellpadding="0" cellspacing="0">
+                                <tr>
+                                    <td bgcolor="#066933"> <img
+                                            src="https://www.spanglobalservices.com/assets/img/health-list-icon.png"
+                                            class="respo-img" alt="Healthcare list" title="Healthcare list" /> </td>
+                                    <td class="list-head-outer">
+                                        <h2 class="list-head"><a
+                                                href="https://www.spanglobalservices.com/healthcare-lists/">Healthcare
+                                                Email Lists</a></h2>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="dgreen-bg-list-outer">
+                        <table class="grey-bg-list">
+                            <tr>
+                                <td height="20"></td>
+                                <td height="20"></td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.spanglobalservices.com/healthcare-lists/hospital-email-list">USA
+                                        Hospital Email Database</a></td>
+                                <td><a
+                                        href="https://www.spanglobalservices.com/healthcare-lists/pharmaceutical-email-list">USA
+                                        Pharmaceutical Email List</a></td>
+                            </tr>
+                            <tr>
+                                <td><a
+                                        href="https://www.spanglobalservices.com/healthcare-lists/cosmetologists-email-list">USA
+                                        Cosmetologist Email List</a></td>
+                                <td><a
+                                        href="https://www.spanglobalservices.com/healthcare-lists/addiction-counselors-email-list">Addiction
+                                        Counselors Email List</a></td>
+                            </tr>
+                            <tr>
+                                <td><a
+                                        href="https://www.spanglobalservices.com/healthcare-lists/family-marital-therapists-email-list">Family
+                                        Marital Therapists</a></td>
+                                <td><a
+                                        href="https://www.spanglobalservices.com/healthcare-lists/gynecologists-email-list">Gynecologists
+                                        Email List</a></td>
+                            </tr>
+                            <tr>
+                                <td><a
+                                        href="https://www.spanglobalservices.com/healthcare-lists/internal-medicine-email-list">Internal
+                                        Medicine Email List</a></td>
+                                <td><a href="https://www.spanglobalservices.com/healthcare-lists/internists-email-list">Internists
+                                        Email List</a></td>
+                            </tr>
+                            <tr>
+                                <td><a
+                                        href="https://www.spanglobalservices.com/healthcare-lists/massage-therapists-email-list">Massage
+                                        Therapists Email List</a></td>
+                                <td><a
+                                        href="https://www.spanglobalservices.com/healthcare-lists/medical-and-hospital-equipments-email-list">Medical
+                                        and Hospital Equipments Email List</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.spanglobalservices.com/healthcare-lists/physician-email-list">Physician
+                                        Email List</a></td>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td height="20"></td>
+                                <td height="20"></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </section>
+    <section class="section-sec-small pt-0">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 mb-4 wow fadeInLeft">
+                    <h2 class="subhead-list mb-2">Geo Targeted Country Wise Lists</h2>
+                </div>
+                <div class="col-lg-12 wow fadeInLeft">
+                    <div class="dgreen-bg-list-outer">
+                        <table class="dgreen-bg-list">
+                            <tr>
+                                <td><a href="https://www.spanglobalservices.com/geo-targeted-lists/netherlands-business-email-list"
+                                        title="Netherlands Business Email List">Netherlands Business Email List</a></td>
+                                <td><a href="https://www.spanglobalservices.com/geo-targeted-lists/japan-business-email-list"
+                                        title="Japan Business Email List">Japan Business Email List</a></td>
+                                <td><a href="https://www.spanglobalservices.com/geo-targeted-lists/spain-business-email-list"
+                                        title="Spain Business Email List">Spain Business Email List</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.spanglobalservices.com/geo-targeted-lists/switzerland-business-email-list"
+                                        title="Switzerland Business Email List">Switzerland Business Email List</a></td>
+                                <td><a href="https://www.spanglobalservices.com/geo-targeted-lists/denmark-business-email-list"
+                                        title="Denmark Business Email List">Denmark Business Email List</a></td>
+                                <td><a href="https://www.spanglobalservices.com/geo-targeted-lists/china-business-email-list"
+                                        title="ChinaBusiness Email List">China Business Email List</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.spanglobalservices.com/geo-targeted-lists/singapore-business-email-list"
+                                        title="Singapore Business Email List">Singapore Business Email List</a></td>
+                                <td><a href="https://www.spanglobalservices.com/geo-targeted-lists/canada-business-email-list"
+                                        title="Canada Business Email List">Canada Business Email List</a></td>
+                                <td><a href="https://www.spanglobalservices.com/geo-targeted-lists/australia-business-email-list"
+                                        title="Australia Business Email List">Australia Business Email List</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.spanglobalservices.com/geo-targeted-lists/germany-business-email-list"
+                                        title="Germany Business Email List">Germany Business Email List</a></td>
+                                <td><a href="https://www.spanglobalservices.com/geo-targeted-lists/france-business-email-list"
+                                        title="France Business Email List">France Business Email List</a></td>
+                                <td><a href="https://www.spanglobalservices.com/geo-targeted-lists/india-business-email-list"
+                                        title="India Business Email List">India Business Email List</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.spanglobalservices.com/geo-targeted-lists/hong-kong-business-email-list"
+                                        title="Hong Kong Business Email List">Hong Kong Business Email List</a></td>
+                                <td><a href="https://www.spanglobalservices.com/geo-targeted-lists/uk-business-email-list"
+                                        title="UK Business Email List">UK Business Email List</a></td>
+                                <td><a href="https://www.spanglobalservices.com/geo-targeted-lists/israel-b2b-email-list"
+                                        title="Israel B2B Email List">Israel B2B Email List</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.spanglobalservices.com/geo-targeted-lists/new-zealand-b2b-email-list"
+                                        title="New Zealand B2B Email List">New Zealand B2B Email List</a></td>
+                                <td><a href="https://www.spanglobalservices.com/geo-targeted-lists/usa-business-email-list"
+                                        title="USA Business Email List">USA Business Email List</a></td>
+                                <td><a href="https://www.spanglobalservices.com/geo-targeted-lists/south-korea-b2b-email-list"
+                                        title="South Korea B2B Email List">South Korea B2B Email List</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.spanglobalservices.com/geo-targeted-lists/asia-pacific-countries-business-email-list"
+                                        title="Asia Pacific Countries Business Email List">Asia Pacific Countries
+                                        Business Email List</a></td>
+                                <td><a href="https://www.spanglobalservices.com/geo-targeted-lists/atlanta-business-email-list"
+                                        title="Atlanta Business Email List">Atlanta Business Email List</a></td>
+                                <td><a href="https://www.spanglobalservices.com/geo-targeted-lists/austria-b2b-email-list"
+                                        title="Austria B2B Email List">Austria B2B Email List</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.spanglobalservices.com/geo-targeted-lists/belgium-business-email-list"
+                                        title="Belgium Business Email List">Belgium Business Email List</a></td>
+                                <td><a href="https://www.spanglobalservices.com/geo-targeted-lists/boston-business-email-list"
+                                        title="Boston Business Email List">Boston Business Email List</a></td>
+                                <td><a href="https://www.spanglobalservices.com/geo-targeted-lists/brazil-business-email-list"
+                                        title="Brazil Business Email List">Brazil Business Email List</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.spanglobalservices.com/geo-targeted-lists/california-email-list"
+                                        title="California Email List">California Email List</a></td>
+                                <td><a href="https://www.spanglobalservices.com/geo-targeted-lists/chicago-business-email-list"
+                                        title="Chicago Business Email List">Chicago Business Email List</a></td>
+                                <td><a href="https://www.spanglobalservices.com/geo-targeted-lists/czech-republic-business-email-list"
+                                        title="Czech Republic Business Email List">Czech Republic Business Email
+                                        List</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.spanglobalservices.com/geo-targeted-lists/dallas-business-email-list"
+                                        title="Dallas Business Email List">Dallas Business Email List</a></td>
+                                <td><a href="https://www.spanglobalservices.com/geo-targeted-lists/emea-countries-business-email-list"
+                                        title="EMEA Countries Business Email List">EMEA Countries Business Email
+                                        List</a></td>
+                                <td><a href="https://www.spanglobalservices.com/geo-targeted-lists/finland-business-email-list"
+                                        title="Finland Business Email List">Finland Business Email List</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.spanglobalservices.com/geo-targeted-lists/ireland-business-email-list"
+                                        title="Ireland Business Email List">Ireland Business Email List</a></td>
+                                <td><a href="https://www.spanglobalservices.com/geo-targeted-lists/italy-business-email-list"
+                                        title="Italy Business Email List">Italy Business Email List</a></td>
+                                <td><a href="https://www.spanglobalservices.com/geo-targeted-lists/los-angeles-business-email-list"
+                                        title="Los Angeles Email List">Los Angeles Business Email List</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.spanglobalservices.com/geo-targeted-lists/malaysia-business-email-list"
+                                        title="Malaysia Business Email List">Malaysia Business Email List</a></td>
+                                <td><a href="https://www.spanglobalservices.com/geo-targeted-lists/mexico-b2b-email-list"
+                                        title="Mexico B2B Email List">Mexico B2B Email List</a></td>
+                                <td><a href="https://www.spanglobalservices.com/geo-targeted-lists/middle-east-business-email-list"
+                                        title="Middle East Business Email List">Middle East Business Email List</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.spanglobalservices.com/geo-targeted-lists/middle-east-north-african-business-email-list"
+                                        title="Middle East North African Business Email List">Middle East North African
+                                        Business Email List</a></td>
+                                <td><a href="https://www.spanglobalservices.com/geo-targeted-lists/new-york-email-list"
+                                        title="New York Email List">New York Email List</a></td>
+                                <td><a href="https://www.spanglobalservices.com/geo-targeted-lists/norway-b2b-email-list"
+                                        title="Norway B2B Email List">Norway B2B Email List</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.spanglobalservices.com/geo-targeted-lists/oceania-business-email-list"
+                                        title="Oceania Business Email List">Oceania Business Email List</a></td>
+                                <td><a href="https://www.spanglobalservices.com/geo-targeted-lists/poland-b2b-email-list"
+                                        title="Poland B2B Email List">Poland B2B Email List</a></td>
+                                <td><a href="https://www.spanglobalservices.com/geo-targeted-lists/russia-b2b-email-list"
+                                        title="Russia B2B Email List">Russia B2B Email List</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.spanglobalservices.com/geo-targeted-lists/south-africa-b2b-email-list"
+                                        title="South Africa Email List">South Africa Email List</a></td>
+                                <td><a href="https://www.spanglobalservices.com/geo-targeted-lists/south-america-business-email-list"
+                                        title="South America Business Email List">South America Business Email List</a>
+                                </td>
+                                <td><a href="https://www.spanglobalservices.com/geo-targeted-lists/sweden-business-email-list"
+                                        title="Sweden Business Email List">Sweden Business Email List</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.spanglobalservices.com/geo-targeted-lists/texas-business-email-list"
+                                        title="Texas Business Email List">Texas Business Email List</a></td>
+                                <td><a href="https://www.spanglobalservices.com/geo-targeted-lists/turkey-b2b-email-list"
+                                        title="Turkey B2B Email List">Turkey B2B Email List</a></td>
+                                <td>&nbsp;</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </section>
+    <section class="section-sec-small pt-0">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 mb-4 wow fadeInLeft">
+                    <h2 class="subhead-list mb-2">Geo Targeted Region Wise Lists</h2>
+                </div>
+                <div class="col-lg-12 wow fadeInLeft">
+                    <div class="dgreen-bg-list-outer">
+                        <table class="dgrey-bg-list">
+                            <tr>
+                                <td><a href="https://www.spanglobalservices.com/geo-targeted-lists/asia-business-email-list"
+                                        title="Asia Business Email List">Asia Business Email List</a></td>
+                                <td><a href="https://www.spanglobalservices.com/geo-targeted-lists/north-america-business-email-list"
+                                        title="North America Business Email List">North America Business Email List</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.spanglobalservices.com/geo-targeted-lists/african-business-email-list"
+                                        title="African Business Email List">African Business Email List</a></td>
+                                <td><a href="https://www.spanglobalservices.com/geo-targeted-lists/european-business-email-list"
+                                        title="European Business Email List">European Business Email List</a></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </section>
+    <div id="requestquote">
+        <p>&nbsp;</p>
+    </div>
+    <section class="free-quote-sec">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 wow fadeInRight centeralign">
+                    <div>
+                        <h2>GET A FREE QUOTE</h2>
+                        <p>Finding the right data can be<br /> complicated, so we are here to help </p>
+                    </div>
+                </div>
+                <div class="col-lg-7 wow fadeInRight">
+                    <div class="contact-quote">
+                        <div class="form">
+                            <form method="post" name="contactside" class="contactForm"
+                                onsubmit="return fnValidationContactside()"
+                                action="https://www.spanglobalservices.com/scripts/formmail"
+                                enctype="multipart/form-data"> <input name="subject" type="hidden"
+                                    value="Contact Details from Span Global Services"> <input name="redirect_url"
+                                    type="hidden" value="https://www.spanglobalservices.com/thanks">
+                                <div class=" form-row">
+                                    <div class="col-lg-6 form-group"> <input type="text" name="fname"
+                                            class="form-control" id="fname" placeholder="First Name*"> </div>
+                                    <div class="col-lg-6 form-group"> <input type="text" name="lname"
+                                            class="form-control" id="lname" placeholder="Last Name*"> </div>
+                                    <div class="col-lg-6 form-group"> <input type="email" class="form-control"
+                                            name="email" id="email" placeholder="Business Email*"> </div>
+                                    <div class="col-lg-6 form-group"> <input type="text" class="form-control"
+                                            name="phone" id="phone" placeholder="Phone*"> </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="col-lg-12 form-group">
+                                        <div class="input-container"> <select name="contact" class="form-control">
+                                                <option value="">No. of contacts</option>
+                                                <option value="Less than 10k">Less than 10k</option>
+                                                <option value="10k-50k">10k-50k</option>
+                                                <option value="50k-100k">50k-100k</option>
+                                                <option value="100k+">100k+</option>
+                                            </select> </div>
+                                    </div>
+                                </div>
+                                <div class="form-group"> <textarea class="form-control " name="comments" rows="2"
+                                        placeholder="Requirements"></textarea> </div>
+                                <div class="form-group"><button type="submit" class="circle-fa">CLICK HERE TO
+                                        SUBMIT</button></div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+{% endblock %}
