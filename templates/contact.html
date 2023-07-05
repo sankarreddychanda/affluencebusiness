@@ -150,37 +150,81 @@
                     <div class="mx-800">
                         <h5 class="black-font">Place your query in the form, and our representatives<br/> will get in touch with you within 24 hours!</h5>
                         <div class="contact-withoutbg">
+                            <div class="row">
+                    <div class="col-12">
+                        {% if form.non_field_errors %}
+                            {% for err in form.non_field_errors %}
+                                <div style="font-size: small" class="alert alert-danger p-1 alert-dismissible fade show"
+                                     role="alert">
+                                    {{ err }}
+                                    <button type="button" class="close p-1" data-dismiss="alert" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                            {% endfor %}
+                        {% endif %}
                             <h1>CONNECT WITH US</h1>
                             <p>We have got you covered on all your email and direct marketing needs</p>
                             <div class="form">
-                                <form name="f12" id="contact-form" action="https://www.spanglobalservices.com/scripts/formmail" method="post" onSubmit="return validationcon()"> <input type="hidden" name="returnURL" value="https://www.spanglobalservices.com/thanks"><input name="title" type="hidden" value="Contact Request from Span Global Services">
+                                <form name="f12" id="contact-form" action="/contact-us/" method="post" >
+                                   {% csrf_token %}
                                     <div class=" form-row">
                                         <div class="col-lg-6 form-group">
-                                            <div class="input-container"> <input type="text" name="fname" class="form-control" id="fname" placeholder="First Name*"> <i class="fa fa-user icon"></i> </div>
+                                            <div class="input-container"> <input type="text" name="first_name" id="first_name" class="form-control" id="fname" placeholder="First Name*"> <i class="fa fa-user icon"></i> </div>
+                                            {% if form.first_name.errors %}
+                                            {% for err in form.first_name.errors %}
+                                                <div class="text-muted">{{ err }}</div>
+                                            {% endfor %}
+                                            {% endif %}
                                         </div>
                                         <div class="col-lg-6 form-group">
-                                            <div class="input-container"> <input type="text" name="lname" class="form-control" id="lname" placeholder="Last Name"> <i class="fa fa-user icon"></i> </div>
+                                            <div class="input-container"> <input type="text" id="last_name" name="last_name" class="form-control" id="lname" placeholder="Last Name"> <i class="fa fa-user icon"></i> </div>
                                         </div>
                                     </div>
                                     <div class=" form-row">
                                         <div class="col-lg-6 form-group">
                                             <div class="input-container"> <input type="email" class="form-control" name="email" id="email" placeholder="Business Email*"> <i class="fa fa-envelope icon"></i> </div>
+                                            {% if form.email.errors %}
+                                            {% for err in form.email.errors %}
+                                                <div class="text-muted">{{ err }}</div>
+                                            {% endfor %}
+                                            {% endif %}
                                         </div>
                                         <div class="col-lg-6 form-group">
                                             <div class="input-container"> <input type="text" class="form-control" name="phone" id="phone" placeholder="Business Phone*"> <i class="fa fa-phone icon"></i> </div>
+                                            {% if form.phone.errors %}
+                                            {% for err in form.phone.errors %}
+                                                <div class="text-muted">{{ err }}</div>
+                                            {% endfor %}
+                                            {% endif %}
                                         </div>
                                     </div>
                                     <div class="form-row">
                                         <div class="col-lg-12 form-group">
-                                            <div class="input-container"> <input type="text" name="company" class="form-control" id="company" placeholder="Company Name*"> <i class="fa fa-briefcase icon"></i> </div>
+                                            <div class="input-container">
+                                                <input type="text" name="company" class="form-control" id="company" placeholder="Company Name*"> <i class="fa fa-briefcase icon"></i> </div>
+                                            {% if form.company.errors %}
+                                            {% for err in form.company.errors %}
+                                                <div class="text-muted">{{ err }}</div>
+                                            {% endfor %}
+                                            {% endif %}
                                         </div>
                                     </div>
                                     <div class="form-row">
                                         <div class="col-lg-12 form-group">
-                                            <div class="input-container"> <select name="contact" class="form-control"> <option value="">No. of contacts</option> <option value="Less than 10k">Less than 10k</option> <option value="10k-50k">10k-50k</option> <option value="50k-100k">50k-100k</option> <option value="100k+">100k+</option></select>                                                </div>
+                                            <div class="input-container">
+                                                <select name="contacts_no" id="contacts_no" class="form-control">
+                                                    <option value="">No. of contacts</option>
+                                                    <option value="Less than 10k">Less than 10k</option>
+                                                    <option value="10k-50k">10k-50k</option>
+                                                    <option value="50k-100k">50k-100k</option>
+                                                    <option value="100k+">100k+</option>
+                                                </select>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="form-group"> <textarea class="form-control " name="comments" rows="1" placeholder="Message*"></textarea> </div>
+                                    <div class="form-group">
+                                        <textarea class="form-control " name="message" id="message" rows="1" placeholder="Message*"></textarea> </div>
                                     <div class="form-group"> <label><input name="newslettersubscribe" value="newslettersubscribe" checked="" type="checkbox"> I would like to subscribe to your Newsletter.</label> </div> <input id="Website" name="Website" type="hidden" value="https://www.spanglobalservices.com/contact-us"
                                     /> <input id="source" name="source" type="hidden" value="Web Site Lead" />
                                     <div class="form-group mt-4"><button type="submit" class="circle-fa">SUBMIT &nbsp; <i class="fa icon ion-android-arrow-forward"></i></button></div>

@@ -222,3 +222,18 @@ class UserProfile(AbstractBaseUser, PermissionsMixin):
             return "%s" % self.username
 
 
+
+
+class ContactData(models.Model):
+    first_name = models.CharField(max_length=255)
+    last_name = models.CharField(max_length=255,null=True,blank=True)
+    email = models.EmailField()
+    phone = models.CharField(max_length=15,null=True,blank=True)
+    company = models.CharField(max_length=255, null=True, blank=True)
+    contacts_no = models.CharField(max_length=255, null=True, blank=True)
+    message = models.TextField(null=True, blank=True)
+    # file = models.FileField()
+
+    def __str__(self):
+        return self.first_name
+
