@@ -40,12 +40,67 @@ def total_addressable_market(request):
     return render(request,'total-addressable-market.html')
 def investors_email_list(request):
     return render(request,'investors-email-list.html')
+def technology_lists(request):
+    return render(request,'technology-lists.html')
+def as_400_users_list(request):
+    return render(request,'technology-lists/as-400-users-list.html')
+def amazon_web_services_users_list(request):
+    return render(request,'technology-lists/amazon-web-services-users-list.html')
+def crm_users_list(request):
+    return render(request,'technology-lists/crm-users-list.html')
+def crm_users_list(request):
+    return render(request,'technology-lists/crm-users-list.html')
+def erp_users_list(request):
+    return render(request,'technology-lists/erp-users-list.html')
+def ms_dynamics_crm_users_list(request):
+    return render(request,'technology-lists/ms-dynamics-crm-users-list.html')
+def peoplesoft_users_list(request):
+    return render(request,'technology-lists/peoplesoft-users-list.html')
+def quickbooks_users_list(request):
+    return render(request,'technology-lists/quickbooks-users-list.html')
+def salesforce_crm_users_list(request):
+    return render(request,'technology-lists/salesforce-crm-users-list.html')
+def sap_users_list(request):
+    return render(request,'technology-lists/sap-users-list.html')
+def professional_lists(request):
+    return render(request,'professional-lists.html')
+def cpa_email_list(request):
+    return render(request,'professional-lists/cpa-email-list.html')
+def attorney_email_list(request):
+    return render(request,'professional-lists/attorney-email-list.html')
+def cio_email_list(request):
+    return render(request,'professional-lists/cio-email-list.html')
+def ceo_email_list(request):
+    return render(request,'professional-lists/cio-email-list.html')
+def cfo_email_list(request):
+    return render(request,'professional-lists/cfo-email-list.html')
+def cmo_email_list(request):
+    return render(request,'professional-lists/cmo-email-list.html')
+def cto_email_list(request):
+    return render(request,'professional-lists/cto-email-list.html')
+def hr_executives_mailing_list(request):
+    return render(request,'professional-lists/hr-executives-mailing-list.html')
+def loan_officer_email_list(request):
+    return render(request,'professional-lists/loan-officer-email-list.html')
+def industry_wise_lists(request):
+    return render(request,'industry-wise-lists.html')
 
 
+def automotive_industry_email_list(request):
+    return render(request,'industry-wise-lists/automotive-industry-email-list.html')
+
+def banking_and_finance_industry_email_list(request):
+    return render(request,'industry-wise-lists/banking-and-finance-industry-email-list.html')
+
+def automotive_industry_email_list(request):
+    return render(request,'industry-wise-lists/automotive-industry-email-list.html')
 
 
+def automotive_industry_email_list(request):
+    return render(request,'industry-wise-lists/automotive-industry-email-list.html')
 
-
+def automotive_industry_email_list(request):
+    return render(request,'industry-wise-lists/automotive-industry-email-list.html')
 
 
 
