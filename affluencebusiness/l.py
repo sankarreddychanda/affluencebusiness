@@ -139,15 +139,18 @@ TEMPLATES = [
     },
 ]
 
-STATIC_URL = 'static/'
-STATICFILES_DIRS = (os.path.join(BASE_DIR, "../static_media/"),)
-MEDIA_URL = "/media/"
-MEDIA_ROOT = (os.path.join(BASE_DIR, "media/"))
-MEDIA_ROOT2 = (os.path.join(BASE_DIR, "media2/"))
-STATIC_ROOT = os.path.join(BASE_DIR, "static/")
+
+
 AUTH_USER_MODEL ='main.UserProfile'
 ADMIN_LOGIN_URL ="/accounts/login/"
 
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
+
+
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+STATICFILES_DIRS = [
+    BASE_DIR / "static_media",]
 
 
 import django
