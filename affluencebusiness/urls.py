@@ -30,6 +30,7 @@ urlpatterns = [
     path("data-intelligence/", data_intelligence),
     path("data-cleansing/", data_cleansing),
     path("contact-us/", contact),
+    path("phone-appending/", phone_appending),
 
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

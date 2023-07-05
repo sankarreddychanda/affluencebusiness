@@ -1,20 +1,171 @@
-{% extends 'base.html' %}
-
-{% block extra_css %}
+{% extends 'base.html' %} {% block extra_css %}
 <style>
-.file-form-control{
-display: block;
-width: 100%;
-height: calc(2.5em + 1.75rem + 2px);
-}
+    .file-form-control {
+        display: block;
+        width: 100%;
+        height: calc(2.5em + 1.75rem + 2px);
+    }
 </style>
-{% endblock %}
-{% block content %}
-
-<main id="main"> <section class="section-sec-0-60" > <div class="container"> <div class="row"> <div class="col-lg-7 section-fpad wow fadeInLeft"> <h2 class="subhead-small-blk">Let's Find Out if You are One of the Following:</h2> <div class="row sicon"> <div class="col-lg-12 mb-4 "> <div class="grey-br-box-sm"> <div class="icon"><img src="https://www.spanglobalservices.com/assets/img/relevant-recipients-thumb.png" alt="Relevant Recipients" title="Relevant Recipients" class="respo-img" /> </div> <p class="des">If you are a marketer and know your top customer accounts and their postal addresses but are unable to find email IDs of relevant recipients.</p> <div class="clearfix"></div> </div> </div> <div class="clearfix"></div> <div class="col-lg-12 mb-4 "> <div class="grey-br-box-sm"> <div class="icon"><img src="https://www.spanglobalservices.com/assets/img/humanly-verified-thumb.png" alt="Humanly Verified" title="Humanly Verified" class="respo-img" /> </div> <p class="des">If you want to automatically find out the email addresses existing of all your contacts and make sure that the inboxes are humanly verified.</p> <div class="clearfix"></div> </div> </div> <div class="clearfix"></div> <div class="col-lg-12 mb-4 "> <div class="grey-br-box-sm"> <div class="icon"><img src="https://www.spanglobalservices.com/assets/img/refreshed-data-thumb.png" alt="Refreshed Data" title="Refreshed Data" class="respo-img" /> </div> <p class="des">If you want to ensure that verified and updated email lead data is refreshed often so that you can be sure that the email campaigns don’t bounce off.</p> <div class="clearfix"></div> </div> </div> <div class="clearfix"></div> </div> <div class="clearfix"></div> <p style="text-align:Justify;">Whatever your customer intelligence challenges, consider them solved! Experience the best customer intelligence on-demand with our superior data mining capabilities.</p> <p style="text-align:Justify;">The industry average to match and refresh the database stands at an average of 90 days. At Span Global services, we undertake data refresh at regular intervals of every 45 days.</p> </div> <div class="col-lg-5 mb-4 wow fadeInRight"> <div class="mx-800"><div class="contact-side"><h4>Free Append Test</h4></br> <div class="form"> <form name="f20" id="contact-form" action="https://www.spanglobalservices.com/scripts/append-mailer" method="post" onSubmit="return dataappendvalidation()" enctype="multipart/form-data"> <input type="hidden" name="returnURL" value="https://www.spanglobalservices.com/thanks"><input name="title" type="hidden" value="Contact Request from Span Global Services"> <div class=" form-row"> <div class="col-lg-6 form-group"> <div class="input-container"> <input type="text" name="fname" class="form-control" id="fname" placeholder="First Name*"> <i class="fa fa-user icon"></i> </div> </div> <div class="col-lg-6 form-group"> <div class="input-container"> <input type="text" name="lname" class="form-control" id="lname" placeholder="Last Name"> <i class="fa fa-user icon"></i> </div> </div> </div> <div class=" form-row"> <div class="col-lg-6 form-group"> <div class="input-container"> <input type="email" class="form-control" name="email" id="email" placeholder="Business Email*"> <i class="fa fa-envelope icon"></i> </div> </div> <div class="col-lg-6 form-group"> <div class="input-container"> <input type="text" class="form-control" name="phone" id="phone" placeholder="Business Phone*"> <i class="fa fa-phone icon"></i> </div> </div> </div> <div class=" form-row"> <div class="col-lg-12 form-group"> <div class="input-container"> <input type="text" name="company" class="form-control" id="company" placeholder="Company Name*"> <i class="fa fa-briefcase icon"></i> </div> </div> </div> <div class="form-row"> <div class="col-lg-12 form-group"> <div class="input-container"> <select name="contact" class="form-control"> <option value="">No. of contacts</option> <option value="Less than 10k">Less than 10k</option> <option value="10k-50k">10k-50k</option> <option value="50k-100k">50k-100k</option> <option value="100k+">100k+</option></select> </div> </div> </div> <div class="form-group"> <textarea class="form-control " name="comments" rows="1" placeholder="Message*"></textarea> </div> <div class="col-lg-12 form-group"> <div class="input-container"> <label for="user" style="font-size:14px;">Upload Sample File :<span style="color:#Ff0000";>*</span></label><input type="file" name="upload" id="upload" value="" style="background:#ffffff;" /></div> </div> <div class="form-group"> <label ><input name="newslettersubscribe" value="newslettersubscribe" checked="" type="checkbox"> I would like to subscribe to your Newsletter.</label> </div> <div class="form-group mt-4"><button type="submit" class="circle-fa" >Append Data Now! <i class="fa icon ion-android-arrow-forward"></i></button></div> </form> </div></div> </div> </div> <div class="clearfix"></div> </div> </div> </section> <section class="grey-sec-light section-sec-0-60" > <div class="container"> <div class="row"> <div class="col-lg-6 pb-4 wow fadeInRight"> <img src="https://www.spanglobalservices.com/assets/img/advancing-lead-sourcing.jpg" alt="Data Appending" title="Data Appending" class="respo-img mb-3" /> </div> <div class="col-lg-6 pb-4 section-fpad mb-4 wow fadeInLeft centeralign"> <div class="mx-480"> <p class="big-des"><strong>Roadmap to Advancing Your Lead Sourcing with Accurate Lead Data Appending</strong></p> <p class="big-des">We begin by <strong>feeding your data</strong> into our dynamic <strong>match-making engine and lead filter</strong>.</p> <p class="big-des" >We <strong>compare your lead information</strong> with our <strong>Billion+ growing customer records</strong>.</p> <p class="big-des">Our experts <strong>perform manual mining</strong> of relevant records matching your needs.</p> <p class="big-des">Our <strong>data de-duplication experts</strong> check for duplicate data and weed out double entries.</p> <p class="big-des"><strong>Data cleaning ensures</strong> any incorrect spellings and sequences stand <strong>corrected and made usable</strong>.</p> <p class="big-des" > <strong>Locations are accurately traced</strong> along with email contact data of decision makers.</p> <p class="big-des">Along with <strong>basic email information</strong> insights on <strong>IT intent andtech installs is added</strong>.</p> <p class="big-des">The phone numbers of decision makers and the direct dials of the organization are sourced.</p> <p class="big-des">You can also <strong>procure behavioral insights</strong> of your customers fromsocial profiles and online interests.</p> </div> </div> </div> </div> </section> <section class="section-sec-40-60" > <div class="container"> <div class="row"> <div class="col-lg-6 section-fpad wow fadeInLeft"> <h2 class="subhead-small-blk">Don’t Just Stop at Matching Email
-Addresses with Current Company Address</h2> <p>That’s the easier part.</p> <p>Now you can also identify anonymous web users.
-Trace back to their current email IDs and IPs with accuracy.</p> <p>With our proven data analyzing skills, you can now identify and build a complete picture of your ideal customer. You can also attribute them tothe different online and offline channels that they frequently visit. </p> </div> <div class="col-lg-6 section-fpad wow fadeInLeft"> <h2 class="subhead-small-blk">Take a Free Trial of Our Data Appending Services</h2> <p>You can upload a sample data that you want to cleanse or append.
-Our data team matches millions of requests with 1 Billion unique records.</p> <p>Our data contains lead data insights and covers complete market intelligence.</p> <p>Apart from email contacts and phone numbers you get insights from 110+ intelligence fields.</p> <div class="mb-4 mt-4"> <a href="#" data-toggle="modal" data-target="#send-message" class="green-btn circle-fa">Try Data Appending For Free &nbsp; <i class="fa icon ion-android-arrow-forward"></i></a> </div> </div> </div> </div></section> <section class="free-quote-sec" > <div class="container"> <div class="row"> <div class="col-lg-5 wow fadeInRight centeralign"> <div> <h2>GET A FREE QUOTE</h2> <p>Finding the right data can be<br/>	complicated, so we are here to help </p> </div> </div> <div class="col-lg-7 wow fadeInRight"> <div class="contact-quote"> <div class="form"> <form method="post" name="contactside" class="contactForm" onsubmit="return fnValidationContactside()" action="https://www.spanglobalservices.com/scripts/formmail" enctype="multipart/form-data"> <input name="subject" type="hidden" value="Contact Details from Span Global Services"> <input name="redirect_url" type="hidden" value="https://www.spanglobalservices.com/thanks"> <div class=" form-row"> <div class="col-lg-6 form-group"> <input type="text" name="fname" class="form-control" id="fname" placeholder="First Name*"> </div> <div class="col-lg-6 form-group"> <input type="text" name="lname" class="form-control" id="lname" placeholder="Last Name*"> </div> <div class="col-lg-6 form-group"> <input type="email" class="form-control" name="email" id="email" placeholder="Business Email*"> </div> <div class="col-lg-6 form-group"> <input type="text" class="form-control" name="phone" id="phone" placeholder="Phone*"> </div> </div> <div class="form-row"> <div class="col-lg-12 form-group"> <div class="input-container"> <select name="contact" class="form-control"> <option value="">No. of contacts</option> <option value="Less than 10k">Less than 10k</option> <option value="10k-50k">10k-50k</option> <option value="50k-100k">50k-100k</option> <option value="100k+">100k+</option></select> </div> </div> </div> <div class="form-group"> <textarea class="form-control " name="comments" rows="2" placeholder="Requirements"></textarea> </div> <div class="form-group"><button type="submit" class="circle-fa" >CLICK HERE TO SUBMIT</button></div> </form> </div></div> </div> </div> </div></section> </main>
+{% endblock %} {% block content %}
+<section class="inner-banner data-appending-banner"> <div class="overlay3"> <div class="container"> <div class="row"> <div class="col-lg-12 text-center mb-3 wow fadeInLeft"> <div class="mx-800"> <h1>Are You Struggling to Find New Business Because Your Lead Generation is Stalled Due to Lack of Accurate Customer Information?</h1> <p>You have come to the right place to advance your lead sourcing and IT & tech install targeting.</p> </div> </div> </div> </div> </div></section>
+<main id="main">
+    <section class="section-sec-0-60">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7 section-fpad wow fadeInLeft">
+                    <h2 class="subhead-small-blk">Let's Find Out if You are One of the Following:</h2>
+                    <div class="row sicon">
+                        <div class="col-lg-12 mb-4 ">
+                            <div class="grey-br-box-sm">
+                                <div class="icon"><img src="/static/assets/img/relevant-recipients-thumb.png" alt="Relevant Recipients" title="Relevant Recipients" class="respo-img" /> </div>
+                                <p class="des">If you are a marketer and know your top customer accounts and their postal addresses but are unable to find email IDs of relevant recipients.</p>
+                                <div class="clearfix"></div>
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+                        <div class="col-lg-12 mb-4 ">
+                            <div class="grey-br-box-sm">
+                                <div class="icon"><img src="/static/assets/img/humanly-verified-thumb.png" alt="Humanly Verified" title="Humanly Verified" class="respo-img" /> </div>
+                                <p class="des">If you want to automatically find out the email addresses existing of all your contacts and make sure that the inboxes are humanly verified.</p>
+                                <div class="clearfix"></div>
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+                        <div class="col-lg-12 mb-4 ">
+                            <div class="grey-br-box-sm">
+                                <div class="icon"><img src="/static/assets/img/refreshed-data-thumb.png" alt="Refreshed Data" title="Refreshed Data" class="respo-img" /> </div>
+                                <p class="des">If you want to ensure that verified and updated email lead data is refreshed often so that you can be sure that the email campaigns don’t bounce off.</p>
+                                <div class="clearfix"></div>
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="clearfix"></div>
+                    <p style="text-align:Justify;">Whatever your customer intelligence challenges, consider them solved! Experience the best customer intelligence on-demand with our superior data mining capabilities.</p>
+                    <p style="text-align:Justify;">The industry average to match and refresh the database stands at an average of 90 days. At Span Global services, we undertake data refresh at regular intervals of every 45 days.</p>
+                </div>
+                <div class="col-lg-5 mb-4 wow fadeInRight">
+                    <div class="mx-800">
+                        <div class="contact-side">
+                            <h4>Free Append Test</h4>
+                            </br>
+                            <div class="form">
+                                <form name="f20" id="contact-form" action="https://www.spanglobalservices.com/scripts/append-mailer" method="post" onSubmit="return dataappendvalidation()" enctype="multipart/form-data"> <input type="hidden" name="returnURL" value="https://www.spanglobalservices.com/thanks"><input name="title" type="hidden" value="Contact Request from Span Global Services">
+                                    <div class=" form-row">
+                                        <div class="col-lg-6 form-group">
+                                            <div class="input-container"> <input type="text" name="fname" class="form-control" id="fname" placeholder="First Name*"> <i class="fa fa-user icon"></i> </div>
+                                        </div>
+                                        <div class="col-lg-6 form-group">
+                                            <div class="input-container"> <input type="text" name="lname" class="form-control" id="lname" placeholder="Last Name"> <i class="fa fa-user icon"></i> </div>
+                                        </div>
+                                    </div>
+                                    <div class=" form-row">
+                                        <div class="col-lg-6 form-group">
+                                            <div class="input-container"> <input type="email" class="form-control" name="email" id="email" placeholder="Business Email*"> <i class="fa fa-envelope icon"></i> </div>
+                                        </div>
+                                        <div class="col-lg-6 form-group">
+                                            <div class="input-container"> <input type="text" class="form-control" name="phone" id="phone" placeholder="Business Phone*"> <i class="fa fa-phone icon"></i> </div>
+                                        </div>
+                                    </div>
+                                    <div class=" form-row">
+                                        <div class="col-lg-12 form-group">
+                                            <div class="input-container"> <input type="text" name="company" class="form-control" id="company" placeholder="Company Name*"> <i class="fa fa-briefcase icon"></i> </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="col-lg-12 form-group">
+                                            <div class="input-container"> <select name="contact" class="form-control"> <option value="">No. of contacts</option> <option value="Less than 10k">Less than 10k</option> <option value="10k-50k">10k-50k</option> <option value="50k-100k">50k-100k</option> <option value="100k+">100k+</option></select>                                                </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group"> <textarea class="form-control " name="comments" rows="1" placeholder="Message*"></textarea> </div>
+                                    <div class="col-lg-12 form-group">
+                                        <div class="input-container"> <label for="user" style="font-size:14px;">Upload Sample File :<span style="color:#Ff0000";>*</span></label><input type="file" name="upload" id="upload" value="" style="background:#ffffff;" /></div>
+                                    </div>
+                                    <div class="form-group"> <label><input name="newslettersubscribe" value="newslettersubscribe" checked="" type="checkbox"> I would like to subscribe to your Newsletter.</label> </div>
+                                    <div class="form-group mt-4"><button type="submit" class="circle-fa">Append Data Now! <i class="fa icon ion-android-arrow-forward"></i></button></div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </section>
+    <section class="grey-sec-light section-sec-0-60">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 pb-4 wow fadeInRight"> <img src="/static/assets/img/advancing-lead-sourcing.jpg" alt="Data Appending" title="Data Appending" class="respo-img mb-3" /> </div>
+                <div class="col-lg-6 pb-4 section-fpad mb-4 wow fadeInLeft centeralign">
+                    <div class="mx-480">
+                        <p class="big-des"><strong>Roadmap to Advancing Your Lead Sourcing with Accurate Lead Data Appending</strong></p>
+                        <p class="big-des">We begin by <strong>feeding your data</strong> into our dynamic <strong>match-making engine and lead filter</strong>.</p>
+                        <p class="big-des">We <strong>compare your lead information</strong> with our <strong>Billion+ growing customer records</strong>.</p>
+                        <p class="big-des">Our experts <strong>perform manual mining</strong> of relevant records matching your needs.</p>
+                        <p class="big-des">Our <strong>data de-duplication experts</strong> check for duplicate data and weed out double entries.</p>
+                        <p class="big-des"><strong>Data cleaning ensures</strong> any incorrect spellings and sequences stand <strong>corrected and made usable</strong>.</p>
+                        <p class="big-des"> <strong>Locations are accurately traced</strong> along with email contact data of decision makers.</p>
+                        <p class="big-des">Along with <strong>basic email information</strong> insights on <strong>IT intent andtech installs is added</strong>.</p>
+                        <p class="big-des">The phone numbers of decision makers and the direct dials of the organization are sourced.</p>
+                        <p class="big-des">You can also <strong>procure behavioral insights</strong> of your customers fromsocial profiles and online interests.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-sec-40-60">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 section-fpad wow fadeInLeft">
+                    <h2 class="subhead-small-blk">Don’t Just Stop at Matching Email Addresses with Current Company Address</h2>
+                    <p>That’s the easier part.</p>
+                    <p>Now you can also identify anonymous web users. Trace back to their current email IDs and IPs with accuracy.</p>
+                    <p>With our proven data analyzing skills, you can now identify and build a complete picture of your ideal customer. You can also attribute them tothe different online and offline channels that they frequently visit. </p>
+                </div>
+                <div class="col-lg-6 section-fpad wow fadeInLeft">
+                    <h2 class="subhead-small-blk">Take a Free Trial of Our Data Appending Services</h2>
+                    <p>You can upload a sample data that you want to cleanse or append. Our data team matches millions of requests with 1 Billion unique records.</p>
+                    <p>Our data contains lead data insights and covers complete market intelligence.</p>
+                    <p>Apart from email contacts and phone numbers you get insights from 110+ intelligence fields.</p>
+                    <div class="mb-4 mt-4"> <a href="#" data-toggle="modal" data-target="#send-message" class="green-btn circle-fa">Try Data Appending For Free &nbsp; <i class="fa icon ion-android-arrow-forward"></i></a> </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="free-quote-sec">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 wow fadeInRight centeralign">
+                    <div>
+                        <h2>GET A FREE QUOTE</h2>
+                        <p>Finding the right data can be<br/> complicated, so we are here to help </p>
+                    </div>
+                </div>
+                <div class="col-lg-7 wow fadeInRight">
+                    <div class="contact-quote">
+                        <div class="form">
+                            <form method="post" name="contactside" class="contactForm" onsubmit="return fnValidationContactside()" action="https://www.spanglobalservices.com/scripts/formmail" enctype="multipart/form-data"> <input name="subject" type="hidden" value="Contact Details from Span Global Services"> <input name="redirect_url" type="hidden" value="https://www.spanglobalservices.com/thanks">
+                                <div class=" form-row">
+                                    <div class="col-lg-6 form-group"> <input type="text" name="fname" class="form-control" id="fname" placeholder="First Name*"> </div>
+                                    <div class="col-lg-6 form-group"> <input type="text" name="lname" class="form-control" id="lname" placeholder="Last Name*"> </div>
+                                    <div class="col-lg-6 form-group"> <input type="email" class="form-control" name="email" id="email" placeholder="Business Email*"> </div>
+                                    <div class="col-lg-6 form-group"> <input type="text" class="form-control" name="phone" id="phone" placeholder="Phone*"> </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="col-lg-12 form-group">
+                                        <div class="input-container"> <select name="contact" class="form-control"> <option value="">No. of contacts</option> <option value="Less than 10k">Less than 10k</option> <option value="10k-50k">10k-50k</option> <option value="50k-100k">50k-100k</option> <option value="100k+">100k+</option></select>                                            </div>
+                                    </div>
+                                </div>
+                                <div class="form-group"> <textarea class="form-control " name="comments" rows="2" placeholder="Requirements"></textarea> </div>
+                                <div class="form-group"><button type="submit" class="circle-fa">CLICK HERE TO SUBMIT</button></div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
 
 
 

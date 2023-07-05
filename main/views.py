@@ -29,3 +29,5 @@ def data_cleansing(request):
 
 def contact(request):
     return render(request,'contact.html')
+def phone_appending(request):
+    return render(request,'phone-appending.html')

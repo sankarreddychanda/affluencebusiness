@@ -1,16 +1,60 @@
-﻿{% extends 'base.html' %}
-
-{% block extra_css %}
-<style> .crypto-head { background-color: green; color: white; margin-top: 0px; } .crypto-head p { color: white; font-size: 16px; text-align: left; padding-top: 6px; } #header { padding: 0px 0; } #header .crypto-head .div-hd { margin-top: 6px; float: left; margin-left: 300px; } #header .crypto-head .div-hd img { padding-left: 16px; } @media screen and (max-width:768px) { #header .crypto-head .div-hd { display: none; } .crypto-head p { color: white; font-size: 12px; text-align: center; padding-top: 4px; margin-left: 0px; } }</style>
+﻿{% extends 'base.html' %} {% block extra_css %}
 <style>
-.whats-phone-wrapper
-{	display: flex; gap: 10px; flex-direction: column; position: fixed; top: 577px; z-index: 999; right: 23px;
-}
+    .crypto-head {
+        background-color: green;
+        color: white;
+        margin-top: 0px;
+    }
+
+    .crypto-head p {
+        color: white;
+        font-size: 16px;
+        text-align: left;
+        padding-top: 6px;
+    }
+
+    #header {
+        padding: 0px 0;
+    }
+
+    #header .crypto-head .div-hd {
+        margin-top: 6px;
+        float: left;
+        margin-left: 300px;
+    }
+
+    #header .crypto-head .div-hd img {
+        padding-left: 16px;
+    }
+
+    @media screen and (max-width:768px) {
+        #header .crypto-head .div-hd {
+            display: none;
+        }
+        .crypto-head p {
+            color: white;
+            font-size: 12px;
+            text-align: center;
+            padding-top: 4px;
+            margin-left: 0px;
+        }
+    }
 </style>
-{% endblock %}
-{% block content %}
+<style>
+    .whats-phone-wrapper {
+        display: flex;
+        gap: 10px;
+        flex-direction: column;
+        position: fixed;
+        top: 577px;
+        z-index: 999;
+        right: 23px;
+    }
+</style>
+{% endblock %} {% block content %}
+<section class="inner-banner data-verifications-banner"> <div class="overlay"> <div class="container"> <div class="row"> <div class="col-lg-6 mb-3 wow fadeInLeft"></div> <div class="col-lg-6 mb-3 wow fadeInLeft"> <h1>Data Verification to Amplify Deliverability and Reach</h1> <p>Isn’t data all that a company has?</p> <p>Maximize returns on data investment; keep a check on data accuracy, and real time and relevancy.</p> <div class="mb-5 mt-4"> <a href="#" data-toggle="modal" data-target="#send-message" class="white-br-btn circle-fa">Let’s Discuss &nbsp; <i class="fa icon ion-android-arrow-forward"></i></a> </div> </div> </div> </div> </div></section>
 <main id="main">
-    <section class="section-sec-0-60" >
+    <section class="section-sec-0-60">
         <div class="container">
             <div class="row">
                 <div class="col-lg-7 section-fpad wow fadeInLeft">
@@ -18,10 +62,173 @@
                     <p>
                         <strong>How we ensure accuracy in our database and data services</strong>
                     </p>
-                    <p>Data that is procured externally should be verified, before integrating it with the master database. To maintain the quality of your database a robust data verification process should be in place.</p> <p>Span Global Services has a data verification process in place, which can ensure high data quality, accuracy and adherence to authentic prospects. The two methods of data verification we follow include automatic data verification and manual data verification.</p> <div id="data-verify-tab"> <ul class="nav nav-tabs" role="tablist"> <li class="nav-item"> <a class="nav-link active" href="#profile" role="tab" data-toggle="tab"><i class="fa fa-envelope"></i> Email Verification</a> </li> <li class="nav-item"> <a class="nav-link" href="#buzz" role="tab" data-toggle="tab"><i class="fa fa-phone"></i> Tele Verification</a> </li> <li class="nav-item"> <a class="nav-link" href="#references" role="tab" data-toggle="tab"><i class="fa fa-users"></i> Social Verification</a> </li> </ul>  <div class="tab-content"> <div role="tabpanel" class="tab-pane fade pt-3 show in active" id="profile"> <p>The success of your email campaigns depends on the quality of your emails. Needless to say that email verification is one of the imperative cornerstones of all your marketing campaigns. Email verification is a process through which email validity is checked. This process is run to avoid bad sender reputation and deliverability concerns when using new email addresses and new lists.</p> </div> <div role="tabpanel" class="tab-pane fade pt-3" id="buzz"> <p>Every contact could be a prospect and every wrong number can hamper your business numbers. Our tele verification process can help you convert your database into a clean, verified and updated database through our extensive Tele verification process. The process is designed to cleanse your databases thoroughly by scrapping the old, inactive records. We identify the discrepancies in the existing records and immediately fix them through a robust tele verification process.</p> </div> <div role="tabpanel" class="tab-pane fade pt-3" id="references"> <p>We validate the Company name and Title of each Contact in your database and match it against various existing social and web networks. This process is run to ensure that you identify the working contacts and their titles. Now get all your Telemarketing campaigns and other Follow-up campaigns to thrive with the best <a href="https://www.spanglobalservices.com/social-verification">social verification</a> and <a href="https://www.spanglobalservices.com/social-validation">social validation</a> services in the industry.</p> </div> </div> </div> <p>Keep your database fresh and make it a revenue generator. Find out how <strong>Span Global Services</strong> can help in ensuring the accuracy of your database, connect with our experts at <strong>(877) 755-0023</strong> for a free one-on-one consultation, or email us at <a href="mailto:info@spanglobalservices.com">info@spanglobalservices.com</a></p> </div> <div class="col-lg-5 mb-4 wow fadeInRight"> <div class="mx-800"><div class="contact-side"><h4>REQUEST<br/> A CALL BACK NOW</h4><p>We have got you covered on all your email and direct marketing needs</p> <div class="form"> <form name="f12" id="contact-form" action="https://www.spanglobalservices.com/scripts/formmail" method="post" onSubmit="return validationcon()" > <input type="hidden" name="returnURL" value="https://www.spanglobalservices.com/thanks"><input name="title" type="hidden" value="Contact Request from Span Global Services"> <div class=" form-row"> <div class="col-lg-6 form-group"> <div class="input-container"> <input type="text" name="fname" class="form-control" id="fname" placeholder="First Name*"> <i class="fa fa-user icon"></i> </div> </div> <div class="col-lg-6 form-group"> <div class="input-container"> <input type="text" name="lname" class="form-control" id="lname" placeholder="Last Name"> <i class="fa fa-user icon"></i> </div> </div> </div> <div class=" form-row"> <div class="col-lg-6 form-group"> <div class="input-container"> <input type="email" class="form-control" name="email" id="email" placeholder="Business Email*"> <i class="fa fa-envelope icon"></i> </div> </div> <div class="col-lg-6 form-group"> <div class="input-container"> <input type="text" class="form-control" name="phone" id="phone" placeholder="Business Phone*"> <i class="fa fa-phone icon"></i> </div> </div> </div> <div class=" form-row"> <div class="col-lg-12 form-group"> <div class="input-container"> <input type="text" name="company" class="form-control" id="company" placeholder="Company Name*"> <i class="fa fa-briefcase icon"></i> </div> </div> </div> <div class=" form-row"> <div class="col-lg-12 form-group"> <div class="input-container"> <select name="contact" class="form-control"> <option value="">No. of contacts</option> <option value="Less than 10k">Less than 10k</option> <option value="10k-50k">10k-50k</option> <option value="50k-100k">50k-100k</option> <option value="100k+">100k+</option></select> </div> </div> </div> <div class="form-group"> <textarea class="form-control " name="comments" rows="1" placeholder="Message*"></textarea> </div> <div class="form-group"> <label ><input name="newslettersubscribe" value="newslettersubscribe" checked="" type="checkbox"> I would like to subscribe to your Newsletter.</label> </div> <div class="form-group mt-4"><button type="submit" class="circle-fa" >GET DATA COUNTS & QUOTES &nbsp; <i class="fa icon ion-android-arrow-forward"></i></button></div> </form> </div></div> </div> </div> <div class="clearfix"></div> </div> <div class="row"> <div class="col-lg-12 mb-4 mt-4 wow fadeInLeft"> <h2 class="subhead-small-blk mb-2">Frequently Asked Questions</h2> </div> <div class="col-lg-12"> <div class="bs-example"> <div class="accordion " id="accordionExample"> <div class="row"> <div class="col-lg-6 mb-4 wow fadeInLeft"> <div class="card"> <div class="card-header" id="headingOne"> <h2 class="mb-0"> <button type="button" class="btn btn-link active" data-toggle="collapse" data-target="#collapseOne"><i class="fa fa-plus"></i> What is Data Verification? </button> </h2> </div> <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample"> <div class="card-body"> <p><strong>Data Verification</strong> is a process in which data is checked for accuracy, inconsistencies and to know if the data was translated accurately and whether it supports processes in the new system.</p> </div> </div> </div> <div class="card"> <div class="card-header" id="headingTwo"> <h2 class="mb-0"> <button type="button" class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo"><i class="fa fa-plus"></i> Why should I opt for Data Verification?</button> </h2> </div> <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample"> <div class="card-body"> <p>Once the data migration is done, it is important to check the data for accuracy to ensure that it conforms with the data requirements of your marketing ecosystem. Data verification helps elimination of bad data and it ensures that data errors are avoided too.</p> </div> </div> </div> </div> <div class="col-lg-6 mb-4 wow fadeInRight"> <div class="card"> <div class="card-header" id="headingThree"> <h2 class="mb-0"> <button type="button" class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree"><i class="fa fa-plus"></i>How do I get Data Verification Services? </button> </h2> </div> <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample"> <div class="card-body"> <p>Span Global Services provides impeccable <strong>data verification services</strong> to ensure that the database is scrupulous and B2B campaign ready. To avail <strong>data verification services</strong>, you may write to us at info@spanglobalservices.com or call on 877 837- 4884 for more details.</p> </div> </div> </div> <div class="card"> <div class="card-header" id="headingfour"> <h2 class="mb-0"> <button type="button" class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapsefour"><i class="fa fa-plus"></i>How authentic are your Data Verification Services?</button> </h2> </div> <div id="collapsefour" class="collapse" aria-labelledby="headingfour" data-parent="#accordionExample"> <div class="card-body"> <p>Span Global Services offers data verification services where in the validity of the databases is checked, to help you maintain a good sender reputation. It offers tele-verification, <strong>email verification</strong> and social verification to ensure that your databases are 100% accurate and responsive. To avail <strong>data verification services</strong>, you may write to us at info@spanglobalservices.com or call on 877 837- 4884 for more details.</p> </div> </div> </div> </div> </div> </div> </div> </div> <div class="clearfix"></div> </div> </div> </section> <section class="free-quote-sec" > <div class="container"> <div class="row"> <div class="col-lg-5 wow fadeInRight centeralign"> <div> <h2>GET A FREE QUOTE</h2> <p>Finding the right data can be<br/>	complicated, so we are here to help </p> </div> </div> <div class="col-lg-7 wow fadeInRight"> <div class="contact-quote"> <div class="form"> <form method="post" name="contactside" class="contactForm" onsubmit="return fnValidationContactside()" action="https://www.spanglobalservices.com/scripts/formmail" enctype="multipart/form-data"> <input name="subject" type="hidden" value="Contact Details from Span Global Services"> <input name="redirect_url" type="hidden" value="https://www.spanglobalservices.com/thanks"> <div class=" form-row"> <div class="col-lg-6 form-group"> <input type="text" name="fname" class="form-control" id="fname" placeholder="First Name*"> </div> <div class="col-lg-6 form-group"> <input type="text" name="lname" class="form-control" id="lname" placeholder="Last Name*"> </div> <div class="col-lg-6 form-group"> <input type="email" class="form-control" name="email" id="email" placeholder="Business Email*"> </div> <div class="col-lg-6 form-group"> <input type="text" class="form-control" name="phone" id="phone" placeholder="Phone*"> </div> </div> <div class="form-row"> <div class="col-lg-12 form-group"> <div class="input-container"> <select name="contact" class="form-control"> <option value="">No. of contacts</option> <option value="Less than 10k">Less than 10k</option> <option value="10k-50k">10k-50k</option> <option value="50k-100k">50k-100k</option> <option value="100k+">100k+</option></select> </div> </div> </div> <div class="form-group"> <textarea class="form-control " name="comments" rows="2" placeholder="Requirements"></textarea> </div> <div class="form-group"><button type="submit" class="circle-fa" >CLICK HERE TO SUBMIT</button></div> </form> </div></div> </div> </div> </div></section> </main>
+                    <p>Data that is procured externally should be verified, before integrating it with the master database. To maintain the quality of your database a robust data verification process should be in place.</p>
+                    <p>Span Global Services has a data verification process in place, which can ensure high data quality, accuracy and adherence to authentic prospects. The two methods of data verification we follow include automatic data verification and
+                        manual data verification.</p>
+                    <div id="data-verify-tab">
+                        <ul class="nav nav-tabs" role="tablist">
+                            <li class="nav-item"> <a class="nav-link active" href="#profile" role="tab" data-toggle="tab"><i class="fa fa-envelope"></i> Email Verification</a> </li>
+                            <li class="nav-item"> <a class="nav-link" href="#buzz" role="tab" data-toggle="tab"><i class="fa fa-phone"></i> Tele Verification</a> </li>
+                            <li class="nav-item"> <a class="nav-link" href="#references" role="tab" data-toggle="tab"><i class="fa fa-users"></i> Social Verification</a> </li>
+                        </ul>
+                        <div class="tab-content">
+                            <div role="tabpanel" class="tab-pane fade pt-3 show in active" id="profile">
+                                <p>The success of your email campaigns depends on the quality of your emails. Needless to say that email verification is one of the imperative cornerstones of all your marketing campaigns. Email verification is a process through
+                                    which email validity is checked. This process is run to avoid bad sender reputation and deliverability concerns when using new email addresses and new lists.</p>
+                            </div>
+                            <div role="tabpanel" class="tab-pane fade pt-3" id="buzz">
+                                <p>Every contact could be a prospect and every wrong number can hamper your business numbers. Our tele verification process can help you convert your database into a clean, verified and updated database through our extensive
+                                    Tele verification process. The process is designed to cleanse your databases thoroughly by scrapping the old, inactive records. We identify the discrepancies in the existing records and immediately fix them through
+                                    a robust tele verification process.</p>
+                            </div>
+                            <div role="tabpanel" class="tab-pane fade pt-3" id="references">
+                                <p>We validate the Company name and Title of each Contact in your database and match it against various existing social and web networks. This process is run to ensure that you identify the working contacts and their titles.
+                                    Now get all your Telemarketing campaigns and other Follow-up campaigns to thrive with the best <a href="https://www.spanglobalservices.com/social-verification">social verification</a> and <a href="https://www.spanglobalservices.com/social-validation">social validation</a>                                    services in the industry.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <p>Keep your database fresh and make it a revenue generator. Find out how <strong>Span Global Services</strong> can help in ensuring the accuracy of your database, connect with our experts at <strong>307-213-7098</strong> for a free
+                        one-on-one consultation, or email us at <a href="mailto:info@affluencebusiness.com">info@affluencebusiness.com</a></p>
+                </div>
+                <div class="col-lg-5 mb-4 wow fadeInRight">
+                    <div class="mx-800">
+                        <div class="contact-side">
+                            <h4>REQUEST<br/> A CALL BACK NOW</h4>
+                            <p>We have got you covered on all your email and direct marketing needs</p>
+                            <div class="form">
+                                <form name="f12" id="contact-form" action="https://www.spanglobalservices.com/scripts/formmail" method="post" onSubmit="return validationcon()"> <input type="hidden" name="returnURL" value="https://www.spanglobalservices.com/thanks"><input name="title" type="hidden" value="Contact Request from Span Global Services">
+                                    <div class=" form-row">
+                                        <div class="col-lg-6 form-group">
+                                            <div class="input-container"> <input type="text" name="fname" class="form-control" id="fname" placeholder="First Name*"> <i class="fa fa-user icon"></i> </div>
+                                        </div>
+                                        <div class="col-lg-6 form-group">
+                                            <div class="input-container"> <input type="text" name="lname" class="form-control" id="lname" placeholder="Last Name"> <i class="fa fa-user icon"></i> </div>
+                                        </div>
+                                    </div>
+                                    <div class=" form-row">
+                                        <div class="col-lg-6 form-group">
+                                            <div class="input-container"> <input type="email" class="form-control" name="email" id="email" placeholder="Business Email*"> <i class="fa fa-envelope icon"></i> </div>
+                                        </div>
+                                        <div class="col-lg-6 form-group">
+                                            <div class="input-container"> <input type="text" class="form-control" name="phone" id="phone" placeholder="Business Phone*"> <i class="fa fa-phone icon"></i> </div>
+                                        </div>
+                                    </div>
+                                    <div class=" form-row">
+                                        <div class="col-lg-12 form-group">
+                                            <div class="input-container"> <input type="text" name="company" class="form-control" id="company" placeholder="Company Name*"> <i class="fa fa-briefcase icon"></i> </div>
+                                        </div>
+                                    </div>
+                                    <div class=" form-row">
+                                        <div class="col-lg-12 form-group">
+                                            <div class="input-container"> <select name="contact" class="form-control"> <option value="">No. of contacts</option> <option value="Less than 10k">Less than 10k</option> <option value="10k-50k">10k-50k</option> <option value="50k-100k">50k-100k</option> <option value="100k+">100k+</option></select>                                                </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group"> <textarea class="form-control " name="comments" rows="1" placeholder="Message*"></textarea> </div>
+                                    <div class="form-group"> <label><input name="newslettersubscribe" value="newslettersubscribe" checked="" type="checkbox"> I would like to subscribe to your Newsletter.</label> </div>
+                                    <div class="form-group mt-4"><button type="submit" class="circle-fa">GET DATA COUNTS & QUOTES &nbsp; <i class="fa icon ion-android-arrow-forward"></i></button></div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 mb-4 mt-4 wow fadeInLeft">
+                    <h2 class="subhead-small-blk mb-2">Frequently Asked Questions</h2>
+                </div>
+                <div class="col-lg-12">
+                    <div class="bs-example">
+                        <div class="accordion " id="accordionExample">
+                            <div class="row">
+                                <div class="col-lg-6 mb-4 wow fadeInLeft">
+                                    <div class="card">
+                                        <div class="card-header" id="headingOne">
+                                            <h2 class="mb-0"> <button type="button" class="btn btn-link active" data-toggle="collapse" data-target="#collapseOne"><i class="fa fa-plus"></i> What is Data Verification? </button> </h2>
+                                        </div>
+                                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                                            <div class="card-body">
+                                                <p><strong>Data Verification</strong> is a process in which data is checked for accuracy, inconsistencies and to know if the data was translated accurately and whether it supports processes in the new system.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-header" id="headingTwo">
+                                            <h2 class="mb-0"> <button type="button" class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo"><i class="fa fa-plus"></i> Why should I opt for Data Verification?</button> </h2>
+                                        </div>
+                                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                                            <div class="card-body">
+                                                <p>Once the data migration is done, it is important to check the data for accuracy to ensure that it conforms with the data requirements of your marketing ecosystem. Data verification helps elimination of bad
+                                                    data and it ensures that data errors are avoided too.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 mb-4 wow fadeInRight">
+                                    <div class="card">
+                                        <div class="card-header" id="headingThree">
+                                            <h2 class="mb-0"> <button type="button" class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree"><i class="fa fa-plus"></i>How do I get Data Verification Services? </button> </h2>
+                                        </div>
+                                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                                            <div class="card-body">
+                                                <p>Span Global Services provides impeccable <strong>data verification services</strong> to ensure that the database is scrupulous and B2B campaign ready. To avail <strong>data verification services</strong>,
+                                                    you may write to us at info@affluencebusiness.com or call on 877 837- 4884 for more details.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-header" id="headingfour">
+                                            <h2 class="mb-0"> <button type="button" class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapsefour"><i class="fa fa-plus"></i>How authentic are your Data Verification Services?</button> </h2>
+                                        </div>
+                                        <div id="collapsefour" class="collapse" aria-labelledby="headingfour" data-parent="#accordionExample">
+                                            <div class="card-body">
+                                                <p>Span Global Services offers data verification services where in the validity of the databases is checked, to help you maintain a good sender reputation. It offers tele-verification, <strong>email verification</strong>                                                    and social verification to ensure that your databases are 100% accurate and responsive. To avail <strong>data verification services</strong>, you may write to us at info@affluencebusiness.com or call
+                                                    on 877 837- 4884 for more details.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </section>
+    <section class="free-quote-sec">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 wow fadeInRight centeralign">
+                    <div>
+                        <h2>GET A FREE QUOTE</h2>
+                        <p>Finding the right data can be<br/> complicated, so we are here to help </p>
+                    </div>
+                </div>
+                <div class="col-lg-7 wow fadeInRight">
+                    <div class="contact-quote">
+                        <div class="form">
+                            <form method="post" name="contactside" class="contactForm" onsubmit="return fnValidationContactside()" action="https://www.spanglobalservices.com/scripts/formmail" enctype="multipart/form-data"> <input name="subject" type="hidden" value="Contact Details from Span Global Services"> <input name="redirect_url" type="hidden" value="https://www.spanglobalservices.com/thanks">
+                                <div class=" form-row">
+                                    <div class="col-lg-6 form-group"> <input type="text" name="fname" class="form-control" id="fname" placeholder="First Name*"> </div>
+                                    <div class="col-lg-6 form-group"> <input type="text" name="lname" class="form-control" id="lname" placeholder="Last Name*"> </div>
+                                    <div class="col-lg-6 form-group"> <input type="email" class="form-control" name="email" id="email" placeholder="Business Email*"> </div>
+                                    <div class="col-lg-6 form-group"> <input type="text" class="form-control" name="phone" id="phone" placeholder="Phone*"> </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="col-lg-12 form-group">
+                                        <div class="input-container"> <select name="contact" class="form-control"> <option value="">No. of contacts</option> <option value="Less than 10k">Less than 10k</option> <option value="10k-50k">10k-50k</option> <option value="50k-100k">50k-100k</option> <option value="100k+">100k+</option></select>                                            </div>
+                                    </div>
+                                </div>
+                                <div class="form-group"> <textarea class="form-control " name="comments" rows="2" placeholder="Requirements"></textarea> </div>
+                                <div class="form-group"><button type="submit" class="circle-fa">CLICK HERE TO SUBMIT</button></div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
 
 {% endblock %}
-
-
-
-

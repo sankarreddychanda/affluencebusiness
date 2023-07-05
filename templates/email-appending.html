@@ -1,22 +1,563 @@
-﻿
-{% extends 'base.html' %}
-
-{% block extra_css %}
-<style> .white-br-btn { border: 1px solid #ffffff; background: #1c8908; color: #fff; } </style>
+﻿ {% extends 'base.html' %} {% block extra_css %}
 <style>
-.file-form-control{
-display: block;
-width: 100%;
-height: calc(2.5em + 1.75rem + 2px);
-}
+    .white-br-btn {
+        border: 1px solid #ffffff;
+        background: #1c8908;
+        color: #fff;
+    }
 </style>
-{% endblock %}
+<style>
+    .file-form-control {
+        display: block;
+        width: 100%;
+        height: calc(2.5em + 1.75rem + 2px);
+    }
+</style>
+ <style>
+        .white-br-btn {
+            border: 1px solid #ffffff;
+            background: #1c8908;
+            color: #fff;
+        }
+    </style>
+{% endblock %} {% block content %}
+     <section class="inner-banner email-appending-banner">
+        <div class="overlay">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 mb-3 wow fadeInLeft"></div>
+                    <div class="col-lg-6 mb-3 wow fadeInLeft">
+                        <h1>Leveraging Email Appending Services</h1>
+                        <p>Reconnect with old customers & make new ones with our qualified leads and unique email lists </p>
+                        <div class="mt-4"> <a href="#" data-toggle="modal" data-target="#send-message" class="white-br-btn circle-fa">Try Appending a Sample File &nbsp; <i class="fa icon ion-android-arrow-forward"></i></a> </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-{% block content %}
+<main id="main">
+    <section class="section-sec-0-20 mb-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7 section-fpad wow fadeInLeft mb-sec">
+                    <h2 class="subhead-small-blk mb-sec">Revamp and Reactivate Your Database by Availing Our Email Appending Solutions</h2>
+                    <p style="text-align:Justify;">Business expansion through B2B email marketing is impossible without having the right email addresses in hand. If you opt for <strong>email appending services</strong> by partnering with us - we will revamp your <a href="https://www.spanglobalservices.com/email-lists"
+                            title="Email Database"><strong>email database</strong></a> in minimum time to market and provide you with the latest email address data of your targeted decision makers and marketing professionals.</p>
+                    <p style="text-align:Justify;">The future of B2B marketing communication seems to be immensely bright. Several trends such as globalization, continuous investments in research and development, newer techniques of multi-channel communication, product proliferation,
+                        and audience engagement through personalized content are the key drivers for B2B markers in <a href="https://www.spanglobalservices.com/lead-generation" title="Lead Generation"><strong>lead generation</strong></a>.</p>
+                    <p style="text-align:Justify;">But most B2B marketers fail to leverage from these avenues as they don’t have access to the right email data. Buy an email list from Span Global Services or <strong>append your email data</strong> file with us. Revamp your list to
+                        make the most out of present market opportunities. </p>
+                    <h2 class="subhead-small-blk">Our Niche Appending Services Includes:</h2>
+                    <div class="row respo-icon">
+                        <div class="col-lg-2 wow fadeInLeft text-center" style="visibility: visible; animation-name: fadeInLeft;">
+                            <a href="/email-appending/">
+                                <div class="icon"><img src="/static/assets/img/Email-Appending.jpg" alt="Email Appending" class="respo-img" /> </div>
+                                <p class="description">Email Appending</p>
+                            </a>
+                        </div>
+                        <div class="col-lg-2 wow fadeInLeft text-center" style="visibility: visible; animation-name: fadeInLeft;">
+                            <a href="/phone-appending/">
+                                <div class="icon"><img src="/static/assets/img/Phone-Appending.jpg" alt="Phone Appending" class="respo-img" /> </div>
+                                <p class="description">Phone Appending</p>
+                            </a>
+                        </div>
+                        <div class="col-lg-2 wow fadeInLeft text-center" style="visibility: visible; animation-name: fadeInLeft;">
+                            <a href="/contact-appending/">
+                                <div class="icon"><img src="/static/assets/img/Contact-Appending.jpg" alt="Contact Appending" class="respo-img" /> </div>
+                                <p class="description">Contact Appending</p>
+                            </a>
+                        </div>
+                        <div class="col-lg-2 wow fadeInLeft text-center align-lft" style="visibility: visible; animation-name: fadeInLeft;">
+                            <a href="/b2c-email-appending/">
+                                <div class="icon"><img src="/static/assets/img/B2C- Email-Appending.jpg" alt="B2C Email Appending" class="respo-img" /> </div>
+                                <p class="description">B2C Email Appending</p>
+                            </a>
+                        </div>
+                        <div class="col-lg-3 wow fadeInLeft text-center" style="visibility: visible; animation-name: fadeInLeft;">
+                            <a href="/social-media-profile-appending/">
+                                <div class="icon"><img src="/static/assets/img/Social-Media-Appending.jpg" alt="Social Media Profile Appending" class="respo-img" /> </div>
+                                <p class="description">Social Media Profile Appending</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 wow fadeInRight">
+                    <div class="mx-800">
+                        <div class="contact-side">
+                            <h4>Free Append Test</h4>
+                            </br>
+                            <div class="form">
+                                <form name="f20" id="contact-form" action="/append-mailer/" method="post" onSubmit="return dataappendvalidation()" enctype="multipart/form-data"> <input type="hidden" name="returnURL" value="https://www.spanglobalservices.com/thanks"><input name="title" type="hidden" value="Contact Request from Span Global Services">
+                                    <div class=" form-row">
+                                        <div class="col-lg-6 form-group">
+                                            <div class="input-container"> <input type="text" name="fname" class="form-control" id="fname" placeholder="First Name*"> <i class="fa fa-user icon"></i> </div>
+                                        </div>
+                                        <div class="col-lg-6 form-group">
+                                            <div class="input-container"> <input type="text" name="lname" class="form-control" id="lname" placeholder="Last Name"> <i class="fa fa-user icon"></i> </div>
+                                        </div>
+                                    </div>
+                                    <div class=" form-row">
+                                        <div class="col-lg-6 form-group">
+                                            <div class="input-container"> <input type="email" class="form-control" name="email" id="email" placeholder="Business Email*"> <i class="fa fa-envelope icon"></i> </div>
+                                        </div>
+                                        <div class="col-lg-6 form-group">
+                                            <div class="input-container"> <input type="text" class="form-control" name="phone" id="phone" placeholder="Business Phone*"> <i class="fa fa-phone icon"></i> </div>
+                                        </div>
+                                    </div>
+                                    <div class=" form-row">
+                                        <div class="col-lg-12 form-group">
+                                            <div class="input-container"> <input type="text" name="company" class="form-control" id="company" placeholder="Company Name*"> <i class="fa fa-briefcase icon"></i> </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="col-lg-12 form-group">
+                                            <div class="input-container"> <select name="contact" class="form-control"> <option value="">No. of contacts</option> <option value="Less than 10k">Less than 10k</option> <option value="10k-50k">10k-50k</option> <option value="50k-100k">50k-100k</option> <option value="100k+">100k+</option></select>                                                </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group"> <textarea class="form-control " name="comments" rows="1" placeholder="Message*"></textarea> </div>
+                                    <div class="col-lg-12 form-group">
+                                        <div class="input-container"> <label for="user" style="font-size:14px;">Upload Sample File :<span style="color:#Ff0000";>*</span></label><input type="file" name="upload" id="upload" value="" style="background:#ffffff;" /></div>
+                                    </div>
+                                    <div class="form-group"> <label><input name="newslettersubscribe" value="newslettersubscribe" checked="" type="checkbox"> I would like to subscribe to your Newsletter.</label> </div>
+                                    <div class="form-group mt-4"><button type="submit" class="circle-fa">Append Data Now! <i class="fa icon ion-android-arrow-forward"></i></button></div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="new-sec-pad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 mb-2 wow fadeInLeft ">
+                    <div class="email-list-style">
+                        <h2 class="subhead-small-blk mb-sec">Revamp Your List to Make the Most Out of Present Market Opportunities</h2>
+                        <p style="text-align:Justify;">Span Global Services’ segmented master list will help you with updated details on the active and prospective email accounts. With the <strong>best email addresses appending service</strong> in the industry, we will help you tailor
+                            your marketing strategies to reach the right audience and achieve higher sales. </p>
+                        <p style="text-align:Justify;">So partner with us and prospect with your targets with channelized campaigns to foster global growth.</p>
+                        <p> Here is how we can help you meet your campaign objectives.</p>
+                        <ul>
+                            <li><img src="/static/assets/img/green-right.png" alt="icon" class="repo-img" style="width:25px;height:25px;">&nbsp;Providing you an Industry-High Match Rate of 70%</li>
+                            <li><img src="/static/assets/img/green-right.png" alt="icon" class="repo-img" style="width:25px;height:25px;">&nbsp;Secure 95% email marketing deliverability by providing you with Opt-in email addresses
+                                only</li>
+                            <li><img src="/static/assets/img/green-right.png" alt="icon" class="repo-img" style="width:25px;height:25px;">&nbsp;We help you get better conversions in minimum time to market</li>
+                            <li><img src="/static/assets/img/green-right.png" alt="icon" class="repo-img" style="width:25px;height:25px;">&nbsp;Drive your sales by accessing the most accurate email marketing data</li>
+                            <li><img src="/static/assets/img/green-right.png" alt="icon" class="repo-img" style="width:25px;height:25px;">&nbsp;You need to pay only for successful appends</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeInRight centeralign"> <img src="/static/assets/img/email-append-sub.webp" alt="Email Appending" class="full-img" /> </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-sec-0 mt-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 wow fadeInLeft padlf-none high-light-row">
+                    <div class="light-br-box">
+                        <div class="mx-800">
+                            <div class="row">
+                                <div class="col-lg-4 mb-2 wow fadeInLeft centeralign mb-sec">
+                                    <div> <img src="/static/assets/img/email-appending-test.webp" alt="Email Appending Test" class="respo-img" /> </div>
+                                </div>
+                                <div class="col-lg-8 mb-2 wow fadeInLeft centeralign">
+                                    <div class="mb-2 mt-2">
+                                        <h2>Share Your File for an Email Appending Test</h2> <a href="#" data-toggle="modal" data-target="#emailappend" class="green-btn circle-fa">UPLOAD HERE &nbsp; <i class="fa icon ion-android-arrow-down"></i></a> </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-sec-new02">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 wow fadeInLeft">
+                    <h2 class="subhead-small-blk">How does Email Appending work?</h2>
+                    <p style="text-align:Justify;">Why wait any longer? Spark up your marketing campaigns with the most actionable <strong>email append solutions &amp; acquire qualified email leads</strong> that boost your sales revenue. Put a rocket under your campaign growth plan
+                        by using data that get your email campaigns delivered to the right inboxes.</p>
+                    <p style="text-align:Justify;">We will help design your marketing strategies to reach the right market segment and achieve higher sales effortlessly. Give your marketing a competitive edge by opting for Span Global Services’ highly responsive marketing intelligence
+                        solutions.</p>
+                </div>
+                <div class="col-sm-6 text-center "> <img src="/static/assets/img/Email-Append-Process.jpg" alt="Email Appending Process" class="respo-img " />
+                    <div class="mt-2"> <a href="#" data-toggle="modal" data-target="#emailappend" class="dgreen-btn circle-fa">Get Free Test Now &nbsp; <i class="fa icon ion-android-arrow-forward"></i></a> </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-sec-new01">
+        <div class="container">
+            <div class="row">
+                <style>
+                    .new-sec-pad {
+                        background: #f7f7f7;
+                        padding: 30px 0 20px 0;
+                    }
 
-<main id="main"> <section class="section-sec-0-20 mb-2"> <div class="container"> <div class="row"> <div class="col-lg-7 section-fpad wow fadeInLeft mb-sec"> <h2 class="subhead-small-blk mb-sec">Revamp and Reactivate Your Database by Availing Our Email Appending Solutions</h2> <p style="text-align:Justify;">Business expansion through B2B email marketing is impossible without having the right email addresses in hand. If you opt for <strong>email appending services</strong> by partnering with us - we will revamp your <a href="https://www.spanglobalservices.com/email-lists" title="Email Database"><strong>email database</strong></a> in minimum time to market and provide you with the latest email address data of your targeted decision makers and marketing professionals.</p> <p style="text-align:Justify;">The future of B2B marketing communication seems to be immensely bright. Several trends such as globalization, continuous investments in research and development, newer techniques of multi-channel communication, product proliferation, and audience engagement through personalized content are the key drivers for B2B markers in <a href="https://www.spanglobalservices.com/lead-generation" title="Lead Generation"><strong>lead generation</strong></a>.</p> <p style="text-align:Justify;">But most B2B marketers fail to leverage from these avenues as they don’t have access to the right email data. Buy an email list from Span Global Services or <strong>append your email data</strong> file with us. Revamp your list to make the most out of present market opportunities. </p> <h2 class="subhead-small-blk">Our Niche Appending Services Includes:</h2> <div class="row respo-icon"> <div class="col-lg-2 wow fadeInLeft text-center" style="visibility: visible; animation-name: fadeInLeft;"> <a href="https://www.spanglobalservices.com/data-append/email-appending"> <div class="icon"><img src="../assets/img/Email-Appending.jpg" alt="Email Appending" class="respo-img" /> </div> <p class="description">Email Appending</p> </a> </div> <div class="col-lg-2 wow fadeInLeft text-center" style="visibility: visible; animation-name: fadeInLeft;"> <a href="https://www.spanglobalservices.com/data-append/phone-appending"> <div class="icon"><img src="../assets/img/Phone-Appending.jpg" alt="Phone Appending" class="respo-img" /> </div> <p class="description">Phone Appending</p> </a> </div> <div class="col-lg-2 wow fadeInLeft text-center" style="visibility: visible; animation-name: fadeInLeft;"> <a href="https://www.spanglobalservices.com/data-append/contact-appending"> <div class="icon"><img src="../assets/img/Contact-Appending.jpg" alt="Contact Appending" class="respo-img" /> </div> <p class="description">Contact Appending</p> </a> </div> <div class="col-lg-2 wow fadeInLeft text-center align-lft" style="visibility: visible; animation-name: fadeInLeft;"> <a href="https://www.spanglobalservices.com/data-append/b2c-email-appending"> <div class="icon"><img src="../assets/img/B2C- Email-Appending.jpg" alt="B2C Email Appending" class="respo-img" /> </div> <p class="description">B2C Email Appending</p> </a> </div> <div class="col-lg-3 wow fadeInLeft text-center" style="visibility: visible; animation-name: fadeInLeft;"> <a href="https://www.spanglobalservices.com/data-append/social-media-profile-appending"> <div class="icon"><img src="../assets/img/Social-Media-Appending.jpg" alt="Social Media Profile Appending" class="respo-img" /> </div> <p class="description">Social Media Profile Appending</p> </a> </div> </div> </div> <div class="col-lg-5 wow fadeInRight"> <div class="mx-800"> <div class="contact-side"><h4>Free Append Test</h4></br> <div class="form"> <form name="f20" id="contact-form" action="https://www.spanglobalservices.com/scripts/append-mailer" method="post" onSubmit="return dataappendvalidation()" enctype="multipart/form-data"> <input type="hidden" name="returnURL" value="https://www.spanglobalservices.com/thanks"><input name="title" type="hidden" value="Contact Request from Span Global Services"> <div class=" form-row"> <div class="col-lg-6 form-group"> <div class="input-container"> <input type="text" name="fname" class="form-control" id="fname" placeholder="First Name*"> <i class="fa fa-user icon"></i> </div> </div> <div class="col-lg-6 form-group"> <div class="input-container"> <input type="text" name="lname" class="form-control" id="lname" placeholder="Last Name"> <i class="fa fa-user icon"></i> </div> </div> </div> <div class=" form-row"> <div class="col-lg-6 form-group"> <div class="input-container"> <input type="email" class="form-control" name="email" id="email" placeholder="Business Email*"> <i class="fa fa-envelope icon"></i> </div> </div> <div class="col-lg-6 form-group"> <div class="input-container"> <input type="text" class="form-control" name="phone" id="phone" placeholder="Business Phone*"> <i class="fa fa-phone icon"></i> </div> </div> </div> <div class=" form-row"> <div class="col-lg-12 form-group"> <div class="input-container"> <input type="text" name="company" class="form-control" id="company" placeholder="Company Name*"> <i class="fa fa-briefcase icon"></i> </div> </div> </div> <div class="form-row"> <div class="col-lg-12 form-group"> <div class="input-container"> <select name="contact" class="form-control"> <option value="">No. of contacts</option> <option value="Less than 10k">Less than 10k</option> <option value="10k-50k">10k-50k</option> <option value="50k-100k">50k-100k</option> <option value="100k+">100k+</option></select> </div> </div> </div> <div class="form-group"> <textarea class="form-control " name="comments" rows="1" placeholder="Message*"></textarea> </div> <div class="col-lg-12 form-group"> <div class="input-container"> <label for="user" style="font-size:14px;">Upload Sample File :<span style="color:#Ff0000";>*</span></label><input type="file" name="upload" id="upload" value="" style="background:#ffffff;" /></div> </div> <div class="form-group"> <label ><input name="newslettersubscribe" value="newslettersubscribe" checked="" type="checkbox"> I would like to subscribe to your Newsletter.</label> </div> <div class="form-group mt-4"><button type="submit" class="circle-fa" >Append Data Now! <i class="fa icon ion-android-arrow-forward"></i></button></div> </form> </div></div> </div> </div> </div> </div> </section> <section class="new-sec-pad"> <div class="container"> <div class="row"> <div class="col-lg-6 mb-2 wow fadeInLeft "> <div class="email-list-style"> <h2 class="subhead-small-blk mb-sec">Revamp Your List to Make the Most Out of Present Market Opportunities</h2> <p style="text-align:Justify;">Span Global Services’ segmented master list will help you with updated details on the active and prospective email accounts. With the <strong>best email addresses appending service</strong> in the industry, we will help you tailor your marketing strategies to reach the right audience and achieve higher sales. </p> <p style="text-align:Justify;">So partner with us and prospect with your targets with channelized campaigns to foster global growth.</p> <p> Here is how we can help you meet your campaign objectives.</p> <ul> <li><img src="https://www.spanglobalservices.com/assets/img/green-right.png" alt="icon" class="repo-img" style="width:25px;height:25px;">&nbsp;Providing you an Industry-High Match Rate of 70%</li> <li><img src="https://www.spanglobalservices.com/assets/img/green-right.png" alt="icon" class="repo-img" style="width:25px;height:25px;">&nbsp;Secure 95% email marketing deliverability by providing you with Opt-in email addresses only</li> <li><img src="https://www.spanglobalservices.com/assets/img/green-right.png" alt="icon" class="repo-img" style="width:25px;height:25px;">&nbsp;We help you get better conversions in minimum time to market</li> <li><img src="https://www.spanglobalservices.com/assets/img/green-right.png" alt="icon" class="repo-img" style="width:25px;height:25px;">&nbsp;Drive your sales by accessing the most accurate email marketing data</li> <li><img src="https://www.spanglobalservices.com/assets/img/green-right.png" alt="icon" class="repo-img" style="width:25px;height:25px;">&nbsp;You need to pay only for successful appends</li> </ul> </div> </div> <div class="col-lg-6 wow fadeInRight centeralign"> <img src="https://www.spanglobalservices.com/assets/img/email-append-sub.webp" alt="Email Appending" class="full-img" /> </div> </div> </div> </section> <section class="section-sec-0 mt-2"> <div class="container"> <div class="row"> <div class="col-lg-12 wow fadeInLeft padlf-none high-light-row"> <div class="light-br-box"> <div class="mx-800"> <div class="row"> <div class="col-lg-4 mb-2 wow fadeInLeft centeralign mb-sec"> <div> <img src="../assets/img/email-appending-test.webp" alt="Email Appending Test" class="respo-img" /> </div> </div> <div class="col-lg-8 mb-2 wow fadeInLeft centeralign"> <div class="mb-2 mt-2"> <h2>Share Your File for an Email Appending Test</h2> <a href="#" data-toggle="modal" data-target="#emailappend" class="green-btn circle-fa">UPLOAD HERE &nbsp; <i class="fa icon ion-android-arrow-down"></i></a> </div> </div> </div> </div> </div> </div> </div> </div> </section> <section class="section-sec-new02"> <div class="container"> <div class="row"> <div class="col-lg-6 wow fadeInLeft"> <h2 class="subhead-small-blk">How does Email Appending work?</h2> <p style="text-align:Justify;">Why wait any longer? Spark up your marketing campaigns with the most actionable <strong>email append solutions &amp; acquire qualified email leads</strong> that boost your sales revenue. Put a rocket under your campaign growth plan by using data that get your email campaigns delivered to the right inboxes.</p> <p style="text-align:Justify;">We will help design your marketing strategies to reach the right market segment and achieve higher sales effortlessly. Give your marketing a competitive edge by opting for Span Global Services’ highly responsive marketing intelligence solutions.</p> </div> <div class="col-sm-6 text-center "> <img src="../assets/img/Email-Append-Process.jpg" alt="Email Appending Process" class="respo-img " /> <div class="mt-2"> <a href="#" data-toggle="modal" data-target="#emailappend" class="dgreen-btn circle-fa">Get Free Test Now &nbsp; <i class="fa icon ion-android-arrow-forward"></i></a> </div> </div> </div> </div> </section> <section class="section-sec-new01"> <div class="container"> <div class="row"> <style> .new-sec-pad { background: #f7f7f7; padding: 30px 0 20px 0; } .section-sec-new03 { margin-top: 20px; } .section-sec-new02 { margin-top: 25px; } .section-sec-new01 { margin-top: 0px; } .respo-icon p { line-height: 18px; margin-top: 5px; } .respo-icon p:hover { color: green; } .email-list-style ul li { margin-left: -30px; font-size: 14px; color: #333333; margin-bottom: 4px; } .email-list-style ul li { list-style-type: none; } @media screen and (max-width: 992px) { .respo-icon .col-lg-3 { width: 100%; } } @media screen and (max-width:768px) { .respo-icon .col-lg-3 { width: 50%; } .align-lft { margin-left: 30px; } .newcrd .col-sm-4 { margin-bottom: 5px; } } @media screen and (max-width: 600px) { .respo-icon.col-lg-3 { width: 50%; } } .high-light-row { background: #e9ffdb; padding: 0; margin: 0; } .new-business-card h5 { color: green; font-size: 16px; text-align: center; margin-bottom: 7px; } .new-business-card img { text-align: center; display: block; margin-bottom: 8px; width: 40px; height: 40px; margin-left: auto; margin-right: auto; } .new-business-card { padding: 14px; text-align: center; background: #eee; box-shadow: 0 8px 8px -4px green; } .new-business-card:hover { padding: 14px; text-align: center; background: #fff; box-shadow: 0 8px 8px -4px green; } </style> <div class="col-lg-12 mb-4 wow fadeInRight newcrd"> <h2 class="subhead-small-blk">Types of Email Appending Services We Provide</h2> <p style="text-align:Justify;">There is more than one type of email appending service present with us. Whatever be your requirement-be it improving your in-house data quality- we are here to help.</p> <div class="row mb-4"> <div class="col-sm-4"> <div class="new-business-card"> <img src="../assets/img/Business-Email-Appending.png" alt="Business Email Appending" class="respo-img " /> <h5> <strong>Business Email Appending:</strong> </h5> <p>We use company names, postal addresses and other data on business decision makers, marketing experts and IT professionals to acquire their <strong>email addresses and append</strong> them to your list.</p> </div> </div> <div class="col-sm-4"> <div class="new-business-card"> <img src="../assets/img/Consumer-Email-Appending.png" alt="Consumer Email Appending" class="respo-img " /> <h5> <strong>Consumer Email Appending:</strong></h5> <p>We match your list of consumers’ data (name, postal address, etc.) and get opt-in consumer email addresses through e-append.<br><br></p> </div> </div> <div class="col-sm-4"> <div class="new-business-card"> <img src="../assets/img/Reverse-Email-Appending.png" alt="Reverse Email Appending" class="respo-img " /> <h5><strong>Reverse Email Appending:</strong></h5> <p>If you have the email address of your prospects, but your list lacks other important data like name, postal information, company details, etc. then acquire that through reverse email appending.</p> </div> </div> </div> <p style="text-align:Justify;">A good marketer always plans campaigns based on statistical data, research and analytics. Research is something that you cannot ignore while executing campaigns for your audience. You need to know them first.</p> <p style="text-align:Justify;">Developing personalized email content is only possible if you know your prospective customers well and understand their purchase behaviors. But sending personalized emails will not bring any result if you don’t have the right email addresses to use. And this is where Span Global Services will help you with a cost-effective <strong>email list appending</strong> of all kinds. </p> </div> </div> </div> </section> <section class="section-sec email-append-benefit-sec"> <div class="container"> <div class="row"> <div class="col-lg-5 mb-2 wow fadeInLeft"> <div class="dark-green"> <h2>How Does Email Appending Services Benefit your Business?</h2> </div> </div> <div class="col-lg-7 wow fadeInLeft"> <p style="text-align:Justify;">To increase customer base, one requires an effective multichannel marketing effort. If you want to promote your brand through multi-channel marketing you can get a compact business mailing list from us to empower your campaigns. We will provide you with updated &amp; responsive contact lists segmented in multiple fields - such as full names, email addresses, direct phone numbers, social media profile details etc.</p> <p>But purchasing email lists often strains the budget. In that case, we suggest you go for appending your emails. With Span Global Services, you can upgrade your marketing data for better targeting &amp; run efficient campaigns to get better visibility in the global B2B market Space.</p> <p style="text-align:Justify;">So hurry up and step up your revenue with Span Global Services' opt-in & deliverable <strong><a href="https://www.spanglobalservices.com/data-append/b2b-email-appending">B2B email appending services</a></strong>. We know that it is a highly competitive world out there and we have companies willing to append your contacts at throwaway prices. We, on the other hand, aim to stay ahead of the competition by providing email contact data that is not only accurate but also highly responsive and deliverable. So make the smart move now and improve your brand visibility worldwide.</p> </div> </div> </div> </section> <section class="section-sec-new03"> <div class="container"> <div class="row"> <div class="col-lg-12 mb-2 wow fadeInLeft"> <h2 class="subhead-small-blk mb-2 text-center">Frequently Asked Questions</h2> </div> <div class="col-lg-12"> <div class="bs-example"> <div class="accordion " id="accordionExample"> <div class="row"> <div class="col-lg-6 mb-4 wow fadeInLeft"> <div class="card"> <div class="card-header" id="headingOne"> <h2 class="mb-0"> <button type="button" class="btn btn-link " data-toggle="collapse" data-target="#collapseOne"><i class="fa fa-plus"></i> What is email appending?</button> </h2> </div> <div id="collapseOne" class="collapse " aria-labelledby="headingOne" data-parent="#accordionExample"> <div class="card-body"> <p><strong>Email Appending</strong> is a marketing practice that involves taking customer data and matching it with the vendors database to obtain email addresses. In essence, it involves adding an email address to an existing list. It is cost effective and ideal for generating revenue through email marketing.</p> </div> </div> </div> <div class="card"> <div class="card-header" id="headingTwo"> <h2 class="mb-0"> <button type="button" class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo"><i class="fa fa-plus"></i>What are some examples of email appending services?</button> </h2> </div> <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample"> <div class="card-body"> <p>Span Global Services offers unmatched <strong>email appending services</strong> like B2B email appending, reverse email appending, telephone appending and contact appending to list a few. Our <strong>email appending</strong> best practices help marketers to connect with key decision makers and professionals </p> </div> </div> </div> <div class="card"> <div class="card-header" id="headingThree"> <h2 class="mb-0"> <button type="button" class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree"><i class="fa fa-plus"></i> How do email appending companies append databases?</button> </h2> </div> <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample"> <div class="card-body"> <p>Email appending is carried out in a very meticulous manner by matching it with vendor and other data repositories. <strong>Email appending</strong> entails the inclusion of missing business email addresses in the corporate mailing database enhance the lists for optimal campaigns. </p> </div> </div> </div> <div class="card"> <div class="card-header" id="headingfour"> <h2 class="mb-0"> <button type="button" class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapsefour"><i class="fa fa-plus"></i> What is unique about Email Appending at Span Global Services?</button> </h2> </div> <div id="collapsefour" class="collapse" aria-labelledby="headingfour" data-parent="#accordionExample"> <div class="card-body"> <p>Once you opt for <strong>email appending services</strong> and partner with us, we will work towards revamping your existing email list. We provide accurate and recent email addresses of niche audience base. Knowing the customer data, we will <strong>append email addresses</strong> from the vendor database and enhance your existing list. </p> </div> </div> </div> <div class="card"> <div class="card-header" id="headingfive"> <h2 class="mb-0"> <button type="button" class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapsefive"><i class="fa fa-plus"></i> Why should I opt for Span Global Services email appending service?</button> </h2> </div> <div id="collapsefive" class="collapse" aria-labelledby="headingfive" data-parent="#accordionExample"> <div class="card-body"> <p>At Span Global Services we understand the importance of verified <a href="https://www.spanglobalservices.com/b2b-email-list">B2B data</a> and go the extra mile to <strong>append email addresses</strong>. Span Global Services has assisted marketers in the past who have always come back to invest in our <strong>email appending services</strong>. We help marketers leverage business and revamp an existing list with our impeccable yet affordable email appending services. </p> </div> </div> </div> </div> <div class="col-lg-6 mb-4 wow fadeInRight"> <div class="card"> <div class="card-header" id="headingsix"> <h2 class="mb-0"> <button type="button" class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapsesix"><i class="fa fa-plus"></i> What are the best practices to append emails?</button> </h2> </div> <div id="collapsesix" class="collapse" aria-labelledby="headingsix" data-parent="#accordionExample"> <div class="card-body"> <p>Email Appending is the process of updating or adding a missing email address into your existing customers record to improve your email marketing metrics. This is how we achieve the best results.</p> <ul class="space-list"> <li>Use of opt-in data to connect with individuals who are interested in hearing from you</li> <li>Updating of your records regularly</li> <li>Pinging appended list from a different IP</li> <li>Know your vendors track records and inquire about how they handle bounces, unsubscribes and grievances</li> </ul> </div> </div> </div> <div class="card"> <div class="card-header" id="headingseven"> <h2 class="mb-0"> <button type="button" class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseseven"><i class="fa fa-plus"></i> How email appending assists your data requirements?</button> </h2> </div> <div id="collapseseven" class="collapse" aria-labelledby="headingseven" data-parent="#accordionExample"> <div class="card-body"> <p>When new data is added to your existing customers list it will enhance your companies customer files. You can reach your existing prospects faster. You can build business relations effectively. With our accurate and permission passed updated data you will not have failed campaigns.</p> <p><strong>Email Appending</strong> will help generate more leads for faster conversions and maximizes your ROI. It can also enhance your business communication.</p> </div> </div> </div> <div class="card"> <div class="card-header" id="headingeight"> <h2 class="mb-0"> <button type="button" class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseeight"><i class="fa fa-plus"></i> How do email appending companies append databases?</button> </h2> </div> <div id="collapseeight" class="collapse" aria-labelledby="headingeight" data-parent="#accordionExample"> <div class="card-body"> <p>Companies often collect raw customer information of their clients such as phone numbers, emails, or addresses. This data is verified to remove incorrect data to make it error free and then matched with our master file. We then add only opt-in data to the email list. We then send a welcome mail to check the deliverability of the data. It is then sent to your <a href="https://www.spanglobalservices.com/email-lists">email address</a> for you to download. </p> </div> </div> </div> <div class="card"> <div class="card-header" id="headingnine"> <h2 class="mb-0"> <button type="button" class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapsenine"><i class="fa fa-plus"></i> What are the benefits of email appending?</button> </h2> </div> <div id="collapsenine" class="collapse" aria-labelledby="headingnine" data-parent="#accordionExample"> <div class="card-body"> <ul class="space-list"> <li>It will connect you with relevant customers through email </li> <li>You can save money by reducing direct mail expenditure</li> <li>Update it to maintain quality</li> <li>Improves accuracy and overall value of data</li> <li>Helps increase campaign response rates and conversion rates </li> <li>Grows your business and expand market reach</li> </ul> </div> </div> </div> <div class="card"> <div class="card-header" id="headingten"> <h2 class="mb-0"> <button type="button" class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseten"><i class="fa fa-plus"></i> How does email appending exactly work?</button> </h2> </div> <div id="collapseten" class="collapse" aria-labelledby="headingten" data-parent="#accordionExample"> <div class="card-body"> <p><strong>Email Appending</strong> follows a very simple principle of using known customer data and searching the corresponding <a href="https://www.spanglobalservices.com/email-lists">email list</a> from the vendors database. This essentially revamps the customers existing list and boosts B2B mailing databases and campaign returns.</p> </div> </div> </div> </div> </div> </div> </div> </div> </div> </div> </section> <section class="free-quote-sec"> <div class="container"> <div class="row"> <div class="col-lg-5 wow fadeInRight centeralign"> <div> <h2>GET A FREE QUOTE</h2> <p>Finding the right data can be<br /> complicated, so we are here to help </p> </div> </div> <div class="col-lg-7 wow fadeInRight"> <div class="contact-quote"> <div class="form"> <form method="post" name="contactside" class="contactForm" onsubmit="return fnValidationContactside()" action="https://www.spanglobalservices.com/scripts/formmail" enctype="multipart/form-data"> <input name="subject" type="hidden" value="Contact Details from Span Global Services"> <input name="redirect_url" type="hidden" value="https://www.spanglobalservices.com/thanks"> <div class=" form-row"> <div class="col-lg-6 form-group"> <input type="text" name="fname" class="form-control" id="fname" placeholder="First Name*"> </div> <div class="col-lg-6 form-group"> <input type="text" name="lname" class="form-control" id="lname" placeholder="Last Name*"> </div> <div class="col-lg-6 form-group"> <input type="email" class="form-control" name="email" id="email" placeholder="Business Email*"> </div> <div class="col-lg-6 form-group"> <input type="text" class="form-control" name="phone" id="phone" placeholder="Phone*"> </div> </div> <div class="form-row"> <div class="col-lg-12 form-group"> <div class="input-container"> <select name="contact" class="form-control"> <option value="">No. of contacts</option> <option value="Less than 10k">Less than 10k</option> <option value="10k-50k">10k-50k</option> <option value="50k-100k">50k-100k</option> <option value="100k+">100k+</option></select> </div> </div> </div> <div class="form-group"> <textarea class="form-control " name="comments" rows="2" placeholder="Requirements"></textarea> </div> <div class="form-group"><button type="submit" class="circle-fa" >CLICK HERE TO SUBMIT</button></div> </form> </div></div> </div> </div> </div> </section> </main>
+                    .section-sec-new03 {
+                        margin-top: 20px;
+                    }
+
+                    .section-sec-new02 {
+                        margin-top: 25px;
+                    }
+
+                    .section-sec-new01 {
+                        margin-top: 0px;
+                    }
+
+                    .respo-icon p {
+                        line-height: 18px;
+                        margin-top: 5px;
+                    }
+
+                    .respo-icon p:hover {
+                        color: green;
+                    }
+
+                    .email-list-style ul li {
+                        margin-left: -30px;
+                        font-size: 14px;
+                        color: #333333;
+                        margin-bottom: 4px;
+                    }
+
+                    .email-list-style ul li {
+                        list-style-type: none;
+                    }
+
+                    @media screen and (max-width: 992px) {
+                        .respo-icon .col-lg-3 {
+                            width: 100%;
+                        }
+                    }
+
+                    @media screen and (max-width:768px) {
+                        .respo-icon .col-lg-3 {
+                            width: 50%;
+                        }
+                        .align-lft {
+                            margin-left: 30px;
+                        }
+                        .newcrd .col-sm-4 {
+                            margin-bottom: 5px;
+                        }
+                    }
+
+                    @media screen and (max-width: 600px) {
+                        .respo-icon.col-lg-3 {
+                            width: 50%;
+                        }
+                    }
+
+                    .high-light-row {
+                        background: #e9ffdb;
+                        padding: 0;
+                        margin: 0;
+                    }
+
+                    .new-business-card h5 {
+                        color: green;
+                        font-size: 16px;
+                        text-align: center;
+                        margin-bottom: 7px;
+                    }
+
+                    .new-business-card img {
+                        text-align: center;
+                        display: block;
+                        margin-bottom: 8px;
+                        width: 40px;
+                        height: 40px;
+                        margin-left: auto;
+                        margin-right: auto;
+                    }
+
+                    .new-business-card {
+                        padding: 14px;
+                        text-align: center;
+                        background: #eee;
+                        box-shadow: 0 8px 8px -4px green;
+                    }
+
+                    .new-business-card:hover {
+                        padding: 14px;
+                        text-align: center;
+                        background: #fff;
+                        box-shadow: 0 8px 8px -4px green;
+                    }
+                </style>
+                <div class="col-lg-12 mb-4 wow fadeInRight newcrd">
+                    <h2 class="subhead-small-blk">Types of Email Appending Services We Provide</h2>
+                    <p style="text-align:Justify;">There is more than one type of email appending service present with us. Whatever be your requirement-be it improving your in-house data quality- we are here to help.</p>
+                    <div class="row mb-4">
+                        <div class="col-sm-4">
+                            <div class="new-business-card"> <img src="/static/assets/img/Business-Email-Appending.png" alt="Business Email Appending" class="respo-img " />
+                                <h5> <strong>Business Email Appending:</strong> </h5>
+                                <p>We use company names, postal addresses and other data on business decision makers, marketing experts and IT professionals to acquire their <strong>email addresses and append</strong> them to your list.</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="new-business-card"> <img src="/static/assets/img/Consumer-Email-Appending.png" alt="Consumer Email Appending" class="respo-img " />
+                                <h5> <strong>Consumer Email Appending:</strong></h5>
+                                <p>We match your list of consumers’ data (name, postal address, etc.) and get opt-in consumer email addresses through e-append.<br><br></p>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="new-business-card"> <img src="/static/assets/img/Reverse-Email-Appending.png" alt="Reverse Email Appending" class="respo-img " />
+                                <h5><strong>Reverse Email Appending:</strong></h5>
+                                <p>If you have the email address of your prospects, but your list lacks other important data like name, postal information, company details, etc. then acquire that through reverse email appending.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <p style="text-align:Justify;">A good marketer always plans campaigns based on statistical data, research and analytics. Research is something that you cannot ignore while executing campaigns for your audience. You need to know them first.</p>
+                    <p style="text-align:Justify;">Developing personalized email content is only possible if you know your prospective customers well and understand their purchase behaviors. But sending personalized emails will not bring any result if you don’t have the right email
+                        addresses to use. And this is where Span Global Services will help you with a cost-effective <strong>email list appending</strong> of all kinds. </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-sec email-append-benefit-sec">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 mb-2 wow fadeInLeft">
+                    <div class="dark-green">
+                        <h2>How Does Email Appending Services Benefit your Business?</h2>
+                    </div>
+                </div>
+                <div class="col-lg-7 wow fadeInLeft">
+                    <p style="text-align:Justify;">To increase customer base, one requires an effective multichannel marketing effort. If you want to promote your brand through multi-channel marketing you can get a compact business mailing list from us to empower your campaigns. We
+                        will provide you with updated &amp; responsive contact lists segmented in multiple fields - such as full names, email addresses, direct phone numbers, social media profile details etc.</p>
+                    <p>But purchasing email lists often strains the budget. In that case, we suggest you go for appending your emails. With Span Global Services, you can upgrade your marketing data for better targeting &amp; run efficient campaigns to get
+                        better visibility in the global B2B market Space.</p>
+                    <p style="text-align:Justify;">So hurry up and step up your revenue with Span Global Services' opt-in & deliverable <strong><a href="https://www.spanglobalservices.com/data-append/b2b-email-appending">B2B email appending services</a></strong>. We know that it is
+                        a highly competitive world out there and we have companies willing to append your contacts at throwaway prices. We, on the other hand, aim to stay ahead of the competition by providing email contact data that is not only accurate
+                        but also highly responsive and deliverable. So make the smart move now and improve your brand visibility worldwide.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-sec-new03">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 mb-2 wow fadeInLeft">
+                    <h2 class="subhead-small-blk mb-2 text-center">Frequently Asked Questions</h2>
+                </div>
+                <div class="col-lg-12">
+                    <div class="bs-example">
+                        <div class="accordion " id="accordionExample">
+                            <div class="row">
+                                <div class="col-lg-6 mb-4 wow fadeInLeft">
+                                    <div class="card">
+                                        <div class="card-header" id="headingOne">
+                                            <h2 class="mb-0"> <button type="button" class="btn btn-link " data-toggle="collapse" data-target="#collapseOne"><i class="fa fa-plus"></i> What is email appending?</button> </h2>
+                                        </div>
+                                        <div id="collapseOne" class="collapse " aria-labelledby="headingOne" data-parent="#accordionExample">
+                                            <div class="card-body">
+                                                <p><strong>Email Appending</strong> is a marketing practice that involves taking customer data and matching it with the vendors database to obtain email addresses. In essence, it involves adding an email address
+                                                    to an existing list. It is cost effective and ideal for generating revenue through email marketing.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-header" id="headingTwo">
+                                            <h2 class="mb-0"> <button type="button" class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo"><i class="fa fa-plus"></i>What are some examples of email appending services?</button> </h2>
+                                        </div>
+                                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                                            <div class="card-body">
+                                                <p>Span Global Services offers unmatched <strong>email appending services</strong> like B2B email appending, reverse email appending, telephone appending and contact appending to list a few. Our <strong>email appending</strong>                                                    best practices help marketers to connect with key decision makers and professionals </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-header" id="headingThree">
+                                            <h2 class="mb-0"> <button type="button" class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree"><i class="fa fa-plus"></i> How do email appending companies append databases?</button> </h2>
+                                        </div>
+                                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                                            <div class="card-body">
+                                                <p>Email appending is carried out in a very meticulous manner by matching it with vendor and other data repositories. <strong>Email appending</strong> entails the inclusion of missing business email addresses
+                                                    in the corporate mailing database enhance the lists for optimal campaigns. </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-header" id="headingfour">
+                                            <h2 class="mb-0"> <button type="button" class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapsefour"><i class="fa fa-plus"></i> What is unique about Email Appending at Span Global Services?</button> </h2>
+                                        </div>
+                                        <div id="collapsefour" class="collapse" aria-labelledby="headingfour" data-parent="#accordionExample">
+                                            <div class="card-body">
+                                                <p>Once you opt for <strong>email appending services</strong> and partner with us, we will work towards revamping your existing email list. We provide accurate and recent email addresses of niche audience base.
+                                                    Knowing the customer data, we will <strong>append email addresses</strong> from the vendor database and enhance your existing list. </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-header" id="headingfive">
+                                            <h2 class="mb-0"> <button type="button" class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapsefive"><i class="fa fa-plus"></i> Why should I opt for Span Global Services email appending service?</button>                                                </h2>
+                                        </div>
+                                        <div id="collapsefive" class="collapse" aria-labelledby="headingfive" data-parent="#accordionExample">
+                                            <div class="card-body">
+                                                <p>At Span Global Services we understand the importance of verified <a href="https://www.spanglobalservices.com/b2b-email-list">B2B data</a> and go the extra mile to <strong>append email addresses</strong>.
+                                                    Span Global Services has assisted marketers in the past who have always come back to invest in our <strong>email appending services</strong>. We help marketers leverage business and revamp an existing
+                                                    list with our impeccable yet affordable email appending services. </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 mb-4 wow fadeInRight">
+                                    <div class="card">
+                                        <div class="card-header" id="headingsix">
+                                            <h2 class="mb-0"> <button type="button" class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapsesix"><i class="fa fa-plus"></i> What are the best practices to append emails?</button> </h2>
+                                        </div>
+                                        <div id="collapsesix" class="collapse" aria-labelledby="headingsix" data-parent="#accordionExample">
+                                            <div class="card-body">
+                                                <p>Email Appending is the process of updating or adding a missing email address into your existing customers record to improve your email marketing metrics. This is how we achieve the best results.</p>
+                                                <ul
+                                                    class="space-list">
+                                                    <li>Use of opt-in data to connect with individuals who are interested in hearing from you</li>
+                                                    <li>Updating of your records regularly</li>
+                                                    <li>Pinging appended list from a different IP</li>
+                                                    <li>Know your vendors track records and inquire about how they handle bounces, unsubscribes and grievances</li>
+                                                    </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-header" id="headingseven">
+                                            <h2 class="mb-0"> <button type="button" class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseseven"><i class="fa fa-plus"></i> How email appending assists your data requirements?</button> </h2>
+                                        </div>
+                                        <div id="collapseseven" class="collapse" aria-labelledby="headingseven" data-parent="#accordionExample">
+                                            <div class="card-body">
+                                                <p>When new data is added to your existing customers list it will enhance your companies customer files. You can reach your existing prospects faster. You can build business relations effectively. With our
+                                                    accurate and permission passed updated data you will not have failed campaigns.</p>
+                                                <p><strong>Email Appending</strong> will help generate more leads for faster conversions and maximizes your ROI. It can also enhance your business communication.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-header" id="headingeight">
+                                            <h2 class="mb-0"> <button type="button" class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseeight"><i class="fa fa-plus"></i> How do email appending companies append databases?</button> </h2>
+                                        </div>
+                                        <div id="collapseeight" class="collapse" aria-labelledby="headingeight" data-parent="#accordionExample">
+                                            <div class="card-body">
+                                                <p>Companies often collect raw customer information of their clients such as phone numbers, emails, or addresses. This data is verified to remove incorrect data to make it error free and then matched with our
+                                                    master file. We then add only opt-in data to the email list. We then send a welcome mail to check the deliverability of the data. It is then sent to your <a href="https://www.spanglobalservices.com/email-lists">email address</a>                                                    for you to download. </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-header" id="headingnine">
+                                            <h2 class="mb-0"> <button type="button" class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapsenine"><i class="fa fa-plus"></i> What are the benefits of email appending?</button> </h2>
+                                        </div>
+                                        <div id="collapsenine" class="collapse" aria-labelledby="headingnine" data-parent="#accordionExample">
+                                            <div class="card-body">
+                                                <ul class="space-list">
+                                                    <li>It will connect you with relevant customers through email </li>
+                                                    <li>You can save money by reducing direct mail expenditure</li>
+                                                    <li>Update it to maintain quality</li>
+                                                    <li>Improves accuracy and overall value of data</li>
+                                                    <li>Helps increase campaign response rates and conversion rates </li>
+                                                    <li>Grows your business and expand market reach</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-header" id="headingten">
+                                            <h2 class="mb-0"> <button type="button" class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseten"><i class="fa fa-plus"></i> How does email appending exactly work?</button> </h2>
+                                        </div>
+                                        <div id="collapseten" class="collapse" aria-labelledby="headingten" data-parent="#accordionExample">
+                                            <div class="card-body">
+                                                <p><strong>Email Appending</strong> follows a very simple principle of using known customer data and searching the corresponding <a href="https://www.spanglobalservices.com/email-lists">email list</a> from
+                                                    the vendors database. This essentially revamps the customers existing list and boosts B2B mailing databases and campaign returns.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="free-quote-sec">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 wow fadeInRight centeralign">
+                    <div>
+                        <h2>GET A FREE QUOTE</h2>
+                        <p>Finding the right data can be<br /> complicated, so we are here to help </p>
+                    </div>
+                </div>
+                <div class="col-lg-7 wow fadeInRight">
+                    <div class="contact-quote">
+                        <div class="form">
+                            <form method="post" name="contactside" class="contactForm" onsubmit="return fnValidationContactside()" action="https://www.spanglobalservices.com/scripts/formmail" enctype="multipart/form-data"> <input name="subject" type="hidden" value="Contact Details from Span Global Services"> <input name="redirect_url" type="hidden" value="https://www.spanglobalservices.com/thanks">
+                                <div class=" form-row">
+                                    <div class="col-lg-6 form-group"> <input type="text" name="fname" class="form-control" id="fname" placeholder="First Name*"> </div>
+                                    <div class="col-lg-6 form-group"> <input type="text" name="lname" class="form-control" id="lname" placeholder="Last Name*"> </div>
+                                    <div class="col-lg-6 form-group"> <input type="email" class="form-control" name="email" id="email" placeholder="Business Email*"> </div>
+                                    <div class="col-lg-6 form-group"> <input type="text" class="form-control" name="phone" id="phone" placeholder="Phone*"> </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="col-lg-12 form-group">
+                                        <div class="input-container"> <select name="contact" class="form-control"> <option value="">No. of contacts</option> <option value="Less than 10k">Less than 10k</option> <option value="10k-50k">10k-50k</option> <option value="50k-100k">50k-100k</option> <option value="100k+">100k+</option></select>                                            </div>
+                                    </div>
+                                </div>
+                                <div class="form-group"> <textarea class="form-control " name="comments" rows="2" placeholder="Requirements"></textarea> </div>
+                                <div class="form-group"><button type="submit" class="circle-fa">CLICK HERE TO SUBMIT</button></div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
 <div id="emailappend" class="modal fade" role="dialog">
-    <div class="modal-dialog">  <div class="modal-content"> <div class="modal-header"> <h4 class="modal-title">Get Started with Email Append</h4> <button type="button" class="close" data-dismiss="modal">×</button> </div> <div class="modal-body" id="file"> <div class="form"> <form name="f7" method="post" action="https://www.spanglobalservices.com/scripts/mailer.php" enctype="multipart/form-data" onSubmit="javascript:return getCountvalidation();"> <input name="fieldOrder" type="hidden" value="name,email,phone,comments,upload"> <input name="subject" type="hidden" value="Get Count Request from Span Global Services"> <input type="hidden" name="returnURL" value="https://www.spanglobalservices.com/thanks"> <div class=" form-row"> <div class="col-lg-6 form-group"> <div class="input-container"> <input type="text" name="fname1" class="form-control" id="fname1" placeholder="First Name*"> </div> </div> <div class="col-lg-6 form-group"> <div class="input-container"> <input type="text" name="lname1" class="form-control" id="lname1" placeholder="Last Name"> </div> </div> </div> <div class=" form-row"> <div class="col-lg-6 form-group"> <div class="input-container"> <input name="email1" class="form-control" type="text" id="email1" value="" placeholder="Email" /> </div> </div> <div class="col-lg-6 form-group"> <div class="input-container"> <input type="text" class="form-control" name="phone1" id="phone1" value="" placeholder="Phone" /> </div> </div> </div> <div class=" form-row"> <div class="col-lg-12 form-group"> <div class="input-container"> <textarea rows="3" class="form-control" name="comments1" id="comments1" placeholder="We urge clients to tell us about their specific data requirements, budget, size of in-house data etc. as it will help in the appending process.."></textarea> </div> </div> </div> <div class="form-group"> <label for="user">Begin Free Trial: Upload Sample File :<span style="color:#Ff0000" ;>*</span></label> <input type="file" name="upload" id="upload" value="" style="background:#ffffff;" /> </div> <div class="form-group mt-4"><button type="submit" class="circle-fa">SUBMIT &nbsp; <i class="fa icon ion-android-arrow-forward"></i></button></div> </form> <div class="text-center"> <a href="https://www.spanglobalservices.com/privacy">"Your privacy is important to us"</a> </div> </div> </div> </div> </div> </div>
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Get Started with Email Append</h4> <button type="button" class="close" data-dismiss="modal">×</button> </div>
+            <div class="modal-body" id="file">
+                <div class="form">
+                    <form name="f7" method="post" action="https://www.spanglobalservices.com/scripts/mailer.php" enctype="multipart/form-data" onSubmit="javascript:return getCountvalidation();"> <input name="fieldOrder" type="hidden" value="name,email,phone,comments,upload"> <input name="subject" type="hidden" value="Get Count Request from Span Global Services"> <input type="hidden" name="returnURL" value="https://www.spanglobalservices.com/thanks">
+                        <div class=" form-row">
+                            <div class="col-lg-6 form-group">
+                                <div class="input-container"> <input type="text" name="fname1" class="form-control" id="fname1" placeholder="First Name*"> </div>
+                            </div>
+                            <div class="col-lg-6 form-group">
+                                <div class="input-container"> <input type="text" name="lname1" class="form-control" id="lname1" placeholder="Last Name"> </div>
+                            </div>
+                        </div>
+                        <div class=" form-row">
+                            <div class="col-lg-6 form-group">
+                                <div class="input-container"> <input name="email1" class="form-control" type="text" id="email1" value="" placeholder="Email" /> </div>
+                            </div>
+                            <div class="col-lg-6 form-group">
+                                <div class="input-container"> <input type="text" class="form-control" name="phone1" id="phone1" value="" placeholder="Phone" /> </div>
+                            </div>
+                        </div>
+                        <div class=" form-row">
+                            <div class="col-lg-12 form-group">
+                                <div class="input-container"> <textarea rows="3" class="form-control" name="comments1" id="comments1" placeholder="We urge clients to tell us about their specific data requirements, budget, size of in-house data etc. as it will help in the appending process.."></textarea>                                    </div>
+                            </div>
+                        </div>
+                        <div class="form-group"> <label for="user">Begin Free Trial: Upload Sample File :<span style="color:#Ff0000" ;>*</span></label> <input type="file" name="upload" id="upload" value="" style="background:#ffffff;" /> </div>
+                        <div class="form-group mt-4"><button type="submit" class="circle-fa">SUBMIT &nbsp; <i class="fa icon ion-android-arrow-forward"></i></button></div>
+                    </form>
+                    <div class="text-center"> <a href="https://www.spanglobalservices.com/privacy">"Your privacy is important to us"</a> </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 
 {% endblock %}
