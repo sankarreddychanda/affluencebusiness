@@ -73,6 +73,7 @@ urlpatterns = [
     path("uk-business-email-list/", uk_business_email_list),
     path("privacy/", privacy),
     path("refund-policy/", refund_policy),
+    path("contactdat_azax/", contactdat_azax),
 
 
 

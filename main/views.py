@@ -2,6 +2,8 @@ from django.shortcuts import render
 from django.http import HttpResponseRedirect, HttpResponse
 from django import forms
 from main.models import *
+from django.views.decorators.csrf import csrf_exempt
+import json
 from django.core.exceptions import ValidationError
 # Create your views here.
 
@@ -185,3 +187,45 @@ def contact(request):
 
     else:
         return render(request, "contact.html")
+
+
+@csrf_exempt
+def contactdat_azax(request):
+    try:
+        if request.method == "POST":
+            first_name = request.POST.get('first_name', None)
+            last_name = request.POST.get('last_name', None)
+            email = request.POST.get('email', None)
+            phone = request.POST.get('phone', None)
+            company = request.POST.get('company', None)
+            message = request.POST.get('message', None)
+            contacts_no = request.POST.get('contacts_no', None)
+
+            if first_name in (None, ''):
+                return HttpResponse(json.dumps({"status": False, "msg": "Please enter your name."}))
+            if not first_name.replace(" ", "").replace(".", "").isalpha():
+                return HttpResponse(json.dumps({"status": False,
+                                                "msg": "Invalid Characters Found In Name, Please don't use any numbers or symbols in name."}))
+            if email in (None, ''):
+                return HttpResponse(json.dumps({"status": False,
+                                                "msg": "Kindly provide your email address, it will be easier for us to contact you."}))
+            if phone in (None, ''):
+                return HttpResponse(json.dumps({"status": False,
+                                                "msg": "Kindly provide your contact number, it will be easier for us to contact you."}))
+
+            contact = ContactData(first_name=first_name)
+            print("ok")
+            if last_name:
+                contact.last_name = last_name
+            contact.phone = phone
+            contact.email = email
+            contact.message = message
+            contact.contacts_no = contacts_no
+            contact.company = company
+            contact.save()
+            return HttpResponse(json.dumps({"status": True, "url": "/thankyou/"}))
+
+    except Exception as e:
+        print(e)
+        return HttpResponse(json.dumps({"status": False,
+                                        "msg": "Sorry, the form could not be saved at this time. Please try again later or contact support for assistance."}))
