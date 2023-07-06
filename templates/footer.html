@@ -222,16 +222,11 @@
                 <input type="file" name="upload" id="upload" value="" style="background:#ffffff; padding:0px;" />
               </div>
             </div>
-
-
-
             <div class="form-group mt-4"><button type="submit" class="circle-fa">SUBMIT &nbsp; <i class="fa icon ion-android-arrow-forward"></i></button></div>
           </form>
-
           <div class="text-center">
             <a href="https://www.spanglobalservices.com/privacy">"Your privacy is important to us"</a>
           </div>
-
         </div>
       </div>
     </div>
@@ -363,34 +358,12 @@
     }
   });
 </script>
-
-<style>
-
-.whats-phone-wrapper
-{
-	display: flex;
-    gap: 10px;
-    flex-direction: column;
-    position: fixed;
-    top: 577px;
-    z-index: 999;
-    right: 23px;
-}
-</style>
-
-<!--<div class="whats-phone-wrapper">-->
-
-<!-- 			<a class="phone-cyc" href="#" data-toggle="modal" data-target="#send-message">-->
-<!-- 				<img class="cyc-wp-temp" src="/static/assets/img/chatnow.webp" alt="chat now">-->
-<!-- 			</a>-->
-<!-- </div>-->
 <script>
 	$(document).ready(function(){
         // Add minus icon for collapse element which is open by default
         $(".collapse.show").each(function(){
         	$(this).prev(".card-header").find(".fa").addClass("fa-minus").removeClass("fa-plus");
         });
-
         // Toggle plus minus icon on show hide of collapse element
         $(".collapse").on('show.bs.collapse', function(){
         	$(this).prev(".card-header").find(".fa").removeClass("fa-plus").addClass("fa-minus");
