@@ -91,20 +91,48 @@ def automotive_industry_email_list(request):
 
 def banking_and_finance_industry_email_list(request):
     return render(request,'industry-wise-lists/banking-and-finance-industry-email-list.html')
+def oil_and_gas_industry_email_list(request):
+    return render(request,'industry-wise-lists/oil-and-gas-industry-email-list.html')
+def real_estate_industry_email_list(request):
+    return render(request,'industry-wise-lists/real-estate-industry-email-list.html')
+def manufacturing_industries_email_list(request):
+    return render(request,'industry-wise-lists/manufacturing-industries-email-list.html')
 
-def automotive_industry_email_list(request):
-    return render(request,'industry-wise-lists/automotive-industry-email-list.html')
-
-
-def automotive_industry_email_list(request):
-    return render(request,'industry-wise-lists/automotive-industry-email-list.html')
-
-def automotive_industry_email_list(request):
-    return render(request,'industry-wise-lists/automotive-industry-email-list.html')
-
+def healthcare_lists(request):
+    return render(request,'healthcare-lists.html')
 
 
+def dentists_email_list(request):
+    return render(request,'healthcare-lists/dentists-email-list.html')
 
+def hospital_email_list(request):
+    return render(request,'healthcare-lists/hospital-email-list.html')
+def nurses_email_list(request):
+    return render(request,'healthcare-lists/nurses-email-list.html')
+
+def physician_email_list(request):
+    return render(request,'healthcare-lists/physician-email-list.html')
+def gov_sector_decision_makers_data(request):
+    return render(request,'gov-sector-decision-makers-data.html')
+def usa_business_email_list(request):
+    return render(request,'geo-targeted-lists/usa-business-email-list.html')
+def geo_targeted_lists(request):
+    return render(request,'geo-targeted-lists.html')
+def privacy(request):
+    return render(request,'privacy.html')
+def refund_policy(request):
+    return render(request,'refund-policy.html')
+
+
+
+def canada_business_email_list(request):
+    return render(request,'geo-targeted-lists/canada-business-email-list.html')
+
+def australia_business_email_list(request):
+    return render(request,'geo-targeted-lists/australia-business-email-list.html')
+
+def uk_business_email_list(request):
+    return render(request,'geo-targeted-lists/uk-business-email-list.html')
 
 
 

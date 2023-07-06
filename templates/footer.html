@@ -58,20 +58,19 @@
       <div class="modal-body">
         <div class="form">
 
-          <form name="popup" id="contact-form" action="https://www.spanglobalservices.com/scripts/formmail" method="post" onSubmit="return commonpopupform()">
-            <input type="hidden" name="returnURL" value="https://www.spanglobalservices.com/thanks">
-            <input name="title" type="hidden" value="Contact Request from Span Global Services">
+          <form name="popup" id="contact-form" action="" method="post" onSubmit="return commonpopupform()">
+
 
             <div class=" form-row">
               <div class="col-lg-6 form-group">
                 <div class="input-container">
-                  <input type="text" name="fname" class="form-control" id="fname" placeholder="First Name*">
+                  <input type="text" name="first_name" class="form-control" id="fname" placeholder="First Name*">
                   <i class="fa fa-user icon"></i>
                 </div>
               </div>
               <div class="col-lg-6 form-group">
                 <div class="input-container">
-                  <input type="text" name="lname" class="form-control" id="lname" placeholder="Last Name">
+                  <input type="text" name="last_name" class="form-control" id="lname" placeholder="Last Name">
                   <i class="fa fa-user icon"></i>
                 </div>
 
@@ -110,7 +109,7 @@
                 <div class="col-lg-12 form-group">
                 	<div class="input-container">
 
-                        <select name="contact" class="form-control">
+                        <select name="contact_no" class="form-control">
                         <option value="">No. of contacts</option>
                         <option value="Less than 10k">Less than 10k</option>
                         <option value="10k-50k">10k-50k</option>
@@ -123,15 +122,17 @@
               </div>
 
             <div class="form-group">
-              <textarea class="form-control " name="comments" rows="3" placeholder="Requirement*"></textarea>
+              <textarea class="form-control " name="message" rows="3" placeholder="Requirement*"></textarea>
             </div>
-            <input id="Website" name="Website" type="hidden" value="https://www.spanglobalservices.com/b2b-email-list" />
-            <input id="source" name="source" type="hidden" value="Web Site Lead" />
-            <div class="form-group mt-4"><button type="submit" class="circle-fa">SUBMIT &nbsp; <i class="fa icon ion-android-arrow-forward"></i></button></div>
+<!--            <input id="Website" name="Website" type="hidden" value="https://www.spanglobalservices.com/b2b-email-list" />-->
+<!--            <input id="source" name="source" type="hidden" value="Web Site Lead" />-->
+            <div class="form-group mt-4">
+              <button type="submit" class="circle-fa">SUBMIT &nbsp; <i class="fa icon ion-android-arrow-forward"></i></button>
+            </div>
           </form>
 
           <div class="text-center">
-            <a href="https://www.spanglobalservices.com/privacy">"Your privacy is important to us"</a>
+            <a href="/privacy/">"Your privacy is important to us"</a>
           </div>
 
         </div>

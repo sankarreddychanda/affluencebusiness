@@ -57,6 +57,24 @@ urlpatterns = [
     path("industry-wise-lists/", industry_wise_lists),
     path("automotive-industry-email-list/", automotive_industry_email_list),
     path("banking-and-finance-industry-email-list/", banking_and_finance_industry_email_list),
+    path("healthcare-lists/", healthcare_lists),
+    path("dentists-email-list/", dentists_email_list),
+    path("hospital-email-list/", hospital_email_list),
+    path("oil-and-gas-industry-email-list/", oil_and_gas_industry_email_list),
+    path("real-estate-industry-email-list/", real_estate_industry_email_list),
+    path("manufacturing-industries-email-list/", manufacturing_industries_email_list),
+    path("nurses-email-list/", nurses_email_list),
+    path("physician-email-list/", physician_email_list),
+    path("gov-sector-decision-makers-data/", gov_sector_decision_makers_data),
+    path("usa-business-email-list/", usa_business_email_list),
+    path("geo-targeted-lists/", geo_targeted_lists),
+    path("canada-business-email-list/", canada_business_email_list),
+    path("australia-business-email-list/", australia_business_email_list),
+    path("uk-business-email-list/", uk_business_email_list),
+    path("privacy/", privacy),
+    path("refund-policy/", refund_policy),
+
+
 
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
