@@ -30,7 +30,7 @@
                     </div>
                     <div class="col-lg-4 col-md-4 mt-4 f-social"> <a href="/" alt="Span Global Services"><img src="/static/assets/img/new-affluence-logo.png" class="respo-img" alt="Span Global Services Logo"></a> </div>
                     <div class="col-lg-8 col-md-8 mt-4 footer-contact">
-                        <div class="copyright"> &copy; 2023 Affluences Business inc - <a href="https://www.championsgroup.com/" target="_blank">A Champions Group Company</a>, All rights reserved. </div>
+                        <div class="copyright"> &copy; 2023 Affluences Business inc - <a href="#" >A Champions Group Company</a>, All rights reserved. </div>
                     </div>
                 </div>
             </div>
@@ -48,7 +48,7 @@
 
       </div>
       <div class="col-lg-12 text-center modal-sub-header oxy-font">
-        <a href="https://www.spanglobalservices.com/" alt="Span Global Services"><img src="/static/assets/img/new-affluence-logo.png" alt="home" title="home" class="popup-logo" /></a>
+        <a href="javascript:void(0)" alt="Span Global Services"><img src="/static/assets/img/new-affluence-logo.png" alt="home" title="home" class="popup-logo" /></a>
         <h4 class="modal-title">Send Us Your Requirement</h4>
         <div>
           <p>Our growth experts will connect with you to fulfill your needs</p>
@@ -58,7 +58,7 @@
       <div class="modal-body">
         <div class="form">
 
-          <form name="popup" id="contact-form" action="" method="post" onSubmit="return commonpopupform()">
+          <form name="popup" id="contact-form" method="post" onSubmit="return validationcon()">
 
 
             <div class=" form-row">
@@ -108,8 +108,7 @@
 
                 <div class="col-lg-12 form-group">
                 	<div class="input-container">
-
-                        <select name="contact_no" class="form-control">
+                        <select name="contacts_no" class="form-control" id="contacts_no">
                         <option value="">No. of contacts</option>
                         <option value="Less than 10k">Less than 10k</option>
                         <option value="10k-50k">10k-50k</option>
@@ -131,9 +130,9 @@
             </div>
           </form>
 
-          <div class="text-center">
+          <!-- <div class="text-center">
             <a href="/privacy/">"Your privacy is important to us"</a>
-          </div>
+          </div> -->
 
         </div>
       </div>
@@ -155,28 +154,27 @@
 
       </div>
       <div class="col-lg-12 text-center modal-sub-header oxy-font">
-        <a href="https://www.spanglobalservices.com/" alt="Span Global Services"><img src="/static/assets/img/new-affluence-logo.png" alt="home" title="home" class="popup-logo" /></a>
+        <a href="" alt="Span Global Services"><img src="/static/assets/img/new-affluence-logo.png" alt="home" title="home" class="popup-logo" /></a>
         <h4 class="modal-title">Get Free Append Match Test Today!</h4>
       </div>
 
       <div class="modal-body">
         <div class="form">
 
-          <form name="f21" id="contact-form" action="https://www.spanglobalservices.com/scripts/append-mailer" method="post" onSubmit="return popupfilevalidation()" enctype="multipart/form-data">
-            <input type="hidden" name="returnURL" value="https://www.spanglobalservices.com/thanks">
-            <input name="title" type="hidden" value="Contact Request from Span Global Services">
-
+          <form name="f21" id="contact" action="/contactdat_azax/" method="post"  enctype="multipart/form-data">
+            {% csrf_token %}
+           
 
             <div class=" form-row">
               <div class="col-lg-6 form-group">
                 <div class="input-container">
-                  <input type="text" name="fname" class="form-control" id="fname" placeholder="First Name*">
+                  <input type="text" name="first_name" class="form-control" id="fname" placeholder="First Name*">
                   <i class="fa fa-user icon"></i>
                 </div>
               </div>
               <div class="col-lg-6 form-group">
                 <div class="input-container">
-                  <input type="text" name="lname" class="form-control" id="lname" placeholder="Last Name">
+                  <input type="text" name="last_name" class="form-control" id="lname" placeholder="Last Name">
                   <i class="fa fa-user icon"></i>
                 </div>
 
@@ -211,7 +209,7 @@
             </div>
 
             <div class="form-group">
-              <textarea class="form-control " name="comments" rows="2" placeholder="Requirement*"></textarea>
+              <textarea class="form-control " name="message" rows="2" placeholder="Requirement*"></textarea>
             </div>
 
             <div class="form-group">
@@ -219,13 +217,14 @@
                 <label for="user" style="display:block;">Upload Sample File(formats .doc,.txt, .xlsx, jpeg) :</label>
               </div>
               <div class="col-lg-12">
-                <input type="file" name="upload" id="upload" value="" style="background:#ffffff; padding:0px;" />
+                <input type="file" name="file" id="file" value="" style="background:#ffffff; padding:0px;" />
               </div>
             </div>
-            <div class="form-group mt-4"><button type="submit" class="circle-fa">SUBMIT &nbsp; <i class="fa icon ion-android-arrow-forward"></i></button></div>
+            <div class="form-group mt-4">
+              <button type="submit" class="circle-fa">SUBMIT &nbsp; <i class="fa icon ion-android-arrow-forward"></i></button></div>
           </form>
           <div class="text-center">
-            <a href="https://www.spanglobalservices.com/privacy">"Your privacy is important to us"</a>
+            <a href="/privacy/">"Your privacy is important to us"</a>
           </div>
         </div>
       </div>
@@ -373,6 +372,28 @@
 			$(this).prev(".card-header").find(".btn-link").removeClass("active");
         });
     });
+
+   $('#contact-form').submit(function(event) {
+    event.preventDefault(); // Prevent the default form submission
+    var selectField = $("#contacts_no");
+    var value = selectField.val();
+    var formData = $(this).serialize();
+    
+    $.ajax({
+      url: $(this).attr('action'),
+      type: $(this).attr('method'),
+      data: formData,
+      dataType: 'json',
+      success: function(response) {
+        // Handle the response data
+        console.log(response);
+      },
+      error: function(error) {
+        // Handle any error that occurred during the request
+        console.error(error);
+      }
+    });
+  });
 </script>
 {% block extra_js %}
 

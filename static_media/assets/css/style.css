@@ -65,7 +65,7 @@ h1,h2,h3,h4,h5,h6{font-weight:400;margin:0 0 20px 0;padding:0}
 #intro .carousel-container-l{display:flex;justify-content:left;align-items:flex-start;position:absolute;bottom:220px;top:auto;left:0;right:0;padding-left:150px;padding-right:75px; }
 #intro .carousel-container-3{display:inline-block;padding-left:150px;padding-right:75px; }
 #intro .carousel-background img{max-width:100%}
-#intro .carousel-content{}
+
 #intro h2{color:#fff;margin-bottom:5px;font-size:38px;font-weight:700; font-family: 'Open Sans', sans-serif;}
 #intro p{width:100%;margin:0 auto 10px auto;color:#fff;font-weight:bold;font-size:20px;line-height:30px;font-family: 'Open Sans', sans-serif;}
 #intro h3.small-head{color:#fff;margin-bottom:5px;font-size:24px;font-weight:600; font-family: 'Open Sans', sans-serif;}

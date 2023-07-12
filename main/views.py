@@ -200,6 +200,7 @@ def contactdat_azax(request):
             company = request.POST.get('company', None)
             message = request.POST.get('message', None)
             contacts_no = request.POST.get('contacts_no', None)
+            file = request.POST.get('file', None)
 
             if first_name in (None, ''):
                 return HttpResponse(json.dumps({"status": False, "msg": "Please enter your name."}))
@@ -222,8 +223,10 @@ def contactdat_azax(request):
             contact.message = message
             contact.contacts_no = contacts_no
             contact.company = company
+            if file:
+                contact.file=file
             contact.save()
-            return HttpResponse(json.dumps({"status": True, "url": "/thankyou/"}))
+            return HttpResponse(json.dumps({"status": True, "message":"successfully updated details"}))
 
     except Exception as e:
         print(e)

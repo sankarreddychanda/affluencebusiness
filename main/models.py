@@ -232,7 +232,7 @@ class ContactData(models.Model):
     company = models.CharField(max_length=255, null=True, blank=True)
     contacts_no = models.CharField(max_length=255, null=True, blank=True)
     message = models.TextField(null=True, blank=True)
-    # file = models.FileField()
+    file = models.FileField(upload_to="contact_files",null=True,blank=True)
 
     def __str__(self):
         return self.first_name
