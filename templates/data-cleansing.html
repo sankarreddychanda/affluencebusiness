@@ -1,4 +1,5 @@
- {% extends 'base.html' %} {% block extra_css %}
+ {% extends 'base.html' %}
+  {% block extra_css %}
 <style>
     .crypto-head {
         background-color: green;
@@ -116,7 +117,8 @@
   .white-br-btn{ border: 1px solid #ffffff; background: #1c8908; color: #fff;
     }
 </style>
-{% endblock %} {% block content %}
+{% endblock %}
+ {% block content %}
  <section class="inner-banner data-cleansing-banner"> <div class="overlay"> <div class="container"> <div class="row"> <div class="col-lg-6 mb-3 wow fadeInLeft"></div> <div class="col-lg-6 mb-3 wow fadeInLeft"> <h1>Top-of-the-Line Data Cleansing Services</h1> <p>If You Care for Your Data, It Will Care for You!</p> <div class="mb-5 mt-4"> <a href="#" data-toggle="modal" data-target="#send-message-new" class="white-br-btn circle-fa"> Try Cleansing a Sample File &nbsp; <i class="fa icon ion-android-arrow-forward"></i></a> </div> </div> </div> </div> </div></section>
 
 <main id="main">
@@ -143,7 +145,8 @@
                             <h4>Free Cleansing Test</h4>
                             </br>
                             <div class="form">
-                                <form name="f20" id="contact-form" action="https://www.spanglobalservices.com/scripts/append-mailer" method="post" onSubmit="return dataappendvalidation()" enctype="multipart/form-data"> <input type="hidden" name="returnURL" value="https://www.spanglobalservices.com/thanks"><input name="title" type="hidden" value="Contact Request from Span Global Services">
+                                <form name="f20" id="contact-form" action="" method="post"  enctype="multipart/form-data"> 
+
                                     <div class=" form-row">
                                         <div class="col-lg-6 form-group">
                                             <div class="input-container"> <input type="text" name="fname" class="form-control" id="fname" placeholder="First Name*"> <i class="fa fa-user icon"></i> </div>
@@ -175,7 +178,9 @@
                                         <div class="input-container"> <label for="user" style="font-size:14px;">Upload Sample File :<span style="color:#Ff0000";>*</span></label><input type="file" name="upload" id="upload" value="" style="background:#ffffff;" /></div>
                                     </div>
                                     <div class="form-group"> <label><input name="newslettersubscribe" value="newslettersubscribe" checked="" type="checkbox"> I would like to subscribe to your Newsletter.</label> </div>
-                                    <div class="form-group mt-4"><button type="submit" class="circle-fa">Cleanse Data Now! <i class="fa icon ion-android-arrow-forward"></i></button></div>
+                                    <div class="form-group mt-4">
+                                        <button type="submit" class="circle-fa">Cleanse Data Now! <i class="fa icon ion-android-arrow-forward"></i></button>
+                                    </div>
                                 </form>
                             </div>
                         </div>
@@ -529,20 +534,37 @@
                 <div class="col-lg-7 wow fadeInRight">
                     <div class="contact-quote">
                         <div class="form">
-                            <form method="post" name="contactside" class="contactForm" onsubmit="return fnValidationContactside()" action="https://www.spanglobalservices.com/scripts/formmail" enctype="multipart/form-data"> <input name="subject" type="hidden" value="Contact Details from Span Global Services"> <input name="redirect_url" type="hidden" value="https://www.spanglobalservices.com/thanks">
+                            <form  name="contactside" id="affluenContact" class="contactForm" method="post">
+                              {% csrf_token %}
+                                
                                 <div class=" form-row">
-                                    <div class="col-lg-6 form-group"> <input type="text" name="fname" class="form-control" id="fname" placeholder="First Name*"> </div>
-                                    <div class="col-lg-6 form-group"> <input type="text" name="lname" class="form-control" id="lname" placeholder="Last Name*"> </div>
-                                    <div class="col-lg-6 form-group"> <input type="email" class="form-control" name="email" id="email" placeholder="Business Email*"> </div>
-                                    <div class="col-lg-6 form-group"> <input type="text" class="form-control" name="phone" id="phone" placeholder="Phone*"> </div>
+                                    <div class="col-lg-6 form-group"> 
+                                        <input type="text" name="first_name" class="form-control" id="fname" placeholder="First Name*"> </div>
+                                    <div class="col-lg-6 form-group">
+                                         <input type="text" name="last_name" class="form-control" id="lname" placeholder="Last Name*"> </div>
+                                    <div class="col-lg-6 form-group"> 
+                                        <input type="email" class="form-control" name="email" id="email" placeholder="Business Email*">
+                                     </div>
+                                    <div class="col-lg-6 form-group">
+                                         <input type="text" class="form-control" name="phone" id="phone" placeholder="Phone*"> </div>
                                 </div>
                                 <div class="form-row">
                                     <div class="col-lg-12 form-group">
-                                        <div class="input-container"> <select name="contact" class="form-control"> <option value="">No. of contacts</option> <option value="Less than 10k">Less than 10k</option> <option value="10k-50k">10k-50k</option> <option value="50k-100k">50k-100k</option> <option value="100k+">100k+</option></select>                                            </div>
+                                        <div class="input-container">
+                                             <select name="contact_no" class="form-control"> <option value="">No. of contacts</option> 
+                                                <option value="Less than 10k">Less than 10k</option> 
+                                                <option value="10k-50k">10k-50k</option> 
+                                                <option value="50k-100k">50k-100k</option> 
+                                                <option value="100k+">100k+</option>
+                                            </select> 
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="form-group"> <textarea class="form-control " name="comments" rows="2" placeholder="Requirements"></textarea> </div>
-                                <div class="form-group"><button type="submit" class="circle-fa">CLICK HERE TO SUBMIT</button></div>
+                                <div class="form-group">
+                                     <textarea class="form-control " name="message" rows="2" placeholder="Requirements"></textarea> </div>
+                                <div class="form-group">
+                                    <button type="submit" class="circle-fa">CLICK HERE TO SUBMIT</button>
+                                </div>
                             </form>
                         </div>
                     </div>
@@ -551,5 +573,27 @@
         </div>
     </section>
 </main>
-
+{% block extra_js %}
+<script>
+    $('#affluenContact').on("submit",function(event) {
+    event.preventDefault(); // Prevent the default form submission
+    var formData = $(this).serialize();
+    
+    $.ajax({
+      url: "/contactdat_azax/",
+      type: "POST",
+      data: formData,
+      dataType: 'json',
+      success: function(response) {
+        // Handle the response data
+        console.log(response);
+      },
+      error: function(error) {
+        // Handle any error that occurred during the request
+        console.error(error);
+      }
+    });
+  });
+</script>
+{% endblock %}
 {% endblock %}
