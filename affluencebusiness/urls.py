@@ -33,7 +33,7 @@ urlpatterns = [
     path("phone-appending/", phone_appending),
     path("about-us/", about),
     path("total-addressable-market/", total_addressable_market),
-    path("investors-email-list/", investors_email_list),
+    # path("investors-email-list/", investors_email_list),
     path("technology-lists/", technology_lists),
     path("as-400-users-list/", as_400_users_list),
     path("amazon-web-services-users-list/", amazon_web_services_users_list),

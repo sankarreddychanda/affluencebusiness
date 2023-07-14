@@ -104,7 +104,7 @@
                         <h2 class="subhead-small-blk">Contact Appending Services</h2>
                         <p><strong>How to prospect to various decision makers within an organization</strong></p>
                         <p>Contact appending adds multiple contacts of key decision makers within an organization. In this way you gain a comprehensive list of contacts with their current titles, providing you with information on the best person to contact.</p>
-                        <p>With organizational structure changing frequently, keeping track of changing titles and job roles is a challenge. <a href="https://www.spanglobalservices.com/" title="Span Global Services"><strong>Span Global Services</strong></a>                            has current information about contact details of various titles within an organization. With our <strong>contact appending services</strong> you can gain:</p>
+                        <p>With organizational structure changing frequently, keeping track of changing titles and job roles is a challenge. <a href="/" title="Span Global Services"><strong>Span Global Services</strong></a>                            has current information about contact details of various titles within an organization. With our <strong>contact appending services</strong> you can gain:</p>
                         <ul class="space-list">
                             <li>A wider market within the same company</li>
                             <li>Establish new connections </li>
@@ -113,36 +113,37 @@
                         <p>Appending contacts from the same company gives you a good advantage. You get to contact the desired contact and also get a good source of engagement within the same company. This amplifies your efforts multi-fold. It also helps
                             you get to people who are new to your business, opening new doors and creating new opportunities. When you have run a <strong>contact append</strong> on your dataset, it increases your campaign scope and directly affects your
                             deliverability and in-turn, you gain a higher ROI. The positive aspects of <strong>contact appending</strong> are many.</p>
-                        <p>Sign up for our <strong>contact appending services</strong> and improve the effectiveness of your marketing campaigns. All you need to do is give us your <a href="https://www.spanglobalservices.com/email-lists" title="Email Database">email database</a>                            and we will give you the appended list in less than 7 business days.</p>
+                        <p>Sign up for our <strong>contact appending services</strong> and improve the effectiveness of your marketing campaigns. All you need to do is give us your <a href="/email-lists" title="Email Database">email database</a>                            and we will give you the appended list in less than 7 business days.</p>
                         <p><strong>Fill in the gaps in your database, with our niche appending services:</strong></p>
                         <div class="row sicon">
                             <div class="col-lg-4 mb-4 ">
-                                <a href="https://www.spanglobalservices.com/data-append/email-appending" title="Email Appending">
-                                    <div class="icon"><img src="https://www.spanglobalservices.com/assets/img/email-appending-thumb.jpg" alt="Email Appending" class="respo-img" /> </div>
+                                <a href="/email-appending/" title="Email Appending">
+                                    <div class="icon"><img src="/static/assets/img/email-appending-thumb.jpg" alt="Email Appending" class="respo-img" /> </div>
                                     <p class="description">Email<br/> Appending</p>
                                 </a>
                             </div>
                             <div class="col-lg-4 mb-4">
-                                <a href="https://www.spanglobalservices.com/data-append/phone-appending" title="Phone Appending">
-                                    <div class="icon"><img src="https://www.spanglobalservices.com/assets/img/phone-appending-thumb.jpg" alt="Phone Appending" class="respo-img" /> </div>
+                                <a href="/phone-appending/" title="Phone Appending">
+                                    <div class="icon"><img src="/static/assets/img/phone-appending-thumb.jpg" alt="Phone Appending" class="respo-img" /> </div>
                                     <p class="description">Phone<br/> Appending</p>
                                 </a>
                             </div>
                             <div class="col-lg-4 mb-4">
-                                <a href="https://www.spanglobalservices.com/data-append/contact-appending" title="Contact Appending">
-                                    <div class="icon"><img src="https://www.spanglobalservices.com/assets/img/contact-appending-thumb.jpg" alt="Contact Appending" class="respo-img" /> </div>
+                                <a href="/contact-appending/" title="Contact Appending">
+                                    <div class="icon"><img src="/static/assets/img/contact-appending-thumb.jpg" alt="Contact Appending" class="respo-img" /> </div>
                                     <p class="description">Contact<br/> Appending</p>
                                 </a>
                             </div>
                             <div class="col-lg-4 mb-4">
-                                <a href="https://www.spanglobalservices.com/data-append/b2c-email-appending" title="B2C Email Appending">
-                                    <div class="icon"><img src="https://www.spanglobalservices.com/assets/img/b2c-email-appending-thumb.jpg" alt="B2C Email Appending" class="respo-img" /> </div>
+                                <a href="/b2c-email-appending/" title="B2C Email Appending">
+                                    <div class="icon">
+                                        <img src="/static/assets/img/b2c-email-appending-thumb.jpg" alt="B2C Email Appending" class="respo-img" /> </div>
                                     <p class="description">B2C Email<br/> Appending</p>
                                 </a>
                             </div>
                             <div class="col-lg-4 mb-4">
-                                <a href="https://www.spanglobalservices.com/data-append/social-media-profile-appending" title="Social Media Profile Appending">
-                                    <div class="icon"><img src="https://www.spanglobalservices.com/assets/img/social-profile-appending-thumb.jpg" alt="Social Media Profile Appending" class="respo-img" /> </div>
+                                <a href="/social-media-profile-appending/" title="Social Media Profile Appending">
+                                    <div class="icon"><img src="/static/assets/img/social-profile-appending-thumb.jpg" alt="Social Media Profile Appending" class="respo-img" /> </div>
                                     <p class="description">Social Media<br/>Profile Appending</p>
                                 </a>
                             </div>
@@ -154,13 +155,15 @@
                                 <h4>Free Append Test</h4>
                                 </br>
                                 <div class="form">
-                                    <form name="f20" id="contact-form" action="https://www.spanglobalservices.com/scripts/append-mailer" method="post" onSubmit="return dataappendvalidation()" enctype="multipart/form-data"> <input type="hidden" name="returnURL" value="https://www.spanglobalservices.com/thanks"><input name="title" type="hidden" value="Contact Request from Span Global Services">
+                                    <form name="f20" id="contact-form" action="/contact-us/" method="post"  enctype="multipart/form-data">
+                                        {% csrf_token %}
                                         <div class=" form-row">
                                             <div class="col-lg-6 form-group">
-                                                <div class="input-container"> <input type="text" name="fname" class="form-control" id="fname" placeholder="First Name*"> <i class="fa fa-user icon"></i> </div>
+                                                <div class="input-container">
+                                                    <input type="text" name="first_name" class="form-control" id="first_name" placeholder="First Name*"> <i class="fa fa-user icon"></i> </div>
                                             </div>
                                             <div class="col-lg-6 form-group">
-                                                <div class="input-container"> <input type="text" name="lname" class="form-control" id="lname" placeholder="Last Name"> <i class="fa fa-user icon"></i> </div>
+                                                <div class="input-container"> <input type="text" name="last_name" class="form-control" id="last_name" placeholder="Last Name"> <i class="fa fa-user icon"></i> </div>
                                             </div>
                                         </div>
                                         <div class=" form-row">
@@ -178,14 +181,17 @@
                                         </div>
                                         <div class="form-row">
                                             <div class="col-lg-12 form-group">
-                                                <div class="input-container"> <select name="contact" class="form-control"> <option value="">No. of contacts</option> <option value="Less than 10k">Less than 10k</option> <option value="10k-50k">10k-50k</option> <option value="50k-100k">50k-100k</option> <option value="100k+">100k+</option></select>                                                    </div>
+                                                <div class="input-container"> <select name="contact_no" class="form-control"> <option value="">No. of contacts</option> <option value="Less than 10k">Less than 10k</option> <option value="10k-50k">10k-50k</option> <option value="50k-100k">50k-100k</option> <option value="100k+">100k+</option></select>                                                    </div>
                                             </div>
                                         </div>
                                         <div class="form-group"> <textarea class="form-control " name="comments" rows="1" placeholder="Message*"></textarea> </div>
                                         <div class="col-lg-12 form-group">
-                                            <div class="input-container"> <label for="user" style="font-size:14px;">Upload Sample File :<span style="color:#Ff0000";>*</span></label><input type="file" name="upload" id="upload" value="" style="background:#ffffff;" /></div>
+                                            <div class="input-container">
+                                                <label for="user" style="font-size:14px;">Upload Sample File :<span style="color:#Ff0000";>*</span></label><input type="file" name="pdf" id="pdf" value="" style="background:#ffffff;" /></div>
                                         </div>
-                                        <div class="form-group"> <label><input name="newslettersubscribe" value="newslettersubscribe" checked="" type="checkbox"> I would like to subscribe to your Newsletter.</label> </div>
+                                        <div class="form-group">
+                                            <label>
+                                                <input name="newslettersubscribe" value="newslettersubscribe" checked="" type="checkbox"> I would like to subscribe to your Newsletter.</label> </div>
                                         <div class="form-group mt-4"><button type="submit" class="circle-fa">Append Data Now! <i class="fa icon ion-android-arrow-forward"></i></button></div>
                                     </form>
                                 </div>
@@ -199,12 +205,12 @@
         <section class="blue-sec-light">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-lg-6 wow fadeInRight padlf-none"> <img src="https://www.spanglobalservices.com/assets/img/data-appending-sub.jpg" alt="Contact Appending" class="full-img" /> </div>
+                    <div class="col-lg-6 wow fadeInRight padlf-none"> <img src="/static/assets/img/data-appending-sub.jpg" alt="Contact Appending" class="full-img" /> </div>
                     <div class="col-lg-6 mb-4 wow fadeInLeft centeralign">
                         <div class="">
                             <h4 class="subhead-big mb-2">Manage Data </h4>
                             <h2 class=" normal-head">before it manages you </h2>
-                            <div class="mb-4 mt-4"> <a href="https://www.spanglobalservices.com/contact-us" class="blk-btn ">Let's Talk &nbsp; <i class="fa fa-phone"></i></a> </div>
+                            <div class="mb-4 mt-4"> <a href="/contact-us/" class="blk-btn ">Let's Talk &nbsp; <i class="fa fa-phone"></i></a> </div>
                         </div>
                     </div>
                 </div>
@@ -222,7 +228,7 @@
                     <div class="col-lg-7 wow fadeInRight">
                         <div class="contact-quote">
                             <div class="form">
-                                <form method="post" name="contactside" class="contactForm" onsubmit="return fnValidationContactside()" action="https://www.spanglobalservices.com/scripts/formmail" enctype="multipart/form-data"> <input name="subject" type="hidden" value="Contact Details from Span Global Services"> <input name="redirect_url" type="hidden" value="https://www.spanglobalservices.com/thanks">
+                                <form method="post" name="contactside" class="contactForm" onsubmit="return fnValidationContactside()" action=" " enctype="multipart/form-data">
                                     <div class=" form-row">
                                         <div class="col-lg-6 form-group"> <input type="text" name="fname" class="form-control" id="fname" placeholder="First Name*"> </div>
                                         <div class="col-lg-6 form-group"> <input type="text" name="lname" class="form-control" id="lname" placeholder="Last Name*"> </div>
