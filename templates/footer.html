@@ -57,10 +57,7 @@
 
       <div class="modal-body">
         <div class="form">
-
-          <form name="popup" id="contact-form" method="post" onSubmit="return validationcon()">
-
-
+          <form name="popup" id="contact-form" action="/contactdat_azax/" method="post" onSubmit="return validationcon()">
             <div class=" form-row">
               <div class="col-lg-6 form-group">
                 <div class="input-container">
@@ -253,7 +250,7 @@
 
         <div class="form">
 
-          <form name="hpopup" id="home-form" action=" " method="post" onSubmit="return homepopup()">
+          <form name="hpopup" id="home-form" action=" " method="post" >
             <input type="hidden" name="returnURL" value=" ">
             <input name="title" type="hidden" value="Contact Request from Affluence Business Inc">
 
@@ -261,13 +258,13 @@
             <div class=" form-row">
               <div class="col-lg-6 form-group">
                 <div class="input-container">
-                  <input type="text" name="fname" class="form-control" id="fname" placeholder="First Name*">
+                  <input type="text" name="fname" class="form-control" id="first_name" placeholder="First Name*">
                   <i class="fa fa-user icon"></i>
                 </div>
               </div>
               <div class="col-lg-6 form-group">
                 <div class="input-container">
-                  <input type="text" name="lname" class="form-control" id="lname" placeholder="Last Name">
+                  <input type="text" name="lname" class="form-control" id="last_name" placeholder="Last Name">
                   <i class="fa fa-user icon"></i>
                 </div>
 
@@ -302,11 +299,10 @@
             </div>
 
             <div class="form-group">
-              <textarea class="form-control " name="comments" rows="3" placeholder="Message*"></textarea>
+              <textarea class="form-control " name="message" rows="3" placeholder="Message*"></textarea>
             </div>
 
-            <input id="Website" name="Website" type="hidden" value="/b2b-email-list/" />
-            <input id="source" name="source" type="hidden" value="Web Site Lead" />
+
 
             <div class="form-group mt-4"><button type="submit" class="circle-fa">Connect Now &nbsp; <i class="fa icon ion-android-arrow-forward"></i></button></div>
           </form>
@@ -373,7 +369,7 @@
         });
     });
 
-   $('#contact-form').submit(function(event) {
+   {% comment %} $('#contact-form').submit(function(event) {
     event.preventDefault(); // Prevent the default form submission
     var selectField = $("#contacts_no");
     var value = selectField.val();
@@ -386,12 +382,75 @@
       dataType: 'json',
       success: function(response) {
         // Handle the response data
+        $("#contact-form")[0].reset();
+        $("#send-message").modal('hide')
         console.log(response);
       },
       error: function(error) {
         // Handle any error that occurred during the request
         console.error(error);
       }
+    });
+  }); {% endcomment %}
+  document.addEventListener("DOMContentLoaded", function() {
+    var form = document.getElementById("contact-form");
+  
+    form.addEventListener("submit", function(event) {
+      event.preventDefault(); // Prevent the default form submission
+  
+      var formData = new FormData(form);
+  
+      var xhr = new XMLHttpRequest();
+      xhr.open(form.getAttribute("method"), form.getAttribute("action"));
+      xhr.setRequestHeader("X-Requested-With", "XMLHttpRequest");
+  
+      xhr.onload = function() {
+        if (xhr.status >= 200 && xhr.status < 400) {
+          var response = JSON.parse(xhr.responseText);
+          // Handle the response data
+          form.reset();
+          $("#send-message").modal("hide");
+          console.log(response);
+        } else {
+          console.error("Error: " + xhr.status);
+        }
+      };
+  
+      xhr.onerror = function() {
+        console.error("Request failed.");
+      };
+  
+      xhr.send(formData);
+    });
+  });
+  document.addEventListener("DOMContentLoaded", function() {
+    var form = document.getElementById("contact-form2");
+  
+    form.addEventListener("submit", function(event) {
+      event.preventDefault(); // Prevent the default form submission
+  
+      var formData = new FormData(form);
+  
+      var xhr = new XMLHttpRequest();
+      xhr.open(form.getAttribute("method"), form.getAttribute("action"));
+      xhr.setRequestHeader("X-Requested-With", "XMLHttpRequest");
+  
+      xhr.onload = function() {
+        if (xhr.status >= 200 && xhr.status < 400) {
+          var response = JSON.parse(xhr.responseText);
+          // Handle the response data
+          form.reset();
+          console.log(response);
+        } else {
+          console.error("Error: " + xhr.status);
+        }
+      };
+  
+      xhr.onerror = function() {
+        console.error("Request failed.");
+      };
+  
+      xhr.send(formData);
     });
   });
 </script>

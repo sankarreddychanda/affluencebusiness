@@ -1739,22 +1739,22 @@ transform: rotateY(180deg);
 .trusted-tier-info{max-width:310px; margin:0 auto;}
 }
 
-.education-industry-banner{background:url(https://www.spanglobalservices.com/assets/img/education-industry-banner.jpg) no-repeat top left; background-size:cover; padding:120px 0 120px 0;}
-.premix-compound-industry-banner{background:url(https://www.spanglobalservices.com/assets/img/premix-compound-industry-banner.jpg) no-repeat top left; background-size:cover; padding:120px 0 120px 0;}
-.real-estate-industry-banner{background:url(https://www.spanglobalservices.com/assets/img/real-estate-industry-banner.jpg) no-repeat top left; background-size:cover; padding:120px 0 120px 0;}
-.supply-chain-and-logistics-industry-banner{background:url(https://www.spanglobalservices.com/assets/img/supply-chain-and-logistics-industry-banner.jpg) no-repeat top left; background-size:cover; padding:120px 0 120px 0;}
-.plumbing-and-hvac-equipment-banner{background:url(https://www.spanglobalservices.com/assets/img/plumbing-and-hvac-equipment-banner.jpg) no-repeat top left; background-size:cover; padding:120px 0 120px 0;}
-.advertising-industry-banner{background:url(https://www.spanglobalservices.com/assets/img/advertising-industry-banner.jpg) no-repeat top left; background-size:cover; padding:120px 0 120px 0;}
-.automotive-industry-banner{background:url(https://www.spanglobalservices.com/assets/img/automotive-industry-banner.jpg) no-repeat top left; background-size:cover; padding:120px 0 120px 0;}
-.aviation-industry-banner{background:url(https://www.spanglobalservices.com/assets/img/aviation-industry-banner.jpg) no-repeat top left; background-size:cover; padding:120px 0 120px 0;}
-.cement-industry-banner{background:url(https://www.spanglobalservices.com/assets/img/cement-industry-banner.jpg) no-repeat top left; background-size:cover; padding:120px 0 120px 0;}
-.chemical-industry-banner{background:url(https://www.spanglobalservices.com/assets/img/chemical-industry-banner.jpg) no-repeat top left; background-size:cover; padding:120px 0 120px 0;}
-.energy-indusrty-banner{background:url(https://www.spanglobalservices.com/assets/img/energy-indusrty-banner.jpg) no-repeat top left; background-size:cover; padding:120px 0 120px 0;}
-.hotel-industry-banner{background:url(https://www.spanglobalservices.com/assets/img/hotel-industry-banner.jpg) no-repeat top left; background-size:cover; padding:120px 0 120px 0;}
-.insurance-service-industry-banner{background:url(https://www.spanglobalservices.com/assets/img/insurance-service-industry-banner.jpg) no-repeat top left; background-size:cover; padding:120px 0 120px 0;}
-.medical-devices-industry-banner{background:url(https://www.spanglobalservices.com/assets/img/medical-devices-industry-banner.jpg) no-repeat top left; background-size:cover; padding:120px 0 120px 0;}
-.pet-care-indusrty-banner{background:url(https://www.spanglobalservices.com/assets/img/pet-care-indusrty-banner.jpg) no-repeat top left; background-size:cover; padding:120px 0 120px 0;}
-.pharmaceutical-industry-banner{background:url(https://www.spanglobalservices.com/assets/img/pharmaceutical-industry-banner.jpg) no-repeat top left; background-size:cover; padding:120px 0 120px 0;}
+.education-industry-banner{background:url(/static/assets/img/education-industry-banner.jpg) no-repeat top left; background-size:cover; padding:120px 0 120px 0;}
+.premix-compound-industry-banner{background:url(/static/assets/img/premix-compound-industry-banner.jpg) no-repeat top left; background-size:cover; padding:120px 0 120px 0;}
+.real-estate-industry-banner{background:url(/static/assets/img/real-estate-industry-banner.jpg) no-repeat top left; background-size:cover; padding:120px 0 120px 0;}
+.supply-chain-and-logistics-industry-banner{background:url(/static/assets/img/supply-chain-and-logistics-industry-banner.jpg) no-repeat top left; background-size:cover; padding:120px 0 120px 0;}
+.plumbing-and-hvac-equipment-banner{background:url(/static/assets/img/plumbing-and-hvac-equipment-banner.jpg) no-repeat top left; background-size:cover; padding:120px 0 120px 0;}
+.advertising-industry-banner{background:url(/static/assets/img/advertising-industry-banner.jpg) no-repeat top left; background-size:cover; padding:120px 0 120px 0;}
+.automotive-industry-banner{background:url(/static/assets/img/automotive-industry-banner.jpg) no-repeat top left; background-size:cover; padding:120px 0 120px 0;}
+.aviation-industry-banner{background:url(/static/assets/img/aviation-industry-banner.jpg) no-repeat top left; background-size:cover; padding:120px 0 120px 0;}
+.cement-industry-banner{background:url(/static/assets/img/cement-industry-banner.jpg) no-repeat top left; background-size:cover; padding:120px 0 120px 0;}
+.chemical-industry-banner{background:url(/static/assets/img/chemical-industry-banner.jpg) no-repeat top left; background-size:cover; padding:120px 0 120px 0;}
+.energy-indusrty-banner{background:url(/static/assets/img/energy-indusrty-banner.jpg) no-repeat top left; background-size:cover; padding:120px 0 120px 0;}
+.hotel-industry-banner{background:url(/static/assets/img/hotel-industry-banner.jpg) no-repeat top left; background-size:cover; padding:120px 0 120px 0;}
+.insurance-service-industry-banner{background:url(/static/assets/img/insurance-service-industry-banner.jpg) no-repeat top left; background-size:cover; padding:120px 0 120px 0;}
+.medical-devices-industry-banner{background:url(/static/assets/img/medical-devices-industry-banner.jpg) no-repeat top left; background-size:cover; padding:120px 0 120px 0;}
+.pet-care-indusrty-banner{background:url(/static/assets/img/pet-care-indusrty-banner.jpg) no-repeat top left; background-size:cover; padding:120px 0 120px 0;}
+.pharmaceutical-industry-banner{background:url(/static/assets/img/pharmaceutical-industry-banner.jpg) no-repeat top left; background-size:cover; padding:120px 0 120px 0;}
 
 .small-tab-head {
     color: #000000;
@@ -1974,7 +1974,7 @@ p.blk{color: #000000; font-family: 'Oxygen', sans-serif;}
 .com-tab-focus-top tr td{background:#ffffff; color:#000000; padding:10px 12px 10px 12px; font-size:16px; font-family: 'Oxygen', sans-serif; text-align:center; border:1px solid #0f0f0f;  }
 
 .testimonials-banner {
-    background: url(https://www.spanglobalservices.com/assets/img/testimonials-banner-bg.jpg) no-repeat top left;
+    background: url(/static/assets/img/testimonials-banner-bg.jpg) no-repeat top left;
         background-size: auto;
     background-size: cover;
 }

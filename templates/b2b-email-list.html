@@ -117,85 +117,7 @@
               <div class="form">
 
 
-                <form name="f12" id="contact-form" action="/scripts/formmail" method="post"
-                  onSubmit="return validationcon()">
-                  <input type="hidden" name="returnURL" value="/thanks">
-                  <input name="title" type="hidden" value="Contact Request from Affluence Business Inc">
-
-
-                  <div class=" form-row">
-                    <div class="col-lg-6 form-group">
-                      <div class="input-container">
-                        <input type="text" name="fname" class="form-control" id="fname" placeholder="First Name*">
-                        <i class="fa fa-user icon"></i>
-                      </div>
-                    </div>
-                    <div class="col-lg-6 form-group">
-                      <div class="input-container">
-                        <input type="text" name="lname" class="form-control" id="lname" placeholder="Last Name">
-                        <i class="fa fa-user icon"></i>
-                      </div>
-
-                    </div>
-                  </div>
-
-                  <div class=" form-row">
-                    <div class="col-lg-6 form-group">
-                      <div class="input-container">
-                        <input type="email" class="form-control" name="email" id="email" placeholder="Business Email*">
-                        <i class="fa fa-envelope icon"></i>
-                      </div>
-                    </div>
-                    <div class="col-lg-6 form-group">
-                      <div class="input-container">
-                        <input type="text" class="form-control" name="phone" id="phone" placeholder="Business Phone*">
-                        <i class="fa fa-phone icon"></i>
-                      </div>
-                    </div>
-                  </div>
-
-
-                  <div class=" form-row">
-
-                    <div class="col-lg-12 form-group">
-                      <div class="input-container">
-                        <input type="text" name="company" class="form-control" id="company" placeholder="Company Name*">
-                        <i class="fa fa-briefcase icon"></i>
-                      </div>
-
-                    </div>
-                  </div>
-
-                  <div class=" form-row">
-
-                    <div class="col-lg-12 form-group">
-                      <div class="input-container">
-
-                        <select name="contact" class="form-control">
-                          <option value="">No. of contacts</option>
-                          <option value="Less than 10k">Less than 10k</option>
-                          <option value="10k-50k">10k-50k</option>
-                          <option value="50k-100k">50k-100k</option>
-                          <option value="100k+">100k+</option>
-                        </select>
-                      </div>
-
-                    </div>
-                  </div>
-
-
-
-                  <div class="form-group">
-                    <textarea class="form-control " name="comments" rows="1" placeholder="Message*"></textarea>
-                  </div>
-                  <div class="form-group">
-                    <label><input name="newslettersubscribe" value="newslettersubscribe" checked="" type="checkbox"> I
-                      would like to subscribe to your Newsletter.</label>
-                  </div>
-
-                  <div class="form-group mt-4"><button type="submit" class="circle-fa">Submit Data Counts and Quote
-                      Request &nbsp; <i class="fa icon ion-android-arrow-forward"></i></button></div>
-                </form>
+                {% include 'form.html' %}
               </div>
             </div>
           </div>
@@ -621,31 +543,7 @@
   </section>
 
 
-  <section class="grey-sec-light-01">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-6 wow fadeInRight">
-          <a href="#requestquote"> <img src="/static/assets/img/B2B-Email-List.webp" alt="b2b email list"
-              class="respo-img mb-3"></a>
-        </div>
-        <div class="col-lg-6 pt-5 pb-5 mt-3 wow fadeInLeft mb-sec">
-          <h2 class="subhead-small-blk mb-sec">We at Affluence Business Inc Take Pride in Delivering Quality over Quantity</h2>
 
-          <p style="text-align:Justify;">The market’s appetite for B2B prospect databases has skyrocketed. The most
-            logical outcome of the status quo is the emanation of numerous firms that offer mailing list services. It is
-            natural for business owners to be overwhelmed by the vast array of options around them. </p>
-          <p style="text-align:Justify;">It is worth noting that fruitful business conversions are only possible with
-            accurate and consent-based contact lists. Thus, accuracy, precision, and the databases’ legitimacy are of
-            acute importance, and that’s what you gain with us. You can count to stand by your side in your endeavor to
-            reach the cream of the crop business decision-makers!</p>
-          <div class="mt-4 pt-3">
-            <a href="#" data-toggle="modal" data-target="#send-message" class="green-btn circle-fa">Book Your Free
-              Sample Mailing Database Now! &nbsp; <i class="fa icon ion-android-arrow-forward"></i></a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
   <section class="section-sec-60-0">
     <div class="container">
       <div class="row">

@@ -75,7 +75,7 @@
                         <p>Our sophisticated data gamut also forays into business insights, market reports and IT
                             support services - so that your business can focus on its ascent without forked
                             distractions. </p>
-                        <p>Affluence Business Inc is a unit of the Champions Group conglomerate. </p>
+
                         <div class="mb-4 mt-4"> <a href="/contact-us/"
                                 class="dgreen-btn circle-fa">Talk to us &nbsp; <i
                                     class="fa icon ion-android-arrow-forward"></i></a> </div>
@@ -332,16 +332,12 @@
                 <div class="col-lg-7 wow fadeInRight">
                     <div class="contact-quote">
                         <div class="form">
-                            <form method="post" name="contactside" class="contactForm"
-                                onsubmit="return fnValidationContactside()"
-                                action=""
-                                enctype="multipart/form-data"> <input name="subject" type="hidden"
-                                    value="Contact Details from Affluence Business Inc"> <input name="redirect_url"
-                                    type="hidden" value="">
+                            <form name="contactside" id ="about_contact_form" action="/contactdat_azax/" method="post"> 
+                               
                                 <div class=" form-row">
-                                    <div class="col-lg-6 form-group"> <input type="text" name="fname"
+                                    <div class="col-lg-6 form-group"> <input type="text" name="first_name"
                                             class="form-control" id="fname" placeholder="First Name*"> </div>
-                                    <div class="col-lg-6 form-group"> <input type="text" name="lname"
+                                    <div class="col-lg-6 form-group"> <input type="text" name="last_name"
                                             class="form-control" id="lname" placeholder="Last Name*"> </div>
                                     <div class="col-lg-6 form-group"> <input type="email" class="form-control"
                                             name="email" id="email" placeholder="Business Email*"> </div>
@@ -350,7 +346,7 @@
                                 </div>
                                 <div class="form-row">
                                     <div class="col-lg-12 form-group">
-                                        <div class="input-container"> <select name="contact" class="form-control">
+                                        <div class="input-container"> <select name="contacts_no" class="form-control">
                                                 <option value="">No. of contacts</option>
                                                 <option value="Less than 10k">Less than 10k</option>
                                                 <option value="10k-50k">10k-50k</option>
@@ -359,10 +355,11 @@
                                             </select> </div>
                                     </div>
                                 </div>
-                                <div class="form-group"> <textarea class="form-control " name="comments" rows="2"
+                                <div class="form-group"> <textarea class="form-control " name="message" rows="2"
                                         placeholder="Requirements"></textarea> </div>
-                                <div class="form-group"><button type="submit" class="circle-fa">CLICK HERE TO
-                                        SUBMIT</button></div>
+                                <div class="form-group">
+                                    <button type="submit" class="circle-fa">CLICK HERE TO SUBMIT</button>
+                                </div>
                             </form>
                         </div>
                     </div>
@@ -372,5 +369,43 @@
     </section>
 </main>
 
-
+{% block extar_js %}
+<script>
+   
+     
+      
+    document.addEventListener("DOMContentLoaded", function() {
+        var form = document.getElementById("about_contact_form");
+      
+        form.addEventListener("submit", function(event) {
+          event.preventDefault(); // Prevent the default form submission
+      
+          var formData = new FormData(form);
+      
+          var xhr = new XMLHttpRequest();
+          xhr.open(form.getAttribute("method"), form.getAttribute("action"));
+          xhr.setRequestHeader("X-Requested-With", "XMLHttpRequest");
+      
+          xhr.onload = function() {
+            if (xhr.status >= 200 && xhr.status < 400) {
+              var response = JSON.parse(xhr.responseText);
+              // Handle the response data
+              form.reset();
+              {% comment %} $("#myModal").modal("hide"); {% endcomment %}
+              console.log(response);
+            } else {
+              console.error("Error: " + xhr.status);
+            }
+          };
+      
+          xhr.onerror = function() {
+            console.error("Request failed.");
+          };
+      
+          xhr.send(formData);
+        });
+      });
+      
+</script>
+{% endblock %}
 {% endblock %}

@@ -148,6 +148,7 @@ class contactForm(forms.Form):
     email = forms.EmailField()
     message = forms.CharField(widget=forms.Textarea, required=False)
 
+
     def clean_mobile(self):
         phone = self.cleaned_data.get("phone")
         if phone.isdigit() == False:
@@ -158,7 +159,7 @@ class contactForm(forms.Form):
 def contact(request):
     if request.method == "POST":
 
-        form = contactForm(request.POST)
+        form = contactForm(request.POST , request.FILES)
         print(form)
         if form.is_valid():
             print("--")
@@ -169,8 +170,9 @@ def contact(request):
             company = form.cleaned_data.get("company")
             message = form.cleaned_data.get("message")
             contacts_no = form.cleaned_data.get("contacts_no")
+            file = request.FILES.get("file")
             contact = ContactData(first_name=first_name)
-            print("ok")
+
             if last_name:
                 contact.last_name = last_name
             contact.phone = phone
@@ -178,6 +180,10 @@ def contact(request):
             contact.message = message
             contact.contacts_no = contacts_no
             contact.company = company
+
+            if file:
+                contact.file = file
+
             contact.save()
             return HttpResponseRedirect("/")
 
